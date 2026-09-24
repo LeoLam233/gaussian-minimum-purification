@@ -1,0 +1,16 @@
+{
+  "formula": "A=0_4; C=(999/1000) R tensor I_2; D=diag(J,2J,3J)/10000",
+  "R_rows": [
+    "(1,-1,0)/sqrt(2)",
+    "(1,1,-2)/sqrt(6)"
+  ],
+  "exact_operator_norm_upper_bound": "999/1000+3/10000=9993/10000<1",
+  "entropy_before": 0.7103374934943614,
+  "coordinate_deletion_entropies": [
+    1.040766021043368,
+    1.0407688447906611,
+    1.0407711058651048
+  ],
+  "polar_deletion_entropy": 0.017190384361387923,
+  "status": "counterexample to fixed-C-Williamson coordinate deletion only"
+}

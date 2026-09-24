@@ -1,0 +1,447 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=25mm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{microtype,booktabs,array,enumitem}
+\usepackage{xcolor}
+\definecolor{linkblue}{RGB}{20,57,102}
+\usepackage[colorlinks=true,linkcolor=linkblue,citecolor=linkblue,urlcolor=linkblue]{hyperref}
+\usepackage{bookmark}
+\numberwithin{equation}{section}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newcommand{\R}{\mathbb R}
+\newcommand{\C}{\mathbb C}
+\newcommand{\id}{\mathbb 1}
+\newcommand{\T}{\mathsf T}
+\newcommand{\EPG}{E_P^{\mathrm G}}
+\newcommand{\tr}{\operatorname{tr}}
+\newcommand{\Tr}{\operatorname{Tr}}
+\newcommand{\diag}{\operatorname{diag}}
+\newcommand{\Gr}{\operatorname{Gr}}
+\newcommand{\Sp}{\operatorname{Sp}}
+\newcommand{\SO}{\operatorname{SO}}
+\newcommand{\OO}{\operatorname{O}}
+\newcommand{\Span}{\operatorname{span}}
+\newcommand{\norm}[1]{\lVert#1\rVert}
+\newcommand{\ket}[1]{\lvert#1\rangle}
+\newcommand{\bra}[1]{\langle#1\rvert}
+\setlength{\parskip}{3pt plus 1pt}
+\setlength{\parindent}{1.2em}
+\setlist{leftmargin=*,itemsep=2pt,topsep=4pt}
+\emergencystretch=2em
+\allowdisplaybreaks[1]
+\hypersetup{pdftitle={A Mode Bound for Gaussian Entanglement of Purification},pdfauthor={Dehao Lin},pdfsubject={Finite-mode bosonic and fermionic Gaussian purifications}}
+\title{\bfseries A Mode Bound for Gaussian\\Entanglement of Purification}
+\author{Dehao Lin\\[3pt]
+\small School of Physics, Sun Yat-sen University, Guangzhou, China\\
+\small\href{mailto:lindh9@mail2.sysu.edu.cn}{lindh9@mail2.sysu.edu.cn}}
+\date{25 September 2026}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+Gaussian entanglement of purification is defined by minimizing the entropy of an enlarged subsystem over pure Gaussian extensions and over all finite numbers of auxiliary modes. We prove that, for every finite-mode bipartite bosonic or fermionic Gaussian state, the infimum is attained with each auxiliary subsystem containing as many modes as its physical counterpart. The bosonic statement assumes a normal state with finite covariance; the fermionic statement concerns parity-invariant quasifree states and includes pure and degenerate limits. The proof combines local entropy compression with an equality condition: at a fixed-size optimum, an excess auxiliary mode can be transferred between the two parties without lowering the entropy and must consequently be a pure product factor. A separate attainment argument excludes escape to degenerate symplectic cuts in the bosonic case. Iterative removal then yields the mode-count assertion of the minimum purification conjecture. The result fixes the size of the Gaussian optimization without assuming optimality among non-Gaussian purifications.
+\end{abstract}
+
+\section{Introduction}
+Entanglement of purification quantifies correlations in a mixed bipartite state by minimizing entanglement across a split of a pure extension~\cite{Terhal2002}. Gaussian purifications make this optimization accessible through covariance matrices, and have been used in free bosonic and fermionic systems~\cite{Bhattacharyya2019,Camargo2021}. A finite numerical calculation nevertheless requires a choice of how many auxiliary modes to introduce on each side. The existence of a purification with a prescribed size does not by itself determine the size needed by an optimizer.
+
+Windt, Jahn, Eisert and Hackl formulated the corresponding minimum purification conjecture: Gaussian entanglement of purification should attain its minimum with $n_{A'}=n_A$ and $n_{B'}=n_B$~\cite[Sec.~6.1, Conjecture~2]{Windt2021}. Their Gaussian-optimality conjecture, which compares Gaussian with all purifications, is a separate question. Equal-size auxiliary systems also appear as a minimal-size ansatz in subsequent numerical work~\cite[Sec.~5.1]{Chen2025}.
+
+The present result proves the mode-count assertion for both statistics, with arbitrary finite physical and auxiliary mode counts. The proof has two substantive ingredients: a local entropy-compression lemma whose equality case forces a pure factor, and existence of an optimum at each fixed auxiliary total. The first reduces to Hermitian eigenvalue interlacing after choosing a complex line inside the auxiliary space. The second uses compactness for fermions and an entropy divergence at symplectic degeneracy for bosons. Together they turn a local redistribution of modes into a reduction of the total number of modes.
+
+\paragraph{Relation to the original analytical bounds.}
+Section~6.3 of Ref.~\cite{Windt2021} already asserts that the auxiliary counts may be restricted to the matched choice, and constructs such a purification in Eq.~(192) before developing entropy upper bounds. Section~6.4 nevertheless invokes the matched choice ``as suggested by conjecture~2''. The displayed construction establishes an admissible matched-size extension; it does not provide a variational comparison with \emph{every} larger finite Gaussian extension. Here we supply that reduction and prove attainment, using the pure-factor equality condition at a fixed-total optimum. Section and equation numbers for Ref.~\cite{Windt2021} refer to the published SciPost version.
+
+Section~\ref{sec:setup} states the theorem and gives the proof strategy before the matrix arguments. Section~\ref{sec:compression} proves local compression and its equality case. Section~\ref{sec:attainment} identifies the full variational space and proves attainment. Section~\ref{sec:global} completes the reduction. Appendix~\ref{app:orbits} supplies the auxiliary-orbit calculation, and Appendix~\ref{app:parity} makes the fermionic parity convention explicit. Standard Gaussian-state facts are reviewed in Refs.~\cite{Windt2021,Hackl2021}; the constructions needed here are stated below.
+
+\section{Statement and proof strategy}\label{sec:setup}
+Let $\rho_{AB}$ be a Gaussian state with $n_A$ and $n_B$ modes, and write $n=n_A+n_B$. Bosonic states are normal states of finitely many canonical modes with finite covariance. Fermionic states are parity-invariant quasifree states; pure one-mode factors and zero or repeated covariance singular values are allowed. A pure fermionic Gaussian state can have either definite total parity. We minimize over both components, and explain in Appendix~\ref{app:parity} why prescribing one total parity gives the same entropy minimum when an auxiliary mode is present. The empty system is trivial.
+
+First moments in the bosonic case can be removed by local displacements. Auxiliary first moments can likewise be set to zero. These operations preserve all relevant entropies, so we work with centered states. For a fixed mode split, reductions are taken on the associated mode algebras. Fermionic tensor products and permutations use the graded convention.
+
+Define
+\begin{equation}\label{eq:def}
+ \EPG(\rho_{AB})=
+ \inf_{\substack{\psi_{ABA'B'}\ \text{pure Gaussian}\\
+       \Tr_{A'B'}\psi=\rho_{AB}\\ n_{A'},n_{B'}<\infty}} S(\psi_{AA'}).
+\end{equation}
+Logarithms are natural, and $S$ denotes von Neumann entropy.
+\begin{theorem}[Matched auxiliary modes]\label{thm:main}
+For the states specified above, the infimum in \eqref{eq:def} is attained, and
+\begin{equation}\label{eq:main}
+ \EPG(\rho_{AB})=
+ \min_{\substack{\psi\ \text{pure Gaussian},\ \psi_{AB}=\rho_{AB}\\
+                    n_{A'}=n_A,\ n_{B'}=n_B}} S(\psi_{AA'}).
+\end{equation}
+\end{theorem}
+
+\subsection{Why moving a mode can eventually remove it}
+The distinction between \emph{transfer} and \emph{removal} is the central point. Fix a total of $M\ge n$ auxiliary modes and allow every assignment of those modes to $A'$ and $B'$. Section~\ref{sec:attainment} proves that the entropy has a minimizer in this class. Call its value $e_M$.
+
+If $M>n$, at least one party has too many auxiliaries. Suppose $n_{A'}>n_A$. The compression lemma selects one auxiliary mode $P$ such that moving it from $A'$ to $B'$ cannot increase the cut entropy:
+\begin{equation}\label{eq:transfer-picture}
+ A\widetilde A'P\ \big|\ BB'
+ \quad\longrightarrow\quad
+ A\widetilde A'\ \big|\ B(PB').
+\end{equation}
+This is still a pure extension of the same physical state with the same total $M$. At a global fixed-$M$ minimum, the entropy therefore cannot decrease either. Equality in the compression lemma forces $P$ to be a pure factor. Only at this point may $P$ be removed from the extension, leaving $M-1$ auxiliaries at the same cost. Conversely, adding a pure auxiliary mode costs no entropy. Hence $e_M=e_{M-1}$ for $M>n$. Transfers at total $n$ then produce the matched split in \eqref{eq:main}.
+
+Two features distinguish this argument from simply discarding an auxiliary coordinate. The selected mode depends on the \emph{joint} covariance of a physical subsystem and its auxiliaries. Moreover, its purity is inferred from optimality and the equality condition, not assumed when it is selected.
+
+\subsection{Covariance conventions}
+We write
+\begin{equation}\label{eq:omega}
+ \Omega_r=\bigoplus_{j=1}^r\begin{pmatrix}0&1\\-1&0\end{pmatrix}.
+\end{equation}
+For bosons, the vacuum covariance is $I$ and physicality is $V+i\Omega\succeq0$. If $\hat\xi$ is the column of quadratures, a real column $x$ labels the observable $x^{\T}\hat\xi$; covariance and commutator on these \emph{coefficient vectors} are the bilinear forms $V$ and $\Omega$. For fermions, the real antisymmetric covariance $\Gamma$ obeys $I+i\Gamma\succeq0$, with singular values in $[0,1]$.
+
+The one-mode entropy functions are
+\begin{align}
+ b(t)&=\frac{t+1}{2}\log\frac{t+1}{2}
+       -\frac{t-1}{2}\log\frac{t-1}{2}, &&t\ge1,\label{eq:boson-entropy}\\
+ f(t)&=-\frac{1+t}{2}\log\frac{1+t}{2}
+       -\frac{1-t}{2}\log\frac{1-t}{2}, &&0\le t\le1.\label{eq:fermion-entropy}
+\end{align}
+We use $0\log0=0$. The function $b$ is strictly increasing and unbounded, whereas $f$ is strictly decreasing. Both are nonnegative and vanish only at $1$. The entropy of a Gaussian state is the sum over its bosonic symplectic eigenvalues or fermionic nonnegative normal-mode singular values~\cite{Hackl2021}. Continuity holds at the pure endpoints; no entropy derivative at an endpoint will be needed.
+
+\section{Local entropy compression}\label{sec:compression}
+\begin{lemma}[Compression and its equality case]\label{lem:compression}
+Let $\rho_{XC}$ be a Gaussian state with $a$ modes in $X$ and $c>a$ modes in $C$, with the same state assumptions as in Section~\ref{sec:setup}. A Gaussian change of coordinates on $C$ alone yields a mode split $C=\widetilde C\oplus P$, where $P$ has one mode, such that
+\begin{equation}\label{eq:compression}
+ S(X\widetilde C)\le S(XC).
+\end{equation}
+For the mode constructed below, equality holds if and only if $P$ is a pure factor:
+\begin{equation}\label{eq:factor}
+ \rho_{XC}=\rho_{X\widetilde C}\otimes\ket\chi\bra\chi_P.
+\end{equation}
+The fermionic factorization uses the graded tensor product.
+\end{lemma}
+
+The geometric choice is common to both statistics. Write $d=a+c$ and let $\mathcal C\subset\R^{2d}$ be the auxiliary coefficient subspace. We construct a compatible complex structure $J$ from a normal form of the joint state. This $J$ squares to $-I$ even for a mixed state; it is distinct from the covariance map that is also sometimes called a mixed-state complex structure. The space
+\begin{equation}\label{eq:intersection}
+ \mathcal L=\mathcal C\cap J\mathcal C,
+ \qquad \dim_{\R}\mathcal L\ge4c-2d=2(c-a)>0
+\end{equation}
+is $J$-invariant. Indeed, $v=Jw\in\mathcal L$ with $w\in\mathcal C$ implies $Jv=-w\in\mathcal C$, and $v\in\mathcal C$ implies $Jv\in J\mathcal C$. Thus $\mathcal C$ contains a complex line
+\begin{equation}\label{eq:plane}
+ P=\Span_{\R}\{v,Jv\}.
+\end{equation}
+This dimension count is why an excess of auxiliary modes matters. Choosing a \emph{complex} line makes reduction to its complement a Hermitian compression, for which eigenvalue interlacing controls entropy. The appropriate complement is orthogonal for fermions and symplectic for bosons.
+
+\subsection{Fermions}
+Real skew normal form gives
+\begin{equation}\label{eq:fermion-jk}
+ \Gamma=Q\Bigl(\bigoplus_{j=1}^d\lambda_j\Omega_1\Bigr)Q^{\T},\quad
+ J=Q\Omega_dQ^{\T},\quad K=-J\Gamma,
+ \qquad 0\le\lambda_j\le1,
+\end{equation}
+where $Q$ is orthogonal. Then $J^2=-I$, $J^{\T}J=I$, $0\preceq K\preceq I$, $[J,K]=0$, and $\Gamma=JK$. On a zero singular-value subspace, any orthogonal complex structure may be chosen: that real kernel has even dimension. Thus there is no inverse of a possibly singular covariance in the construction.
+
+Using $J$ as multiplication by $i$, the real space is a complex Hilbert space of dimension $d$ and $K$ is positive Hermitian, with eigenvalues $\lambda_1,\ldots,\lambda_d$ counted once each. The entropy is $\sum_j f(\lambda_j)$.
+
+Choose a unit $v$ in \eqref{eq:intersection} and let $P$ be \eqref{eq:plane}. Its Euclidean orthogonal complement $U=P^\perp$ is $J$-invariant and equals $X\oplus\widetilde C$. An orthonormal basis adapted to $P$ can be completed inside $C$. If its determinant is negative, reversing one basis vector within a resulting block makes the full change on $C$ lie in $\SO(2c)$ without changing either subspace. Thus the split can be implemented by a parity-preserving Gaussian unitary on $C$.
+
+Let $E:U\hookrightarrow\R^{2d}$ be the isometric inclusion, written in orthonormal coordinates, and put $J_U=E^{\T}JE$, $K_U=E^{\T}KE$. Invariance gives $JE=EJ_U$ and
+\begin{equation}\label{eq:fermion-compression-matrix}
+ \Gamma_U=E^{\T}\Gamma E=J_UK_U,\qquad [J_U,K_U]=0.
+\end{equation}
+The compressed positive Hermitian matrix $K_U$ therefore supplies the nonnegative normal-mode singular values of the actual reduced covariance. If the ordered eigenvalues are $\lambda_1\le\cdots\le\lambda_d$ and $\mu_1\le\cdots\le\mu_{d-1}$, Cauchy interlacing~\cite{HornJohnson2013} gives
+\begin{equation}\label{eq:interlacing-f}
+ \lambda_j\le\mu_j\le\lambda_{j+1},\qquad 1\le j<d.
+\end{equation}
+Consequently,
+\begin{equation}\label{eq:fermion-difference}
+ S(XC)-S(X\widetilde C)
+ =f(\lambda_d)+\sum_{j=1}^{d-1}\bigl[f(\lambda_j)-f(\mu_j)\bigr]\ge0.
+\end{equation}
+
+Every term on the right is nonnegative. Equality forces $\lambda_d=1$ and $\mu_j=\lambda_j$ for every $j$. For a complex unit vector $p$ spanning $P$, the trace identity gives
+\begin{equation}\label{eq:fermion-equality}
+ \langle p,Kp\rangle=\tr_{\C}K-\tr_{\C}K_U=1.
+\end{equation}
+Since $I-K\succeq0$, we obtain $Kp=p$. Hence $P$ is an invariant pure covariance block and has no cross block with $U$. A parity-invariant Gaussian state is determined by its covariance, so \eqref{eq:factor} follows. Its converse follows immediately from additivity of entropy for a pure product factor.
+
+\subsection{Bosons}
+A Williamson decomposition~\cite{Williamson1936} has the form
+\begin{equation}\label{eq:williamson}
+ V=SDS^{\T},\quad S\Omega_d S^{\T}=\Omega_d,\quad
+ D=\diag(\nu_1,\nu_1,\ldots,\nu_d,\nu_d),\qquad \nu_j\ge1.
+\end{equation}
+Define the complex structure on \emph{coefficient vectors} by
+\begin{equation}\label{eq:boson-j}
+ J=-S^{-\T}\Omega_d S^{\T}.
+\end{equation}
+Direct multiplication gives
+\begin{equation}\label{eq:boson-compatible}
+ J^2=-I,\quad J^{\T}\Omega_dJ=\Omega_d,\quad
+ \Omega_dJ=SS^{\T}\succ0,\quad J^{\T}VJ=V.
+\end{equation}
+The transpose placement in \eqref{eq:boson-j} reflects the use of observable coefficients rather than the column of operators.
+
+Choose $P\subset\mathcal C$ from \eqref{eq:intersection}--\eqref{eq:plane}. It is a symplectic plane because $v^{\T}\Omega_dJv>0$. Its symplectic complement $U=P^{\perp_\Omega}$ is $J$-invariant: for $u\in U$ and $p\in P$, compatibility gives $\Omega(Ju,p)=-\Omega(u,Jp)=0$. Since the physical and auxiliary mode spaces are symplectically orthogonal,
+\begin{equation}\label{eq:boson-split}
+ U=X\oplus\widetilde C,\qquad
+ \widetilde C=\mathcal C\cap P^{\perp_\Omega},\qquad
+ \mathcal C=P\oplus\widetilde C.
+\end{equation}
+Both summands inside $\mathcal C$ are symplectic, so adapted canonical bases define a symplectic coordinate change on $C$ alone.
+
+\paragraph{Identifying the compressed covariance.}
+For spectral calculations, set $y=S^{\T}x$. Under this change of coefficient coordinates,
+\begin{equation}\label{eq:diagonal-frame}
+ x^{\T}Vx=y^{\T}Dy,\quad
+ x^{\T}\Omega_d x'=y^{\T}\Omega_d y',\quad
+ S^{\T}JS^{-\T}=-\Omega_d.
+\end{equation}
+Write $P_y=S^{\T}P$ and $U_y=S^{\T}U$. The plane $P_y$ is invariant under $\Omega_d$, and its symplectic complement is its Euclidean orthogonal complement. Choose an orthonormal canonical frame $E$ for $U_y$, so that
+\begin{equation}\label{eq:boson-e-frame}
+ E^{\T}E=I,\qquad \Omega_dE=E\Omega_{d-1},\qquad
+ E^{\T}\Omega_dE=\Omega_{d-1}.
+\end{equation}
+The columns of $B=S^{-\T}E$ form a canonical frame of the retained space $U$ in the original coefficients. In this frame the reduced covariance and commutator are
+\begin{equation}\label{eq:boson-actual-reduction}
+ B^{\T}VB=E^{\T}DE=:D_U,\qquad
+ B^{\T}\Omega_dB=\Omega_{d-1}.
+\end{equation}
+The matrix $D_U$ commutes with $\Omega_{d-1}$, since $D$ commutes with $\Omega_d$ and \eqref{eq:boson-e-frame} holds. It is therefore the real representation of a positive Hermitian matrix on a complex hyperplane. Unitary diagonalization of that Hermitian matrix is simultaneously an orthogonal symplectic diagonalization of $D_U$. Its eigenvalues $\mu_1,\ldots,\mu_{d-1}$ are exactly the symplectic eigenvalues of the reduced state on $U$.
+
+These global Williamson coordinates serve only to calculate the entropy of the already selected subsystem. They are not an allowed operation on the fixed physical marginal. The actual auxiliary split was chosen locally in \eqref{eq:boson-split}.
+
+Ordering eigenvalues increasingly, Hermitian interlacing gives $\nu_j\le\mu_j\le\nu_{j+1}$. The increasing bosonic entropy uses the upper side of this inequality:
+\begin{equation}\label{eq:boson-difference}
+ S(XC)-S(X\widetilde C)
+ =b(\nu_1)+\sum_{j=1}^{d-1}\bigl[b(\nu_{j+1})-b(\mu_j)\bigr]\ge0.
+\end{equation}
+Equality implies $\nu_1=1$ and $\mu_j=\nu_{j+1}$ for every $j$. For a complex unit vector $p$ spanning $P_y$, the complex trace difference is $\langle p,Dp\rangle=1$. As $D-I\succeq0$, we have $Dp=p$. Thus $P_y$ is a vacuum covariance block without cross covariance to $U_y$. Transforming back gives a pure one-mode factor on $P$, proving \eqref{eq:factor}. The converse is again immediate.
+
+\begin{remark}[What the equality statement adds]
+The geometric construction and interlacing already give the entropy inequality. The trace identity and positivity identify the selected line as pure when equality holds. It is this additional conclusion that permits removal from a global purification. The proof accommodates pure and repeated eigenvalues directly, and the fermionic construction also covers covariance zero modes.
+\end{remark}
+
+\section{The full variational space and attainment}\label{sec:attainment}
+Fix $M\ge n$. A reference pure Gaussian extension $\psi^0$ on $AB$ and $M$ auxiliary modes $E$ is obtained by purifying each non-pure physical normal mode with one auxiliary mode and appending pure modes. This canonical construction establishes that the variational class is nonempty.
+
+\begin{proposition}[Auxiliary orbit]\label{prop:orbit}
+Every centered pure Gaussian extension of $\rho_{AB}$ with $M$ auxiliary modes is obtained from $\psi^0$ by an auxiliary symplectic transformation for bosons or an auxiliary orthogonal transformation for fermions. For fermions of a prescribed total parity, one may choose a reference in that parity and restrict to the special orthogonal orbit.
+\end{proposition}
+The covariance proof is given in Appendix~\ref{app:orbits}. In particular, this statement concerns a fixed total $M$ and does not presuppose any optimal mode bound.
+
+\begin{proposition}[Auxiliary cuts]\label{prop:cuts}
+For a fixed assignment of $k$ auxiliary modes to $A'$, the possible cut entropies are exactly those obtained by restricting the fixed reference state to $A\oplus W$, where $W\subset E$ ranges over:
+\begin{itemize}
+ \item all real $2k$-planes for fermions;
+ \item all real $2k$-planes on which $\Omega_E$ is nondegenerate for bosons.
+\end{itemize}
+The entropy depends on $W$, not on the chosen orthonormal or canonical frame of $W$.
+\end{proposition}
+\begin{proof}
+Let $G$ be an auxiliary covariance transformation, so the full covariance transforms by $I_{AB}\oplus G$. Retaining the first $2k$ transformed auxiliary coordinates pulls the coefficient rows back to a $2k$-plane $W$ in the reference auxiliary space. The rows are orthonormal for fermions and canonical for bosons, so $W$ has the stated property.
+
+Conversely, any orthonormal frame of a fermionic $W$ extends to an orthogonal basis of $E$. Any canonical frame of a bosonic symplectic $W$ extends by a canonical frame of $W^{\perp_\Omega}$ to a symplectic basis of $E$. The resulting auxiliary transformation realizes the cut. Changing an adapted frame inside either retained or discarded subspace is local to the cut and leaves the entropy unchanged. In the fermionic case the overall determinant can be made positive by a sign change of one frame vector, which leaves $W$ and the cut entropy unchanged. Thus fixing the total parity does not remove any possible cut subspace.
+\end{proof}
+
+\begin{lemma}[Fixed-total attainment]\label{lem:attainment}
+The minimum $e_M$ of $S(AA')$ over all Gaussian extensions with total auxiliary count $M\ge n$, allowing all splits $k+(M-k)$, is attained.
+\end{lemma}
+\begin{proof}
+It suffices to prove attainment for each fixed $k$, because there are only $M+1$ possible splits.
+
+For fermions, the cut space is the compact real Grassmannian $\Gr(2k,2M)$. Locally choose orthonormal frames; compression of the fixed covariance is continuous, and its normal-mode entropy is continuous even at pure endpoints. The frame independence in Proposition~\ref{prop:cuts} makes this a continuous function on the Grassmannian, so it has a minimum.
+
+For bosons, the nondegenerate symplectic cuts form an open part of the same compact Grassmannian. We show that finite-entropy sublevels stay away from its degenerate boundary. Let $V_F\succ0$ be the reference covariance restricted to $A$ and all of $E$. Choose a Euclidean orthonormal row frame $R$ for $W$ and put
+\begin{equation}\label{eq:pair-reduction}
+ T=I_{2n_A}\oplus R,\qquad
+ V_R=TV_FT^{\T},\qquad
+ \Omega_R=T\Omega_{n_A+M}T^{\T}.
+\end{equation}
+The frame $R$ need not be canonical. We therefore retain both bilinear forms $(V_R,\Omega_R)$, rather than treating $V_R$ alone as a covariance in standard canonical coordinates. Since $TT^{\T}=I$,
+\begin{equation}\label{eq:lower-bound}
+ V_R\succeq v_*I,\qquad v_*=\lambda_{\min}(V_F)>0,
+\end{equation}
+uniformly over all cuts.
+
+For a nondegenerate cut, a change to canonical coordinates shows that the symplectic eigenvalues of this pair are the positive absolute eigenvalues of
+\begin{equation}\label{eq:h-r}
+ H_R=iV_R^{1/2}\Omega_R^{-1}V_R^{1/2}.
+\end{equation}
+Indeed, $H_R$ is Hermitian and is similar to $i\Omega_R^{-1}V_R$; the latter changes by similarity under a simultaneous congruence of the two forms. Its spectrum is consequently the usual paired symplectic spectrum. Physicality gives $\nu_j\ge1$.
+
+Using $i\Omega_R^{-1}=V_R^{-1/2}H_RV_R^{-1/2}$ yields
+\begin{equation}\label{eq:coercive-bound}
+ \nu_{\max}(R)=\norm{H_R}
+ \ge \frac{v_*}{\sigma_{\min}(\Omega_R)}.
+\end{equation}
+When $W$ approaches symplectic degeneracy, the denominator tends to zero. Hence
+\begin{equation}\label{eq:coercive-entropy}
+ S(AW)\ge b\bigl(\nu_{\max}(R)\bigr)\longrightarrow\infty.
+\end{equation}
+There is at least one admissible cut with finite entropy. A minimizing sequence can therefore be chosen in a finite-entropy sublevel. Its orthonormal frames have a convergent subsequence in a compact Stiefel manifold. Equations~\eqref{eq:coercive-bound}--\eqref{eq:coercive-entropy} ensure that the limiting restricted symplectic form is nondegenerate. The entropy is continuous at that limit, which is thus an admissible minimizer. For $k=0$ and $k=M$ the cut is fixed and attainment is immediate. This proves the lemma for both statistics.
+\end{proof}
+
+The reference lower bound $v_*$ is fixed separately for each $M$. No estimate uniform in an infinite auxiliary limit is needed, because the next section compares finite values of $M$ by exact removal.
+
+\section{Removing excess modes and proving the theorem}\label{sec:global}
+\begin{proof}[Proof of Theorem~\ref{thm:main}]
+For $M\ge n$, let $e_M$ be the attained minimum in Lemma~\ref{lem:attainment}. Adding one independent pure auxiliary mode gives
+\begin{equation}\label{eq:padding}
+ e_M\le e_{M-1}\qquad(M>n).
+\end{equation}
+Choose an $e_M$ minimizer with $k$ modes in $A'$ and $M-k$ modes in $B'$. If $M>n_A+n_B$, then $k>n_A$ or $M-k>n_B$.
+
+Suppose $k>n_A$. Apply Lemma~\ref{lem:compression} to the reduced state on $AA'$. After a local auxiliary coordinate change it gives $A'=\widetilde A'\oplus P$ and
+\begin{equation}\label{eq:global-compression}
+ S(A\widetilde A')\le S(AA')=e_M.
+\end{equation}
+Keep the full pure state and reassign $P$ to $B'$, as in \eqref{eq:transfer-picture}. The physical marginal remains $\rho_{AB}$ and the auxiliary total remains $M$, so the new split is an admissible competitor for $e_M$. Minimality forces equality in \eqref{eq:global-compression}.
+
+By the equality case of Lemma~\ref{lem:compression}, $P$ has a pure marginal. A subsystem with a pure marginal factorizes from every extension. Therefore $P$ is a pure product factor of the \emph{full} Gaussian purification and can be removed. The remaining $M-1$ auxiliary modes still purify $\rho_{AB}$ with entropy $e_M$, giving $e_{M-1}\le e_M$. If $M-k>n_B$, apply the same argument to $BB'$ and use global purity, $S(AA')=S(BB')$. With \eqref{eq:padding} we obtain
+\begin{equation}\label{eq:plateau}
+ e_M=e_{M-1}\quad(M>n),\qquad e_M=e_n\quad(M\ge n).
+\end{equation}
+
+It remains to match the two counts at total $n$. Take a minimizer attaining $e_n$. If $k>n_A$, apply the compression lemma on $AA'$ and transfer the selected mode to $B'$. This reduces $k$ by one, preserves the total $n$, and cannot raise the entropy; minimality keeps its value equal to $e_n$. Repeat until $k=n_A$. If $k<n_A$, then $n-k>n_B$, and the corresponding transfers on the $B$ side increase $k$ until it reaches $n_A$. The process terminates with $n_{A'}=n_A$ and $n_{B'}=n_B$.
+
+Any purification with fewer than $n$ auxiliaries can be padded to total $n$ with independent pure modes, without changing its entropy, and hence cannot beat $e_n$. Equation~\eqref{eq:plateau} covers every larger finite total. The matched minimizer thus attains the infimum in \eqref{eq:def}. For $n\ge1$, Appendix~\ref{app:parity} shows that the same value is attained under a prescribed fermionic total-parity convention.
+\end{proof}
+
+\section{Consequences and scope}\label{sec:scope}
+The theorem replaces optimization over unbounded \emph{finite} auxiliary counts by optimization over a fixed-size covariance manifold. It justifies the matched auxiliary count for Gaussian EoP calculations under the stated assumptions. For bosons, finite mode count still permits an infinite-dimensional oscillator Hilbert space; no occupation-number truncation is used.
+
+The resulting fixed-size optimization can remain nonconvex. The theorem supplies neither a closed expression for $\EPG$ nor a guarantee that local numerical optimization finds its global minimum. It also leaves open the separate comparison $E_P=\EPG$ with non-Gaussian purifications. An infinite-mode or continuum extension would require additional operator and compactness arguments. Pure physical factors, repeated normal-mode eigenvalues and fermionic covariance zero modes are already included in the finite-mode statement.
+
+\paragraph{Computational material.}
+The accompanying research package contains covariance, finite Fock-space, exact-algebra and boundary checks of the constructions. These are diagnostic checks; none is a premise of the proof or a formal proof-assistant certificate. The package records the computational procedures and their scope; the analytic argument above is independent of those calculations.
+
+\appendix
+\section{Covariance proof of the auxiliary-orbit statement}\label{app:orbits}
+We prove Proposition~\ref{prop:orbit} without assuming the theorem. Normal forms below are changes used to compare extensions of the same physical covariance. A fixed physical change is applied equally to the reference and the extension and undone at the end; the transformation relating them acts only on the auxiliaries.
+
+\subsection{Fermions}
+Bring the physical covariance to $G=\bigoplus_j\lambda_j\Omega_1$. Physical modes with $\lambda_j=1$ have pure marginals and decouple. On the remaining $r$ modes, $0\le\lambda_j<1$. A pure extension has covariance
+\begin{equation}\label{eq:fermion-orbit}
+ \Gamma_{PE}=\begin{pmatrix}G&C\\-C^{\T}&D_E\end{pmatrix},\qquad
+ \Gamma_{PE}^2=-I.
+\end{equation}
+Writing $\Delta=\bigoplus_{j=1}^r\sqrt{1-\lambda_j^2}\,I_2$, the upper blocks of the purity identity give
+\begin{equation}\label{eq:fermion-orbit-blocks}
+ CC^{\T}=I+G^2=\Delta^2,\qquad GC+CD_E=0.
+\end{equation}
+Thus $C=\Delta R$ for an orthonormal row frame $RR^{\T}=I_{2r}$. Completing $R$ to an orthogonal auxiliary basis makes $C=[\Delta\ \ 0]$. Decompose the transformed $D_E$ into the corresponding $2r$ and remaining blocks. The second identity in \eqref{eq:fermion-orbit-blocks} gives
+\begin{equation}
+ D_{11}=-\Delta^{-1}G\Delta=-G,\qquad D_{12}=0.
+\end{equation}
+The remaining block obeys $D_{22}^2=-I$ and can be orthogonally normalized to pure one-mode blocks. The inverses used here are safe because pure physical modes were already removed; $\lambda_j=0$ is allowed. This proves that any extension is in the auxiliary orthogonal orbit of the fixed canonical extension, including arbitrary pure auxiliary factors.
+
+For a pure fermionic covariance, its Pfaffian fixes total parity up to the common convention, and $\operatorname{Pf}(Q\Gamma Q^{\T})=\det(Q)\operatorname{Pf}(\Gamma)$. Extensions in the same total-parity component are therefore related by an auxiliary transformation of determinant $+1$. This gives the special orthogonal version of Proposition~\ref{prop:orbit}.
+
+\subsection{Bosons}
+Bring the physical covariance to $D_P=\bigoplus_j\nu_jI_2$ and remove the decoupled physical modes with $\nu_j=1$. On the remaining $r$ modes all $\nu_j>1$. For a pure extension
+\begin{equation}
+ V_{PE}=\begin{pmatrix}D_P&C\\C^{\T}&W\end{pmatrix},
+ \qquad V_{PE}\Omega V_{PE}=\Omega,
+\end{equation}
+the upper blocks give
+\begin{equation}\label{eq:boson-orbit-blocks}
+ C\Omega_EC^{\T}=-(D_P^2-I)\Omega_r,\qquad
+ D_P\Omega_rC+C\Omega_EW=0.
+\end{equation}
+Let $L=\bigoplus_j\sqrt{\nu_j^2-1}\,\diag(1,-1)$. It is invertible and obeys $L\Omega_rL^{\T}=-(D_P^2-I)\Omega_r$. Hence $C=LR$ with $R\Omega_ER^{\T}=\Omega_r$. Complete $R$ to the first $2r$ rows of a symplectic matrix $F$ on the auxiliaries. The auxiliary covariance transformation $H=F^{-\T}$ then sends the cross block to $CH^{\T}=[L\ \ 0]$. The second equation in \eqref{eq:boson-orbit-blocks} then gives
+\begin{equation}
+ D_P\Omega_rL+L\Omega_rW_{11}=0,\qquad L\Omega_rW_{12}=0,
+\end{equation}
+so $W_{11}=D_P$ and $W_{12}=0$. The remaining block is pure and can be transformed to the vacuum by an auxiliary symplectic map. This proves the bosonic orbit statement, including physical pure factors through their initial separation.
+
+\section{Fermionic parity and removal of a pure mode}\label{app:parity}
+Parity invariance of a density operator means that it commutes with total fermion parity. It does not require its support to lie in a prescribed parity sector. A pure parity-invariant Gaussian state, however, has definite parity. Accordingly, the full pure-state orbit uses $\OO(2N)$, and a fixed-parity orbit uses $\SO(2N)$~\cite{Windt2021,Hackl2021}.
+
+The local split in Section~\ref{sec:compression} can be chosen orientation-preserving, as shown there. Changing a basis sign within one of its blocks alters only its orientation, not the subspace or its entropy. Thus the compression step requires no parity-changing local evolution.
+
+To compare the two possible global parities of purifications, choose a normalized auxiliary Majorana $m=\gamma(u)$, $m^2=I$, supported in one auxiliary party. Conjugation by $m$ flips total parity and acts linearly on Majoranas as
+\begin{equation}\label{eq:majorana-reflection}
+ m\,\gamma(v)\,m=\gamma\bigl((2uu^{\T}-I)v\bigr).
+\end{equation}
+Thus it maps a pure Gaussian state to a pure Gaussian state. For physical vectors $v\perp u$, the action is $\gamma(v)\mapsto-\gamma(v)$, so the physical covariance is unchanged. All odd physical moments already vanish and all even ones are unchanged; the physical marginal is therefore preserved. Relative to the mode cut $AA'\,|\,BB'$, the orthogonal map in \eqref{eq:majorana-reflection} is block diagonal, so each reduced covariance has the same normal-mode singular values and the same entropy as before. The two global parity choices consequently have equal attainable entropy values whenever an auxiliary mode is available.
+
+This is a correspondence between extensions, not a claim that a parity-changing Majorana is generated by a parity-preserving quadratic Hamiltonian. If removing an occupied pure auxiliary factor changes the parity of the remaining extension, the correspondence restores any prescribed total parity without changing $\rho_{AB}$ or the cut entropy. During the reductions $M>n\ge1$, at least one auxiliary mode remains. A matched extension has $n$ auxiliaries and can likewise be chosen in either total-parity sector. Pure-mode padding also permits a choice of parity. For $n=0$, the matched extension is the empty even-parity state and has zero entropy; a prescribed odd-parity extension requires an auxiliary mode and is not covered by the fixed-parity matched-size assertion.
+
+\section{Finite-dimensional normal forms and interlacing}\label{app:linear}
+For completeness, the linear algebra used above has no infinite-dimensional normal-form step. For $V\succ0$, a real skew normal form is
+\begin{equation}
+ V^{1/2}\Omega V^{1/2}=O(D\Omega)O^{\T},\qquad
+ D=\bigoplus_j\nu_jI_2\succ0.
+\end{equation}
+Then $S=V^{1/2}OD^{-1/2}$ satisfies $V=SDS^{\T}$ and $S\Omega S^{\T}=\Omega$. The uncertainty condition implies $D+i\Omega\succeq0$, hence $\nu_j\ge1$. This is the finite positive-definite Williamson construction~\cite{Williamson1936}. Fermionic real skew normal form directly produces the blocks in \eqref{eq:fermion-jk}.
+
+If a Hermitian operator on a complex $d$-space has ascending eigenvalues $\lambda_j$, compression to a complex hyperplane has eigenvalues $\mu_j$ satisfying $\lambda_j\le\mu_j\le\lambda_{j+1}$ by the minimum--maximum principle~\cite{HornJohnson2013}. For a unit vector $p$ orthogonal to that hyperplane, the trace difference equals $\langle p,Kp\rangle$. These are the interlacing and trace facts used in both equality arguments. Finally, the Gaussian normal forms yield independent thermal bosonic modes or two-level fermionic modes, whose entropies are \eqref{eq:boson-entropy} and \eqref{eq:fermion-entropy}~\cite{Hackl2021}.
+
+\section*{AI contribution statement}
+An AI workflow designed and assembled by the author autonomously selected the open problem and developed the proof. AI systems played the primary role in deriving the argument and preparing its computational checks. The resulting argument was subsequently subjected to adversarial review by other AI systems. AI assistance was also used in revising the exposition. These AI reviews do not constitute human peer review.
+
+\paragraph{Funding.}
+This work received no specific funding.
+
+\paragraph{Competing interests.}
+The author declares no competing interests.
+
+\begin{thebibliography}{9}
+\raggedright
+\bibitem{Terhal2002}
+B.~M.~Terhal, M.~Horodecki, D.~W.~Leung and D.~P.~DiVincenzo,
+\emph{The entanglement of purification},
+J. Math. Phys. \textbf{43}, 4286--4298 (2002),
+\href{https://doi.org/10.1063/1.1498001}{doi:10.1063/1.1498001},
+\href{https://arxiv.org/abs/quant-ph/0202044}{arXiv:quant-ph/0202044}.
+
+\bibitem{Bhattacharyya2019}
+A.~Bhattacharyya, A.~Jahn, T.~Takayanagi and K.~Umemoto,
+\emph{Entanglement of Purification in Many Body Systems and Symmetry Breaking},
+Phys. Rev. Lett. \textbf{122}, 201601 (2019),
+\href{https://doi.org/10.1103/PhysRevLett.122.201601}{doi:10.1103/PhysRevLett.122.201601},
+\href{https://arxiv.org/abs/1902.02369}{arXiv:1902.02369}.
+
+\bibitem{Camargo2021}
+H.~A.~Camargo, L.~Hackl, M.~P.~Heller, A.~Jahn, T.~Takayanagi and B.~Windt,
+\emph{Entanglement and complexity of purification in $(1+1)$-dimensional free conformal field theories},
+Phys. Rev. Research \textbf{3}, 013248 (2021),
+\href{https://doi.org/10.1103/PhysRevResearch.3.013248}{doi:10.1103/PhysRevResearch.3.013248},
+\href{https://arxiv.org/abs/2009.11881}{arXiv:2009.11881}.
+
+\bibitem{Windt2021}
+B.~Windt, A.~Jahn, J.~Eisert and L.~Hackl,
+\emph{Local optimization on pure Gaussian state manifolds},
+SciPost Phys. \textbf{10}, 066 (2021),
+\href{https://doi.org/10.21468/SciPostPhys.10.3.066}{doi:10.21468/SciPostPhys.10.3.066},
+\href{https://arxiv.org/abs/2009.11884v3}{arXiv:2009.11884v3}.
+
+\bibitem{Chen2025}
+L.~Chen,
+\emph{R\'enyi Entanglement of Purification and Half R\'enyi Reflected Entropy in Free Scalar Theory},
+J. High Energy Phys. \textbf{06} (2025) 045,
+\href{https://doi.org/10.1007/JHEP06(2025)045}{doi:10.1007/JHEP06(2025)045},
+\href{https://arxiv.org/abs/2501.10944}{arXiv:2501.10944}.
+
+\bibitem{Hackl2021}
+L.~Hackl and E.~Bianchi,
+\emph{Bosonic and fermionic Gaussian states from K\"ahler structures},
+SciPost Phys. Core \textbf{4}, 025 (2021),
+\href{https://doi.org/10.21468/SciPostPhysCore.4.3.025}{doi:10.21468/SciPostPhysCore.4.3.025},
+\href{https://arxiv.org/abs/2010.15518}{arXiv:2010.15518}.
+
+\bibitem{HornJohnson2013}
+R.~A.~Horn and C.~R.~Johnson,
+\emph{Matrix Analysis}, 2nd ed., Cambridge University Press (2013),
+\href{https://doi.org/10.1017/CBO9781139020411}{doi:10.1017/CBO9781139020411}.
+
+\bibitem{Williamson1936}
+J.~Williamson,
+\emph{On the Algebraic Problem Concerning the Normal Forms of Linear Dynamical Systems},
+Am. J. Math. \textbf{58}, 141--163 (1936),
+\href{https://doi.org/10.2307/2371062}{doi:10.2307/2371062}.
+\end{thebibliography}
+\end{document}

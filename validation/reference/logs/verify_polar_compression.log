@@ -1,0 +1,9 @@
+{
+  "seed": 39181753,
+  "tests": 1000,
+  "worst_after_minus_before": {
+    "fermion": 5.976620546496821e-15,
+    "boson": 5.097009886673141e-14
+  }
+}
+POLAR COMPRESSION REGRESSION PASS

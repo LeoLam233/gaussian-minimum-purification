@@ -1,0 +1,7 @@
+* text=auto eol=lf
+paper/manuscript.pdf -text
+paper/manuscript.tex -text whitespace=trailing-space,space-before-tab,cr-at-eol
+verification/original/** -text
+verification/independent/** -text
+validation/reference/** -text whitespace=trailing-space,space-before-tab,cr-at-eol
+requirements.txt -text

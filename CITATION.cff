@@ -1,0 +1,29 @@
+{
+  "cff-version": "1.2.0",
+  "message": "Please cite the manuscript using preferred-citation.",
+  "title": "A Mode Bound for Gaussian Entanglement of Purification",
+  "type": "software",
+  "version": "0.1",
+  "authors": [
+    {
+      "family-names": "Lin",
+      "given-names": "Dehao",
+      "affiliation": "School of Physics, Sun Yat-sen University, Guangzhou, China"
+    }
+  ],
+  "license": "MIT",
+  "preferred-citation": {
+    "type": "generic",
+    "title": "A Mode Bound for Gaussian Entanglement of Purification",
+    "authors": [
+      {
+        "family-names": "Lin",
+        "given-names": "Dehao",
+        "affiliation": "School of Physics, Sun Yat-sen University, Guangzhou, China"
+      }
+    ],
+    "year": 2026,
+    "version": "0.1",
+    "notes": "Manuscript v0.1; original paper and prose licensed CC BY 4.0. No DOI or journal publication is claimed."
+  }
+}

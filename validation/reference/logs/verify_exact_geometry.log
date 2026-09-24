@@ -1,0 +1,27 @@
+EXACT PASS fermion rational orthogonality
+EXACT PASS fermion J squared
+EXACT PASS fermion positive polar modulus
+EXACT PASS fermion plane contained in C
+EXACT PASS fermion plane J invariant
+EXACT PASS fermion orthogonal projection
+EXACT PASS fermion complex-linear projection
+EXACT PASS fermion double real spectrum
+EXACT PASS fermion two complex retained modes
+EXACT PASS fermion exact interlacing 0
+EXACT PASS fermion exact interlacing 1
+EXACT PASS boson rational symplecticity
+EXACT PASS boson J squared
+EXACT PASS boson J symplectic
+EXACT PASS boson covariance J invariant
+EXACT PASS boson positive compatible metric
+EXACT PASS boson plane contained in C
+EXACT PASS boson plane J invariant
+EXACT PASS boson orthogonal projection
+EXACT PASS boson complex-linear projection
+EXACT PASS boson double real spectrum
+EXACT PASS boson two complex retained modes
+EXACT PASS boson exact interlacing 0
+EXACT PASS boson exact interlacing 1
+EXACT PASS fermion equality pure support
+EXACT PASS boson equality pure support
+EXACT GEOMETRY CHECKS PASS

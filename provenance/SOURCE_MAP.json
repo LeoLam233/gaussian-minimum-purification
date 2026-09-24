@@ -1,0 +1,337 @@
+{
+  "scientific_version": "v0.1",
+  "files": [
+    {
+      "repository_path": "paper/manuscript.pdf",
+      "distributed_sha256": "956a7cc584855815915c3db3e223ac0670e6724058b64f6dcec9b679611887bc",
+      "source_sha256": "956a7cc584855815915c3db3e223ac0670e6724058b64f6dcec9b679611887bc",
+      "source_archive_chain": [
+        {
+          "archive": "Gaussian_MinPur_v0.1.zip",
+          "sha256": "1610956a15654942ef7fa7db0f737e4345a353b50ff37faff8864b27fadd33b0"
+        }
+      ],
+      "source_member": "Gaussian_MinPur_v0.1/paper/manuscript.pdf",
+      "transformation": "none"
+    },
+    {
+      "repository_path": "paper/manuscript.tex",
+      "distributed_sha256": "40f022a8d08801d7e1e09c0802cb5b4b2c2f2d1b964a8392f748c586620501ba",
+      "source_sha256": "40f022a8d08801d7e1e09c0802cb5b4b2c2f2d1b964a8392f748c586620501ba",
+      "source_archive_chain": [
+        {
+          "archive": "Gaussian_MinPur_v0.1.zip",
+          "sha256": "1610956a15654942ef7fa7db0f737e4345a353b50ff37faff8864b27fadd33b0"
+        }
+      ],
+      "source_member": "Gaussian_MinPur_v0.1/paper/manuscript.tex",
+      "transformation": "none"
+    },
+    {
+      "repository_path": "verification/original/verify_polar_compression.py",
+      "distributed_sha256": "b22856657337a69f9a356b42b0959643fc555351308325f76a402fb3265328a9",
+      "source_sha256": "b22856657337a69f9a356b42b0959643fc555351308325f76a402fb3265328a9",
+      "source_archive_chain": [
+        {
+          "archive": "Gaussian_MinPur_v0.1.zip",
+          "sha256": "1610956a15654942ef7fa7db0f737e4345a353b50ff37faff8864b27fadd33b0"
+        },
+        {
+          "archive": "original/P2_3_Gaussian_MinPur_Minimal.zip",
+          "sha256": "b049afcccdbfe9c898b72b5eb6448ac9fff94c636f92536c12874b9c20ba19d0"
+        }
+      ],
+      "source_member": "Gaussian_Minimum_Purification/verify_polar_compression.py",
+      "transformation": "none"
+    },
+    {
+      "repository_path": "verification/original/verify_fock_compression.py",
+      "distributed_sha256": "a390d08b670416acb231337c20928cbed0897edfe14a52711b8462238f9be01a",
+      "source_sha256": "a390d08b670416acb231337c20928cbed0897edfe14a52711b8462238f9be01a",
+      "source_archive_chain": [
+        {
+          "archive": "Gaussian_MinPur_v0.1.zip",
+          "sha256": "1610956a15654942ef7fa7db0f737e4345a353b50ff37faff8864b27fadd33b0"
+        },
+        {
+          "archive": "original/P2_3_Gaussian_MinPur_Minimal.zip",
+          "sha256": "b049afcccdbfe9c898b72b5eb6448ac9fff94c636f92536c12874b9c20ba19d0"
+        }
+      ],
+      "source_member": "Gaussian_Minimum_Purification/verify_fock_compression.py",
+      "transformation": "none"
+    },
+    {
+      "repository_path": "verification/original/verify_exact_geometry.py",
+      "distributed_sha256": "5fb323a041e664587e0f085991f0c18f113410324d61173d982caaf1c359fede",
+      "source_sha256": "5fb323a041e664587e0f085991f0c18f113410324d61173d982caaf1c359fede",
+      "source_archive_chain": [
+        {
+          "archive": "Gaussian_MinPur_v0.1.zip",
+          "sha256": "1610956a15654942ef7fa7db0f737e4345a353b50ff37faff8864b27fadd33b0"
+        },
+        {
+          "archive": "original/P2_3_Gaussian_MinPur_Minimal.zip",
+          "sha256": "b049afcccdbfe9c898b72b5eb6448ac9fff94c636f92536c12874b9c20ba19d0"
+        }
+      ],
+      "source_member": "Gaussian_Minimum_Purification/verify_exact_geometry.py",
+      "transformation": "none"
+    },
+    {
+      "repository_path": "verification/original/verify_orbit_and_boundary.py",
+      "distributed_sha256": "23047caef01f33a318140d4daad05710fae7c9342ade3339499a71736f1c5fbe",
+      "source_sha256": "23047caef01f33a318140d4daad05710fae7c9342ade3339499a71736f1c5fbe",
+      "source_archive_chain": [
+        {
+          "archive": "Gaussian_MinPur_v0.1.zip",
+          "sha256": "1610956a15654942ef7fa7db0f737e4345a353b50ff37faff8864b27fadd33b0"
+        },
+        {
+          "archive": "original/P2_3_Gaussian_MinPur_Minimal.zip",
+          "sha256": "b049afcccdbfe9c898b72b5eb6448ac9fff94c636f92536c12874b9c20ba19d0"
+        }
+      ],
+      "source_member": "Gaussian_Minimum_Purification/verify_orbit_and_boundary.py",
+      "transformation": "none"
+    },
+    {
+      "repository_path": "verification/original/verify_failed_shortcut.py",
+      "distributed_sha256": "08297ba289f11ed81fbfa53b3d2e49d2c616a7a1099a258c29763bbab1847368",
+      "source_sha256": "08297ba289f11ed81fbfa53b3d2e49d2c616a7a1099a258c29763bbab1847368",
+      "source_archive_chain": [
+        {
+          "archive": "Gaussian_MinPur_v0.1.zip",
+          "sha256": "1610956a15654942ef7fa7db0f737e4345a353b50ff37faff8864b27fadd33b0"
+        },
+        {
+          "archive": "original/P2_3_Gaussian_MinPur_Minimal.zip",
+          "sha256": "b049afcccdbfe9c898b72b5eb6448ac9fff94c636f92536c12874b9c20ba19d0"
+        }
+      ],
+      "source_member": "Gaussian_Minimum_Purification/verify_failed_shortcut.py",
+      "transformation": "none"
+    },
+    {
+      "repository_path": "verification/original/verify_mutations.py",
+      "distributed_sha256": "eee6d5b420a594cecf8e07948279a66d3b1f40bd60c91f952d9ae478c958791a",
+      "source_sha256": "eee6d5b420a594cecf8e07948279a66d3b1f40bd60c91f952d9ae478c958791a",
+      "source_archive_chain": [
+        {
+          "archive": "Gaussian_MinPur_v0.1.zip",
+          "sha256": "1610956a15654942ef7fa7db0f737e4345a353b50ff37faff8864b27fadd33b0"
+        },
+        {
+          "archive": "original/P2_3_Gaussian_MinPur_Minimal.zip",
+          "sha256": "b049afcccdbfe9c898b72b5eb6448ac9fff94c636f92536c12874b9c20ba19d0"
+        }
+      ],
+      "source_member": "Gaussian_Minimum_Purification/verify_mutations.py",
+      "transformation": "none"
+    },
+    {
+      "repository_path": "verification/original/run_checks.py",
+      "distributed_sha256": "b611c4712127d3830ab0b066ab572508997125de458e5328aca5a7524219e25b",
+      "source_sha256": "b611c4712127d3830ab0b066ab572508997125de458e5328aca5a7524219e25b",
+      "source_archive_chain": [
+        {
+          "archive": "Gaussian_MinPur_v0.1.zip",
+          "sha256": "1610956a15654942ef7fa7db0f737e4345a353b50ff37faff8864b27fadd33b0"
+        },
+        {
+          "archive": "original/P2_3_Gaussian_MinPur_Minimal.zip",
+          "sha256": "b049afcccdbfe9c898b72b5eb6448ac9fff94c636f92536c12874b9c20ba19d0"
+        }
+      ],
+      "source_member": "Gaussian_Minimum_Purification/run_checks.py",
+      "transformation": "none"
+    },
+    {
+      "repository_path": "requirements.txt",
+      "distributed_sha256": "68a798d14ab7ceac5f914897b07fd7053ddfd40acabcd6c79e6ba7677e874b13",
+      "source_sha256": "68a798d14ab7ceac5f914897b07fd7053ddfd40acabcd6c79e6ba7677e874b13",
+      "source_archive_chain": [
+        {
+          "archive": "Gaussian_MinPur_v0.1.zip",
+          "sha256": "1610956a15654942ef7fa7db0f737e4345a353b50ff37faff8864b27fadd33b0"
+        },
+        {
+          "archive": "original/P2_3_Gaussian_MinPur_Minimal.zip",
+          "sha256": "b049afcccdbfe9c898b72b5eb6448ac9fff94c636f92536c12874b9c20ba19d0"
+        }
+      ],
+      "source_member": "Gaussian_Minimum_Purification/requirements.txt",
+      "transformation": "none"
+    },
+    {
+      "repository_path": "verification/independent/independent_density_checks.py",
+      "distributed_sha256": "491671ebd3f533b42a0d5f57bad9ffaf9873d6c9c8a88fb96b366b297d9a90bb",
+      "source_sha256": "491671ebd3f533b42a0d5f57bad9ffaf9873d6c9c8a88fb96b366b297d9a90bb",
+      "source_archive_chain": [
+        {
+          "archive": "Gaussian_MinPur_v0.1.zip",
+          "sha256": "1610956a15654942ef7fa7db0f737e4345a353b50ff37faff8864b27fadd33b0"
+        },
+        {
+          "archive": "review/a1v2_cold_evidence.zip",
+          "sha256": "851e0c2e21506464894ed9c5aae8ae55aedb3d04412585db1630f15a002368bb"
+        }
+      ],
+      "source_member": "Gaussian_MinPur_A1V2_Audit_Evidence/audit_work/independent_density_checks.py",
+      "transformation": "none"
+    },
+    {
+      "repository_path": "validation/reference/original_summary.json",
+      "distributed_sha256": "6c1710bcabb5bff9a947e79d7d326737d11ec8d79363e4ff5343795f89981c30",
+      "source_sha256": "6c1710bcabb5bff9a947e79d7d326737d11ec8d79363e4ff5343795f89981c30",
+      "source_archive_chain": [
+        {
+          "archive": "Gaussian_MinPur_v0.1.zip",
+          "sha256": "1610956a15654942ef7fa7db0f737e4345a353b50ff37faff8864b27fadd33b0"
+        },
+        {
+          "archive": "review/a1v2_cold_evidence.zip",
+          "sha256": "851e0c2e21506464894ed9c5aae8ae55aedb3d04412585db1630f15a002368bb"
+        }
+      ],
+      "source_member": "Gaussian_MinPur_A1V2_Audit_Evidence/audit_work/original_verification/REPLAY_SUMMARY.json",
+      "transformation": "none"
+    },
+    {
+      "repository_path": "validation/reference/logs/verify_polar_compression.log",
+      "distributed_sha256": "19295ecf64322e4780723c2006f2299da764211a228dcf19bf2b86dae4df54c2",
+      "source_sha256": "19295ecf64322e4780723c2006f2299da764211a228dcf19bf2b86dae4df54c2",
+      "source_archive_chain": [
+        {
+          "archive": "Gaussian_MinPur_v0.1.zip",
+          "sha256": "1610956a15654942ef7fa7db0f737e4345a353b50ff37faff8864b27fadd33b0"
+        },
+        {
+          "archive": "review/a1v2_cold_evidence.zip",
+          "sha256": "851e0c2e21506464894ed9c5aae8ae55aedb3d04412585db1630f15a002368bb"
+        }
+      ],
+      "source_member": "Gaussian_MinPur_A1V2_Audit_Evidence/audit_work/original_verification/replay_logs/verify_polar_compression.log",
+      "transformation": "none"
+    },
+    {
+      "repository_path": "validation/reference/logs/verify_fock_compression.log",
+      "distributed_sha256": "a0f8abb6dac0596d836ce713aac374b4620f1cab4914af5f764bf3995c5517f1",
+      "source_sha256": "a0f8abb6dac0596d836ce713aac374b4620f1cab4914af5f764bf3995c5517f1",
+      "source_archive_chain": [
+        {
+          "archive": "Gaussian_MinPur_v0.1.zip",
+          "sha256": "1610956a15654942ef7fa7db0f737e4345a353b50ff37faff8864b27fadd33b0"
+        },
+        {
+          "archive": "review/a1v2_cold_evidence.zip",
+          "sha256": "851e0c2e21506464894ed9c5aae8ae55aedb3d04412585db1630f15a002368bb"
+        }
+      ],
+      "source_member": "Gaussian_MinPur_A1V2_Audit_Evidence/audit_work/original_verification/replay_logs/verify_fock_compression.log",
+      "transformation": "none"
+    },
+    {
+      "repository_path": "validation/reference/logs/verify_exact_geometry.log",
+      "distributed_sha256": "05f7f9f6c46a8982bb47e3855b8744bf1a423e5f7a1719557684acb20267daed",
+      "source_sha256": "05f7f9f6c46a8982bb47e3855b8744bf1a423e5f7a1719557684acb20267daed",
+      "source_archive_chain": [
+        {
+          "archive": "Gaussian_MinPur_v0.1.zip",
+          "sha256": "1610956a15654942ef7fa7db0f737e4345a353b50ff37faff8864b27fadd33b0"
+        },
+        {
+          "archive": "review/a1v2_cold_evidence.zip",
+          "sha256": "851e0c2e21506464894ed9c5aae8ae55aedb3d04412585db1630f15a002368bb"
+        }
+      ],
+      "source_member": "Gaussian_MinPur_A1V2_Audit_Evidence/audit_work/original_verification/replay_logs/verify_exact_geometry.log",
+      "transformation": "none"
+    },
+    {
+      "repository_path": "validation/reference/logs/verify_orbit_and_boundary.log",
+      "distributed_sha256": "b4870b6d8a9228b77b82ff878d89b31a549aa3fd4b36b12b1c145911d7f778e1",
+      "source_sha256": "b4870b6d8a9228b77b82ff878d89b31a549aa3fd4b36b12b1c145911d7f778e1",
+      "source_archive_chain": [
+        {
+          "archive": "Gaussian_MinPur_v0.1.zip",
+          "sha256": "1610956a15654942ef7fa7db0f737e4345a353b50ff37faff8864b27fadd33b0"
+        },
+        {
+          "archive": "review/a1v2_cold_evidence.zip",
+          "sha256": "851e0c2e21506464894ed9c5aae8ae55aedb3d04412585db1630f15a002368bb"
+        }
+      ],
+      "source_member": "Gaussian_MinPur_A1V2_Audit_Evidence/audit_work/original_verification/replay_logs/verify_orbit_and_boundary.log",
+      "transformation": "none"
+    },
+    {
+      "repository_path": "validation/reference/logs/verify_failed_shortcut.log",
+      "distributed_sha256": "2ec29bab238206aefe326a049e16e520a0a4df06fbeae47338bb94c79e2e8aac",
+      "source_sha256": "2ec29bab238206aefe326a049e16e520a0a4df06fbeae47338bb94c79e2e8aac",
+      "source_archive_chain": [
+        {
+          "archive": "Gaussian_MinPur_v0.1.zip",
+          "sha256": "1610956a15654942ef7fa7db0f737e4345a353b50ff37faff8864b27fadd33b0"
+        },
+        {
+          "archive": "review/a1v2_cold_evidence.zip",
+          "sha256": "851e0c2e21506464894ed9c5aae8ae55aedb3d04412585db1630f15a002368bb"
+        }
+      ],
+      "source_member": "Gaussian_MinPur_A1V2_Audit_Evidence/audit_work/original_verification/replay_logs/verify_failed_shortcut.log",
+      "transformation": "none"
+    },
+    {
+      "repository_path": "validation/reference/logs/verify_mutations.log",
+      "distributed_sha256": "a7077b6c5f46b0f7827ba9ebd10425d6fa67d299a1a5ef050a936a1b9ddae4c1",
+      "source_sha256": "a7077b6c5f46b0f7827ba9ebd10425d6fa67d299a1a5ef050a936a1b9ddae4c1",
+      "source_archive_chain": [
+        {
+          "archive": "Gaussian_MinPur_v0.1.zip",
+          "sha256": "1610956a15654942ef7fa7db0f737e4345a353b50ff37faff8864b27fadd33b0"
+        },
+        {
+          "archive": "review/a1v2_cold_evidence.zip",
+          "sha256": "851e0c2e21506464894ed9c5aae8ae55aedb3d04412585db1630f15a002368bb"
+        }
+      ],
+      "source_member": "Gaussian_MinPur_A1V2_Audit_Evidence/audit_work/original_verification/replay_logs/verify_mutations.log",
+      "transformation": "none"
+    },
+    {
+      "repository_path": "validation/reference/independent_density_results.json",
+      "distributed_sha256": "1819776b6255bb007386346b9ecab59d34ea14d48b6bee750df94d8f6687757e",
+      "source_sha256": "fc7fa82a771ef952686f09ce69f3b12401921856264558600402b43c558f9c2f",
+      "source_archive_chain": [
+        {
+          "archive": "Gaussian_MinPur_v0.1.zip",
+          "sha256": "1610956a15654942ef7fa7db0f737e4345a353b50ff37faff8864b27fadd33b0"
+        },
+        {
+          "archive": "review/a1v2_cold_evidence.zip",
+          "sha256": "851e0c2e21506464894ed9c5aae8ae55aedb3d04412585db1630f15a002368bb"
+        }
+      ],
+      "source_member": "Gaussian_MinPur_A1V2_Audit_Evidence/audit_work/independent_density_checks.json",
+      "transformation": "Replace only the local interpreter executable field; numerical values and all other fields are preserved."
+    },
+    {
+      "repository_path": "validation/reference/logs/independent_density_checks.log",
+      "distributed_sha256": "61b62d3964cf2a93aad123f4b9e26188ca793b18ba2f63b3e8b6839bcbee30ae",
+      "source_sha256": "61b62d3964cf2a93aad123f4b9e26188ca793b18ba2f63b3e8b6839bcbee30ae",
+      "source_archive_chain": [
+        {
+          "archive": "Gaussian_MinPur_v0.1.zip",
+          "sha256": "1610956a15654942ef7fa7db0f737e4345a353b50ff37faff8864b27fadd33b0"
+        },
+        {
+          "archive": "review/a1v2_cold_evidence.zip",
+          "sha256": "851e0c2e21506464894ed9c5aae8ae55aedb3d04412585db1630f15a002368bb"
+        }
+      ],
+      "source_member": "Gaussian_MinPur_A1V2_Audit_Evidence/audit_work/independent_density_checks.log",
+      "transformation": "none"
+    }
+  ]
+}

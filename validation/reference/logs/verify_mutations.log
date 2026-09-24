@@ -1,0 +1,10 @@
+MUTATION REJECTED Fermion: omit strict c>a dimension condition
+MUTATION REJECTED Boson: omit strict c>a dimension condition
+MUTATION REJECTED Fermion: arbitrary auxiliary plane instead of polar-invariant plane
+MUTATION REJECTED Boson: arbitrary auxiliary plane instead of compatible-J plane
+MUTATION REJECTED Fermion: use unrelated J with nonpositive polar modulus
+MUTATION REJECTED Boson: Euclidean complement in original squeezed coordinates
+MUTATION REJECTED Boson: admit degenerate symplectic cuts
+MUTATION REJECTED Discard a mixed auxiliary from a nonoptimal purification without equality
+MUTATION REJECTED Boson: remove fixed positive covariance lower bound from coercivity
+MUTATION SUITE PASS 9 false variants rejected

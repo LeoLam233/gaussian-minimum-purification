@@ -1,0 +1,17 @@
+{
+  "title": "A Mode Bound for Gaussian Entanglement of Purification",
+  "author": "Dehao Lin",
+  "version": "v0.1",
+  "scientific_freeze_date": "2026-09-25",
+  "repository_candidate": "v0.1-rc1",
+  "repository_name": "gaussian-minimum-purification",
+  "manuscript_pages": 11,
+  "manuscript_sha256": {
+    "paper/manuscript.pdf": "956a7cc584855815915c3db3e223ac0670e6724058b64f6dcec9b679611887bc",
+    "paper/manuscript.tex": "40f022a8d08801d7e1e09c0802cb5b4b2c2f2d1b964a8392f748c586620501ba"
+  },
+  "private_freeze_archive_sha256": "1610956a15654942ef7fa7db0f737e4345a353b50ff37faff8864b27fadd33b0",
+  "code_license": "MIT",
+  "manuscript_and_documentation_license": "CC-BY-4.0",
+  "human_peer_review": "not performed"
+}

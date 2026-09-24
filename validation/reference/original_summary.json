@@ -1,0 +1,62 @@
+{
+  "interpretation": "Same-agent internal replay; not independent external audit or formal certification",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "packages": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0"
+  },
+  "tests": [
+    {
+      "script": "verify_polar_compression.py",
+      "exit_code": 0,
+      "elapsed_seconds": 0.75,
+      "script_sha256": "b22856657337a69f9a356b42b0959643fc555351308325f76a402fb3265328a9",
+      "log": "replay_logs\\verify_polar_compression.log",
+      "status": "PASS"
+    },
+    {
+      "script": "verify_fock_compression.py",
+      "exit_code": 0,
+      "elapsed_seconds": 0.547,
+      "script_sha256": "a390d08b670416acb231337c20928cbed0897edfe14a52711b8462238f9be01a",
+      "log": "replay_logs\\verify_fock_compression.log",
+      "status": "PASS"
+    },
+    {
+      "script": "verify_exact_geometry.py",
+      "exit_code": 0,
+      "elapsed_seconds": 0.437,
+      "script_sha256": "5fb323a041e664587e0f085991f0c18f113410324d61173d982caaf1c359fede",
+      "log": "replay_logs\\verify_exact_geometry.log",
+      "status": "PASS"
+    },
+    {
+      "script": "verify_orbit_and_boundary.py",
+      "exit_code": 0,
+      "elapsed_seconds": 0.828,
+      "script_sha256": "23047caef01f33a318140d4daad05710fae7c9342ade3339499a71736f1c5fbe",
+      "log": "replay_logs\\verify_orbit_and_boundary.log",
+      "status": "PASS"
+    },
+    {
+      "script": "verify_failed_shortcut.py",
+      "exit_code": 0,
+      "elapsed_seconds": 0.391,
+      "script_sha256": "08297ba289f11ed81fbfa53b3d2e49d2c616a7a1099a258c29763bbab1847368",
+      "log": "replay_logs\\verify_failed_shortcut.log",
+      "status": "PASS"
+    },
+    {
+      "script": "verify_mutations.py",
+      "exit_code": 0,
+      "elapsed_seconds": 0.406,
+      "script_sha256": "eee6d5b420a594cecf8e07948279a66d3b1f40bd60c91f952d9ae478c958791a",
+      "log": "replay_logs\\verify_mutations.log",
+      "status": "PASS"
+    }
+  ],
+  "overall": "PASS"
+}
