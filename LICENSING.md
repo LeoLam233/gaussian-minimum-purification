@@ -13,6 +13,8 @@ Attribution for the manuscript and documentation: Dehao Lin, *A Mode Bound for G
 
 The MIT license applies to original code. Its standard reference to associated documentation does not override the separate CC BY 4.0 treatment of the manuscript and project prose.
 
-The repository does not redistribute dependency binaries or third-party source PDFs. Bibliographic links and archive hashes do not grant rights in the referenced material. The full pre-existing research and audit archives are retained separately and are not relicensed wholesale by these notices.
+The repository does not redistribute dependency binaries. The two complete input ZIPs under reproduction/inputs/ include Windt et al., SciPost Physics 10, 066 (2021), and Hackl–Bianchi, SciPost Physics Core 4, 025 (2021), under their own CC BY 4.0 terms. Each ZIP retains its THIRD_PARTY_NOTICES.md, source metadata and license text. These publications are excluded from the project's original-material grant; their authors do not endorse this project. Bibliographic links and archive hashes do not grant rights in the referenced material. The full pre-existing research and audit archives are retained separately and are not relicensed wholesale by these notices.
 
 Original verifier files are distributed byte-identically, without inserting new license headers. This scope notice applies alongside those files. The included CC BY 4.0 text was taken from the author's prior repository; its canonical legal text is [Creative Commons' legal code](https://creativecommons.org/licenses/by/4.0/legalcode).
+
+The original research-output prose in reproduction/ and the expert brief are covered by the project prose license. Publication notices are editorial additions; the frozen output payloads themselves are unchanged. Any original tools inside the input ZIPs retain their included MIT notices.

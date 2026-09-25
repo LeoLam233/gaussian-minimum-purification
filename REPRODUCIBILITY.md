@@ -46,4 +46,8 @@ The initial coarse-quadrature calculation and its subsequent refinement are reta
 
 See [paper/README.md](paper/README.md). A rebuild writes to a new .local/ directory. The versioned PDF is not overwritten by the build command; an independently rebuilt PDF may differ in metadata bytes.
 
-The GitHub Actions workflow verifies the manifest and runs the diagnostics when the repository is published. No remote CI execution is claimed for the local candidate.
+The GitHub Actions workflow verifies the manifest and runs the diagnostics when the repository is published. Remote execution status is shown in the repository Actions tab; the dated local replay records do not claim a remote run.
+
+## Independent derivation protocols
+
+The [reconstruction directory](reproduction/README.md) contains the complete CR0 and MR1 input packets, three mathematical outputs and their provenance. These research runs are distinct from replaying the diagnostic scripts. The released proof does not use the unaudited additional results as premises.

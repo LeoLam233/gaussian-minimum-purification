@@ -4,7 +4,7 @@
 School of Physics, Sun Yat-sen University, Guangzhou, China<br>
 lindh9@mail2.sysu.edu.cn
 
-**Manuscript v0.1, editorial revision v0.1-rc3.** [Read the paper](paper/manuscript.pdf) · [Proof guide](docs/PROOF_GUIDE.md) · [Reproduce the checks](REPRODUCIBILITY.md) · [Evidence and audit status](audits/STATUS.md)
+**Public release v0.1.** [Read the paper](paper/manuscript.pdf) · [Proof guide](docs/PROOF_GUIDE.md) · [Reproduce the checks](REPRODUCIBILITY.md) · [Evidence and audit status](audits/STATUS.md)
 
 For a finite-mode bipartite Gaussian state, the paper proves that Gaussian entanglement of purification attains its minimum with as many auxiliary modes on each side as physical modes:
 
@@ -18,6 +18,8 @@ The infimum on the left allows **all finite auxiliary mode counts**. The bosonic
 
 This establishes the mode-count assertion of the minimum purification conjecture formulated by Windt, Jahn, Eisert and Hackl. Their paper states the matched-size restriction and develops canonical purifications and analytical bounds. Building on that formulation, this work gives an explicit reduction from arbitrary finite auxiliary sizes and proves attainment; see [source positioning](provenance/SOURCES.md).
 
+**AI-assisted research:** an author-designed AI workflow selected the problem and developed the proof; other AI systems performed adversarial reviews. See [the contribution statement](AUTHORSHIP.md).
+
 ## The proof in one paragraph
 
 An excess auxiliary mode can be selected so that transferring it across the purification cut does not increase entropy. At an attained minimum with a fixed auxiliary total, the entropy cannot decrease either. The equality case then forces the selected mode to be a pure factor, which can be removed. A separate bosonic argument prevents minimizing sequences from escaping to degenerate symplectic cuts. Iterating the removal and then matching the split proves the theorem.
@@ -27,7 +29,8 @@ The result does not establish optimality among non-Gaussian purifications, give 
 ## Start here
 
 - [Manuscript PDF](paper/manuscript.pdf), [LaTeX source](paper/manuscript.tex), and [build instructions](paper/README.md).
-- [Proof guide and the steps worth checking first](docs/PROOF_GUIDE.md).
+- [Two-page expert brief](docs/expert-brief/expert_brief.pdf) and [proof guide](docs/PROOF_GUIDE.md).
+- [Independent-context attempts and method-guided rederivation](reproduction/README.md), with [additional results not separately audited](reproduction/EXTRA_RESULTS.md).
 - [Reproduction instructions](REPRODUCIBILITY.md) and [audit qualifications](audits/STATUS.md).
 - [Source and artifact provenance](provenance/SOURCE_MAP.json), [archival boundary](provenance/ARCHIVAL_BOUNDARY.md), and [release notes](RELEASE_NOTES.md).
 - [Author and AI contribution statements](AUTHORSHIP.md) and [citation metadata](CITATION.cff).
@@ -45,6 +48,12 @@ python scripts/reproduce.py
 The reproduction command runs the six original verifiers and the separately written density-operator checks in fresh working directories. Generated results go under .local/; the versioned scripts and manuscript are left untouched.
 
 These computations are finite diagnostics. The analytic proof carries the universal claim. Three AI reviews were considered alongside checks of their supporting calculations; [the review scope and reproducibility limits are recorded](audits/STATUS.md). **Independent human expert validation and journal peer review have not been performed.**
+
+## Reconstruction records and additional results
+
+Two problem-only AI attempts returned PARTIAL. A later method-guided attempt returned CLAIMED_PROOF; targeted post-freeze reading found no load-bearing gap. This was reconstruction with a supplied method architecture, not blind discovery. The two earlier outcomes remain PARTIAL.
+
+The complete input packets and mathematical outputs are in [reproduction/](reproduction/README.md). Alternative arguments and partial results are explicitly marked **not separately adversarially audited** and are not used as premises of the released manuscript. The manuscript and original scientific scripts are unchanged from rc3.
 
 ## AI contribution and licensing
 

@@ -1,0 +1,92 @@
+{
+  "record_date": "2026-09-25",
+  "description": "Curated public index prepared after the original runs froze; not a replacement for their original run records.",
+  "input_packets": [
+    {
+      "phase": "CR0",
+      "path": "reproduction/inputs/Gaussian_MinPur_CleanRoom_Input_v0.1.zip",
+      "sha256": "09bb90987e8be52e8fe1467c4e84d934e57216df6fbf1d14aab882c36696c7ba",
+      "input_manifest_sha256": "659bb9913ff06b8cb6706f1401a431afe4f72761567ed49e97e1aa1bf64a5b59"
+    },
+    {
+      "phase": "MR1",
+      "path": "reproduction/inputs/Gaussian_MinPur_Method_Rederivation_Input_v0.1.zip",
+      "sha256": "2debadb933a0575fd6246a75478104f91be9092a24152b3b8d6985e238df89a9",
+      "input_manifest_sha256": "e061c0a122c814f40412366477e484174bfab1eb709f9c0815918aa53276d366"
+    }
+  ],
+  "runs": [
+    {
+      "label": "CR0-1",
+      "run_id": "Gaussian_MinPur_CR0_20260925_run1",
+      "model_identity_as_reported": "GPT-5.6 Sol",
+      "model_identity_independently_verified": false,
+      "phase": "CR0",
+      "frozen_outcome": "PARTIAL",
+      "summary": "Partial analytic results; general matched-size value and attainment unresolved.",
+      "frozen_archive_sha256": "61a81534e10dee7bf55086e4577bec3d2e6b461f71e76da6820b3a560ed8776d",
+      "original_result_sha256": "26c358bdd54110aeea26d93a35a0a24e9cb037cc7b79673204ee2706ed39f728",
+      "public_result_path": "reproduction/runs/CR0-1/RESULT.md",
+      "public_result_sha256": "bfdc8c4d15b512566bc3d5b0f2b6543cc695b439269e47905a7cce6506f9cace",
+      "publication_notice_bytes": 377,
+      "original_result_payload_modified": false,
+      "method_framework_supplied": false,
+      "complete_blind_reproduction": false,
+      "technical_isolation_independently_verified": false,
+      "separate_full_adversarial_audit_of_additional_results": false
+    },
+    {
+      "label": "CR0-2",
+      "run_id": "CR0-20260925T095429Z-GPT6AstraPro-01",
+      "model_identity_as_reported": "GPT-6 Pro (run record: GPT-6 Astra Pro)",
+      "model_identity_independently_verified": false,
+      "phase": "CR0",
+      "frozen_outcome": "PARTIAL",
+      "summary": "Fixed-size attainment and a per-side mixed-mode-count bound claimed; universal matched-size comparison unresolved.",
+      "frozen_archive_sha256": "21c5615203abdb4b1aff72c029e0181ccb2dbee06a3c57a97aaf9bae0a85af82",
+      "original_result_sha256": "2a01e56a2a553a94702233424b6591990b29753021952416fe19b6db17094abc",
+      "public_result_path": "reproduction/runs/CR0-2/RESULT.md",
+      "public_result_sha256": "7a7891a90390c1ca35678b8d8c79895d9c652b7d546143caa68f28aa383ae083",
+      "publication_notice_bytes": 377,
+      "original_result_payload_modified": false,
+      "method_framework_supplied": false,
+      "complete_blind_reproduction": false,
+      "technical_isolation_independently_verified": false,
+      "separate_full_adversarial_audit_of_additional_results": false
+    },
+    {
+      "label": "MR1-1",
+      "run_id": "MR1-20260925-method-rederivation-gpt56sol-01",
+      "model_identity_as_reported": "GPT-5.6 Sol",
+      "model_identity_independently_verified": false,
+      "phase": "MR1",
+      "frozen_outcome": "CLAIMED_PROOF",
+      "summary": "All eight requested proof nodes claimed closed; targeted post-freeze reading found no load-bearing gap. Not a separate full adversarial audit.",
+      "frozen_archive_sha256": "0643678d5dc273ff10ea3357a4925b81d1b7bb380d98e591d15f7f031e0ed989",
+      "original_result_sha256": "0303dbc9a2f75c57b3e783dac1b9bfe05e5601270099709c3766872d426e75e7",
+      "public_result_path": "reproduction/runs/MR1-1/RESULT.md",
+      "public_result_sha256": "8f661a0a4090b6684d53e649db287b4aa875ccf44970b896ebf1c0f51c627afa",
+      "publication_notice_bytes": 383,
+      "original_result_payload_modified": false,
+      "method_framework_supplied": true,
+      "complete_blind_reproduction": false,
+      "technical_isolation_independently_verified": false,
+      "separate_full_adversarial_audit_of_additional_results": false
+    }
+  ],
+  "original_frozen_archives_modified": false,
+  "raw_access_logs_and_environment_records": "Retained privately; not included in this public projection.",
+  "reported_deviations": {
+    "CR0-1": [
+      "Early log initialized after initial extraction and required reads."
+    ],
+    "CR0-2": [
+      "Bootstrap log temporarily placed in the new workspace root before reading the output-location rule."
+    ],
+    "MR1-1": [
+      "Early actions logged retrospectively.",
+      "Temporary proofreading excerpt of own result outside the permitted output directory.",
+      "Import-created input bytecode cache; first freeze rejected, cache removed, input rechecked and final freeze succeeded."
+    ]
+  }
+}

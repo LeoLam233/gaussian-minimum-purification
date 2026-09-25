@@ -1,0 +1,27 @@
+# Post-freeze review qualifications
+
+This is a public summary of targeted AI reading and integrity checks performed after the runs froze. It is not a new full A1V2 adversarial audit, a formal proof certificate or human peer review. The additional results retain the status **not separately adversarially audited**.
+
+## CR0-1
+
+The partial outcome is retained. The report's section 4 describes a pointwise non-increasing-entropy replacement as equivalent to equality of infima. Without attainment, that equivalence needs an epsilon: equality of infima guarantees a matched candidate within any positive epsilon, not necessarily an exactly no-worse candidate for every original state. The stronger pointwise statement is sufficient. With an attained matched minimum the distinction disappears. This qualification does not turn the report into either a proof of the general theorem or a counterexample.
+
+The finite local numerical searches were not certified as global optimizations or replayed in this targeted review. Their outputs are not used to establish the general comparison.
+
+## CR0-2
+
+Targeted reading checked the correlation-block rank, the proposed bosonic and fermionic elimination identities, and the direct fixed-size attainment argument. No load-bearing gap was identified in those checked steps. The general comparison between the claimed (r,r) bound and the matched split remained unresolved in the original run. Its diagnostics were not replayed in this review.
+
+## MR1-1
+
+Targeted reading covered G0, F1, F2, B1, B2, A_F, A_B and R. In the specified domain it found the argument closed without a load-bearing gap: the actual reduced covariances were identified with the Hermitian compressions, the equality cases were proved separately, and fixed-size attainment preceded deletion at an optimum. This assessment does not enlarge the scope to every auxiliary claim in the manuscript.
+
+A small expository addition would make G0 fully explicit: the bosonic canonical-purification block has positive ordinary eigenvalues `nu +/- sqrt(nu^2-1)`, in addition to satisfying the purity identity. This is immediate from the displayed block, not a remaining research obligation.
+
+The returned diagnostic contained one case per statistics and was read but not replayed in the receiving environment because SciPy was unavailable. Separately written NumPy spot checks covered 26 cases of physical compression, trace identities and constructed equality cases. They passed at floating-point precision; they do not establish universal validity or attainment and do not constitute a separate adversarial audit.
+
+## Integrity and access limitations
+
+All three received archives passed their retained manifest and result-file checks, and the separately supplied result files matched the corresponding archived payloads. The original input manifests matched the prepared packets. These checks bind received documents to their frozen records; they cannot certify unlogged accesses or technical isolation.
+
+Early logging gaps and the disclosed output-directory/cache deviations are recorded in [RUNS.json](RUNS.json). MR1's first freeze failed on an automatically generated input bytecode cache; after cleanup, input verification and final freezing succeeded. The records do not show external proof material introduced through those deviations. Complete system-level access traces were not available.

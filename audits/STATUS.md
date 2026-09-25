@@ -1,6 +1,6 @@
 # Audit and evidence status
 
-Three AI reports examined the 24 September 2026 manuscript. Their assessment informed the 25 September revision. The current candidate also contains a subsequent editorial revision of one introductory attribution paragraph (rc2) and a brief AI-workflow disclosure in the introduction (rc3). These later exposition changes have not received a second complete set of three AI reviews.
+Three AI reports examined the 24 September 2026 manuscript. Their assessment informed the 25 September revision. The released manuscript also contains a subsequent editorial revision of one introductory attribution paragraph (rc2) and a brief AI-workflow disclosure in the introduction (rc3). These later exposition changes have not received a second complete set of three AI reviews.
 
 | Review or computation | Scope and retained evidence |
 | --- | --- |
@@ -30,3 +30,9 @@ Finite computations and AI review provide diagnostic evidence. They do not const
 The recorded public-literature searches found no matching proof. The earlier paper's statement is credited, and no unverified third-party AI repository was identified as a premise of the proof. This is a dated search outcome, not an absolute priority claim. Repository preparation and the editorial revision did not conduct a new novelty audit.
 
 The [archive map](../provenance/ARCHIVAL_BOUNDARY.md) identifies the retained review reports and their hashes.
+
+## Reconstruction records added for public v0.1
+
+Two problem-only derivation attempts remained PARTIAL. A later method-guided rederivation claimed a complete proof; targeted post-freeze reading identified no load-bearing gap in its eight requested nodes. These outcomes and qualifications are recorded in [reproduction/README.md](../reproduction/README.md).
+
+The [additional results](../reproduction/EXTRA_RESULTS.md) have not received a separate complete adversarial audit and are not part of the released manuscript's proof dependencies. The paper and scientific scripts are unchanged from rc3; publication does not turn targeted reading into another full audit or human validation.

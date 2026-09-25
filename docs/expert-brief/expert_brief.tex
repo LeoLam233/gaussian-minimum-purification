@@ -1,0 +1,108 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=22mm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{microtype,xcolor}
+\definecolor{linkblue}{RGB}{20,57,102}
+\usepackage[colorlinks=true,linkcolor=linkblue,citecolor=linkblue,urlcolor=linkblue]{hyperref}
+\usepackage{bookmark}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt plus 1pt}
+\emergencystretch=2em
+\newcommand{\R}{\mathbb R}
+\newcommand{\C}{\mathbb C}
+\newcommand{\tr}{\operatorname{tr}}
+\newcommand{\EPG}{E_P^{\mathrm G}}
+\newcommand{\ket}[1]{\lvert#1\rangle}
+\newcommand{\bra}[1]{\langle#1\rvert}
+\newcommand{\heading}[1]{\par\vspace{5pt}{\large\bfseries #1}\par\vspace{1pt}}
+\hypersetup{pdftitle={Removing excess modes in Gaussian purification: an expert brief},pdfsubject={The transfer, equality and removal mechanism; companion to manuscript v0.1, editorial revision rc3}}
+
+\begin{document}
+{\LARGE\bfseries Removing excess modes in Gaussian purification}\par
+\vspace{4pt}
+{\small Expert brief v0.1 \quad Companion to manuscript v0.1, editorial revision rc3}
+
+\heading{The result and its scope}
+For a bipartite Gaussian state $\rho_{AB}$ with $n_A$ and $n_B$ modes, Gaussian entanglement of purification minimizes $S(AA')$ over pure Gaussian extensions and \emph{all finite} auxiliary mode counts. The accompanying manuscript~[1] proves
+\begin{equation*}
+\EPG(\rho_{AB})
+=\min_{\substack{\psi_{ABA'B'}\ \text{pure Gaussian},\ \psi_{AB}=\rho_{AB}\\
+n_{A'}=n_A,\ n_{B'}=n_B}}S(\psi_{AA'}).
+\end{equation*}
+Here bosonic states are normal with finite covariance; fermionic states are parity-invariant quasifree states. Pure factors, degenerate spectra and fermionic covariance zero modes are included. The main fermionic optimization allows both total-parity sectors.
+
+This is the mode-count assertion of Windt, Jahn, Eisert and Hackl's minimum purification conjecture~[2, Sec.~6.1, Conjecture~2]. Their Section~6.3 states the matched-mode restriction and gives a canonical purification. Building on that formulation, [1] gives a variational comparison with every finite auxiliary size and proves attainment. The result fixes the size of the Gaussian optimization; it neither settles optimality among non-Gaussian purifications nor guarantees that a local optimizer finds the global minimum.
+
+\heading{The key mechanism: transfer, equality, removal}
+The local ingredient is a compression lemma. If a Gaussian state on $XC$ has $a$ modes in $X$ and $c>a$ modes in $C$, an auxiliary-only Gaussian coordinate change selects a one-mode subsystem $P$, with $C=\widetilde C\oplus P$, such that
+\begin{equation*}
+S(X\widetilde C)\le S(XC),
+\qquad
+\text{equality}\ \Longleftrightarrow\ 
+\rho_{XC}=\rho_{X\widetilde C}\otimes\ket\chi\bra\chi_P.
+\end{equation*}
+The equality claim applies to \emph{the mode selected by the construction}; it is the part that makes deletion possible. Fermionic factorization uses the graded tensor product.
+
+Write $n=n_A+n_B$. For fixed total auxiliary count $M\ge n$, minimize over all extensions \emph{and all left/right assignments}; denote the attained minimum by $e_M$. Its existence is justified on the next page.
+
+If $M>n$, at least one side has excess modes. Suppose it is $A'$. Apply the lemma to $AA'$ and first \emph{transfer} the selected mode:
+\begin{equation*}
+A\widetilde A'P\ \big|\ BB'
+\quad\longrightarrow\quad
+A\widetilde A'\ \big|\ B(PB').
+\end{equation*}
+The full state, physical marginal and auxiliary total are unchanged. Thus the new cut is an admissible competitor for the \emph{same} minimum $e_M$. Minimality gives the first inequality below, and compression gives the second:
+\begin{equation*}
+e_M\ \le\ S(A\widetilde A')\ \le\ S(AA')\ =\ e_M.
+\end{equation*}
+Both must be equalities. By the lemma, $P$ has a pure marginal, so it factorizes from the \emph{entire} purification. Only now can it be removed at no entropy cost.
+
+Removal gives $e_{M-1}\le e_M$; padding by a pure mode gives the reverse inequality. Hence $e_M=e_{M-1}$ for $M>n$. Excess on the $B'$ side is treated using global purity, $S(AA')=S(BB')$.
+
+At total $n$, successive transfers from the excess side reach the matched split without raising entropy. Any extension with fewer than $n$ auxiliaries can be padded to total $n$. This completes the comparison with \emph{every finite} auxiliary count.
+
+{\small\textbf{AI contribution.} AI systems carried out problem selection, proof development and computational checks in an author-designed workflow. Subsequent AI reviews do not constitute human peer review. Details: [1].}
+
+\newpage
+\heading{Inside the compression lemma}
+Let $d=a+c$ and let $\mathcal C\subset\R^{2d}$ be the $2c$-dimensional auxiliary coefficient space. The joint Gaussian normal form supplies a compatible complex structure $J$, with $J^2=-I$, even for a mixed state. The intersection $\mathcal C\cap J\mathcal C$ is $J$-invariant, and
+\begin{equation*}
+\dim_{\R}(\mathcal C\cap J\mathcal C)\ge 4c-2d=2(c-a)>0.
+\end{equation*}
+It therefore contains a complex line $P=\operatorname{span}_{\R}\{v,Jv\}$ lying wholly in the auxiliaries. Compatibility makes $P$ symplectic in the bosonic case. Its retained complement $U=X\oplus\widetilde C$ is $J$-invariant: use the orthogonal complement for fermions, the symplectic complement for bosons. The entropy on $U$ is obtained from a Hermitian compression. Only the auxiliary split is physically changed; the joint normal form is used to calculate its spectrum.
+
+For fermions, $\Gamma=JK$ with $0\preceq K\preceq I$ and $[J,K]=0$. On the complex space defined by $J$, $K$ is Hermitian. Its compression $K_U$ gives the reduced covariance $\Gamma_U=J_UK_U$, where $J_U=J|_U$. If $\lambda_j$ and $\mu_j$ are the ascending eigenvalues of $K$ and $K_U$, interlacing gives $\lambda_j\le\mu_j\le\lambda_{j+1}$. The single-mode entropy $f$ is strictly decreasing on $[0,1]$, nonnegative, and zero only at $1$. Thus
+\begin{equation*}
+S(XC)-S(X\widetilde C)
+=f(\lambda_d)+\sum_{j=1}^{d-1}\bigl[f(\lambda_j)-f(\mu_j)\bigr]\ge0.
+\end{equation*}
+Equality makes every term vanish: $\lambda_d=1$ and $\mu_j=\lambda_j$. For a complex unit vector $p$ spanning the removed line,
+\begin{equation*}
+\langle p,Kp\rangle=\tr_{\C}K-\tr_{\C}K_U=1,
+\qquad I-K\succeq0\ \Longrightarrow\ Kp=p.
+\end{equation*}
+Consequently the selected mode is pure and its cross covariance vanishes. All eigenvalues and traces here count each mode once, in complex dimension.
+
+For bosons, the corresponding Hermitian matrix is the Williamson diagonal $D\succeq I$ in its complex representation. Its eigenvalues $\nu_j$ interlace those of the compression as $\nu_j\le\mu_j\le\nu_{j+1}$. The single-mode entropy $b$ is strictly increasing and unbounded on $[1,\infty)$, with $b(1)=0$, so one uses the \emph{upper} bound $\mu_j\le\nu_{j+1}$. Equality forces $\nu_1=1$ and $\mu_j=\nu_{j+1}$. For a unit vector $p$ spanning the selected line in Williamson coordinates, the trace identity gives $\langle p,Dp\rangle=1$. Positivity of $D-I$ gives $Dp=p$, again a decoupled pure mode. Full covariance details: [1, Secs.~3.1--3.2].
+
+\heading{Why the fixed-total minimum exists}
+Bosonic first moments can be removed by local displacements without changing entropy. All centered pure Gaussian extensions at fixed $M$ form the auxiliary orthogonal or symplectic orbit of a reference extension [1, App.~A]. Fixing the left auxiliary count $k$ thus reduces the problem to cuts $A\oplus W$, where $W$ is a real $2k$-plane in the auxiliaries. Fermionic cuts form a compact Grassmannian, and entropy is continuous.
+
+Bosonic cuts require a nondegenerate restricted symplectic form. In an orthonormal frame of $A\oplus W$, let $V_R$ and $\Omega_R$ be the restricted covariance and commutator forms. The fixed reference covariance gives $V_R\succeq v_*I$ with $v_*>0$, and [1, Sec.~4] proves
+\begin{equation*}
+\nu_{\max}(R)\ge\frac{v_*}{\sigma_{\min}(\Omega_R)},
+\qquad S(AW)\ge b\bigl(\nu_{\max}(R)\bigr)\longrightarrow\infty
+\end{equation*}
+at a degenerate cut. Here $\sigma_{\min}$ is the smallest singular value and $\nu_{\max}$ the largest symplectic eigenvalue. Finite-entropy sublevels avoid that boundary, so compactness yields a minimizer. Minimizing over the $M+1$ choices of $k$ gives $e_M$. The bound is needed separately at each finite $M$.
+
+\vspace{3pt}
+{\small
+\textbf{Full argument and sources.}
+[1] \emph{A Mode Bound for Gaussian Entanglement of Purification}, accompanying manuscript v0.1, editorial revision rc3 (25 September 2026). Compression: Sec.~3, pp.~3--5; auxiliary orbit: App.~A, pp.~8--9; attainment: Sec.~4, pp.~6--7; reduction: Sec.~5, pp.~7--8; parity: App.~B, p.~10.
+
+[2] B.~Windt, A.~Jahn, J.~Eisert and L.~Hackl, \emph{Local optimization on pure Gaussian state manifolds}, SciPost Phys.~\textbf{10}, 066 (2021), \href{https://doi.org/10.21468/SciPostPhys.10.3.066}{doi:10.21468/SciPostPhys.10.3.066}.
+
+}
+\end{document}

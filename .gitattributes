@@ -5,3 +5,8 @@ verification/original/** -text
 verification/independent/** -text
 validation/reference/** -text whitespace=trailing-space,space-before-tab,cr-at-eol
 requirements.txt -text
+
+# Preserve the archived payload bytes, including their original line endings.
+reproduction/runs/** -text whitespace=trailing-space,space-before-tab,cr-at-eol
+reproduction/inputs/*.zip -text
+docs/expert-brief/** -text whitespace=trailing-space,space-before-tab,cr-at-eol

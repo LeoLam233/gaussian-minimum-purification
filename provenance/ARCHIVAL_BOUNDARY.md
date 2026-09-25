@@ -30,3 +30,7 @@ These are archive fingerprints, not publicly registered DOIs or mathematical cer
 The repository ZIP is exported from a committed Git tree. It excludes .git/, .local/, virtual environments, raw compiler logs and local author-review documents. A Git bundle is a repository backup, not the suggested public source archive; it contains committed objects and refs, but no local configuration or reflogs.
 
 The author's name, affiliation and academic contact email are intentionally public. The same approved academic email appears in the candidate's Git authorship metadata. Fresh local diagnostic and compiler outputs can contain the executing reader's own paths; these remain under the ignored .local/ directory and are not part of the release.
+
+## Public v0.1 reconstruction projection
+
+The complete CR0/MR1 input packets and three mathematical result payloads are public under reproduction/. Each result receives a publication-status notice, with both original and distributed hashes in reproduction/RUNS.json and SOURCE_MAP.json. No original frozen archive is rewritten. Raw run/access logs, environment files, intermediate optimizer code and full result ZIPs remain private. The curated index discloses the known procedural deviations and the limits of isolation verification. Additional results have not received a separate complete adversarial audit.

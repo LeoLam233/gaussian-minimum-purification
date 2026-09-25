@@ -1,0 +1,159 @@
+{
+  "title": "Removing excess modes in Gaussian purification: an expert brief",
+  "brief_version": "v0.1",
+  "created_at_utc": "2026-09-25T06:41:21.208866+00:00",
+  "document_role": "Companion expert reading note selecting the main proof mechanism; not a replacement for the full proof.",
+  "language": "English",
+  "pages": 2,
+  "source_body_font_pt": 11,
+  "author_block_and_contact_details": "omitted",
+  "source_manuscript": {
+    "title": "A Mode Bound for Gaussian Entanglement of Purification",
+    "scientific_version": "v0.1",
+    "repository_tag": "v0.1-rc3",
+    "git_commit": "179590232c52a59d4bc0751ea3f8885056a345d5",
+    "sha256": {
+      "paper/manuscript.pdf": "abd776c8a49a5a39703473d7682abe560b27881ebd0b672f5cc5327ef1324b19",
+      "paper/manuscript.tex": "fdaf9671311e037f806e7f0fa36534b74bd663ade90d061560c4cd9b8ee6f20a"
+    }
+  },
+  "artifacts": {
+    "expert_brief.pdf": "b14bf9939a8c0efac931a9c21c7dec16637cb881a38095c830eec8f053d55219",
+    "expert_brief.tex": "20d5647e41a3b276cbe06397a3398f843a7ebd37c059095c9e47ffabaad56cdb"
+  },
+  "new_mathematical_claims": false,
+  "claim_to_manuscript_map": [
+    {
+      "topic": "Matched-mode theorem and state assumptions",
+      "source_labels": [
+        "thm:main",
+        "eq:def"
+      ],
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "topic": "Constructed compression and equality iff selected mode is a pure factor",
+      "source_labels": [
+        "lem:compression"
+      ],
+      "source_pages": [
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "topic": "Auxiliary intersection and compatible complex line",
+      "source_labels": [
+        "eq:intersection",
+        "eq:plane"
+      ],
+      "source_pages": [
+        3,
+        4
+      ]
+    },
+    {
+      "topic": "Fermionic interlacing and complex trace equality",
+      "source_labels": [
+        "eq:fermion-compression-matrix",
+        "eq:fermion-difference",
+        "eq:fermion-equality"
+      ],
+      "source_pages": [
+        4
+      ]
+    },
+    {
+      "topic": "Bosonic upper interlacing bound and equality",
+      "source_labels": [
+        "eq:boson-difference"
+      ],
+      "source_pages": [
+        5
+      ]
+    },
+    {
+      "topic": "Complete auxiliary orbit",
+      "source_labels": [
+        "prop:orbit",
+        "app:orbits"
+      ],
+      "source_pages": [
+        6,
+        8,
+        9
+      ]
+    },
+    {
+      "topic": "Attainment and entropy divergence at symplectic degeneracy",
+      "source_labels": [
+        "lem:attainment",
+        "eq:coercive-bound",
+        "eq:coercive-entropy"
+      ],
+      "source_pages": [
+        6,
+        7
+      ]
+    },
+    {
+      "topic": "Fixed-total transfer, equality, global pure factor, removal and padding",
+      "source_labels": [
+        "sec:global",
+        "eq:plateau"
+      ],
+      "source_pages": [
+        7,
+        8
+      ]
+    },
+    {
+      "topic": "Main optimization includes both total-parity sectors",
+      "source_labels": [
+        "sec:setup",
+        "app:parity"
+      ],
+      "source_pages": [
+        2,
+        10
+      ]
+    }
+  ],
+  "editorial_checks": {
+    "scope": "Source comparison, reference-location checks, PDF rendering and distribution checks; not a new independent proof audit.",
+    "all_pages_rendered_and_visually_inspected": true,
+    "unresolved_reference_markers": false,
+    "latex_layout_warnings": [],
+    "out_of_page_characters_by_page": [
+      0,
+      0
+    ],
+    "fonts_embedded": 15,
+    "all_fonts_embedded": true,
+    "embedded_attachments": 0,
+    "active_pdf_content": false,
+    "pdf_author_metadata": "absent",
+    "external_links": [
+      "https://doi.org/10.21468/SciPostPhys.10.3.066"
+    ],
+    "visible_text_and_pdf_objects_privacy_scan": "PASS",
+    "source_manuscript_hashes_unchanged": true,
+    "point_checked_in_text": [
+      "finite mode counts, bosonic normality and finite covariance, fermionic parity invariance",
+      "equality is asserted for the specifically constructed mode",
+      "fixed-total minimum ranges over every left/right split",
+      "transfer leaves the full extension and physical marginal unchanged",
+      "pure marginal implies a factor of the full extension before removal",
+      "padding covers both the reverse comparison and totals below the matched count",
+      "complex trace counts each mode once",
+      "fermionic lower and bosonic upper interlacing bounds are distinguished",
+      "bosonic first moments and the complete auxiliary orbit are addressed",
+      "fixed-M entropy divergence excludes degeneracy; minimum is taken over all M+1 splits"
+    ]
+  },
+  "published": false,
+  "distribution_license": "CC-BY-4.0"
+}
