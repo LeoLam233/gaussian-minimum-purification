@@ -38,7 +38,7 @@ The original suite mixes exact finite algebra with ordinary and higher-precision
 
 validation/reference/ contains the previously recorded successful logs and summaries. The independent JSON's local interpreter path is replaced by a disclosure-neutral marker; numerical fields are unchanged. The source map records the original and distributed hashes and that specific transformation.
 
-validation/ASSEMBLY_REPLAY.json retains the dated rc1 replay. validation/RC2_REPLAY.json records the replay of this candidate. Each record describes the files current at its own execution time. Full output of a fresh local run is retained under .local/ and is not automatically committed. Platform-dependent floating-point output is not required to be byte-identical to earlier output; assertions, exit codes and generated-summary checks determine replay success.
+validation/ASSEMBLY_REPLAY.json and validation/RC2_REPLAY.json retain the dated rc1 and rc2 replays. Each record describes the files current at its own execution time. The rc3 revision changes introductory prose and documentation; all scientific scripts remain byte-identical to those replayed in rc2, as recorded in provenance/AI_DISCLOSURE_UPDATE.json. Full output of a fresh local run is retained under .local/ and is not automatically committed. Platform-dependent floating-point output is not required to be byte-identical to earlier output; assertions, exit codes and generated-summary checks determine replay success.
 
 The initial coarse-quadrature calculation and its subsequent refinement are retained together in the full review archive. The public check includes quadrature refinement.
 

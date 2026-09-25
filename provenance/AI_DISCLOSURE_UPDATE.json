@@ -1,0 +1,21 @@
+{
+  "baseline_repository_tag": "v0.1-rc2",
+  "baseline_commit": "c2b15130dfddde08a2177762fb4da2f79bc8baf7",
+  "candidate": "v0.1-rc3",
+  "scope": "Add one AI-workflow disclosure sentence at the end of the introduction, before the paper roadmap.",
+  "added_sentence": "AI systems carried out problem selection, proof development, and computational checks within a research workflow designed and supervised by the author; further details are given in the AI contribution statement.",
+  "complete_tex_unchanged_outside_recorded_insertion": true,
+  "baseline_tex_sha256": "b18162be3bfc7a6c29872098e7b4c4dd5ee7ae8a8e72fecfadb96ae5d598e70c",
+  "revised_tex_sha256": "fdaf9671311e037f806e7f0fa36534b74bd663ade90d061560c4cd9b8ee6f20a",
+  "baseline_pdf_sha256": "7c819b01039b172d98018c24cd4804f6ad7b8ae3301f2e67d30649efc535b1ff",
+  "mathematical_changes": false,
+  "equation_blocks_unchanged": 37,
+  "align_blocks_unchanged": 1,
+  "theorem_blocks_unchanged": 1,
+  "lemma_blocks_unchanged": 2,
+  "proposition_blocks_unchanged": 2,
+  "thebibliography_blocks_unchanged": 1,
+  "full_ai_contribution_statement_and_following_declarations_unchanged": true,
+  "scientific_python_files_unchanged": 8,
+  "revised_pdf_sha256": "abd776c8a49a5a39703473d7682abe560b27881ebd0b672f5cc5327ef1324b19"
+}

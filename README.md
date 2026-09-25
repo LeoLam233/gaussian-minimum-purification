@@ -4,7 +4,7 @@
 School of Physics, Sun Yat-sen University, Guangzhou, China<br>
 lindh9@mail2.sysu.edu.cn
 
-**Manuscript v0.1, editorial revision v0.1-rc2.** [Read the paper](paper/manuscript.pdf) · [Proof guide](docs/PROOF_GUIDE.md) · [Reproduce the checks](REPRODUCIBILITY.md) · [Evidence and audit status](audits/STATUS.md)
+**Manuscript v0.1, editorial revision v0.1-rc3.** [Read the paper](paper/manuscript.pdf) · [Proof guide](docs/PROOF_GUIDE.md) · [Reproduce the checks](REPRODUCIBILITY.md) · [Evidence and audit status](audits/STATUS.md)
 
 For a finite-mode bipartite Gaussian state, the paper proves that Gaussian entanglement of purification attains its minimum with as many auxiliary modes on each side as physical modes:
 
@@ -50,4 +50,4 @@ These computations are finite diagnostics. The analytic proof carries the univer
 
 An AI workflow designed and assembled by the author autonomously selected the open problem and developed the proof. AI systems played the primary role in the derivation and computational checks, and other AI systems carried out adversarial reviews. AI assistance also contributed to exposition and repository preparation. These reviews are distinct from human peer review.
 
-Original code is licensed under [MIT](LICENSE). The original manuscript and documentation are licensed under [CC BY 4.0](LICENSES/CC-BY-4.0.txt). See [licensing scope](LICENSING.md) for third-party exclusions. The full research archive is retained separately; this repository provides the manuscript, runnable checks and a documented [public/private boundary](provenance/ARCHIVAL_BOUNDARY.md). The [editorial change record](provenance/EDITORIAL_CHANGES.json) identifies the single revised manuscript paragraph; the mathematical argument and scientific scripts are unchanged.
+Original code is licensed under [MIT](LICENSE). The original manuscript and documentation are licensed under [CC BY 4.0](LICENSES/CC-BY-4.0.txt). See [licensing scope](LICENSING.md) for third-party exclusions. The full research archive is retained separately; this repository provides the manuscript, runnable checks and a documented [public/private boundary](provenance/ARCHIVAL_BOUNDARY.md). The [rc2 editorial record](provenance/EDITORIAL_CHANGES.json) and [rc3 AI disclosure record](provenance/AI_DISCLOSURE_UPDATE.json) document the introductory wording changes; the mathematical argument and scientific scripts are unchanged.

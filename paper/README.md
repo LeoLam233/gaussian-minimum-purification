@@ -1,6 +1,6 @@
 # Manuscript v0.1
 
-[manuscript.pdf](manuscript.pdf) is the 11-page manuscript v0.1 with the rc2 editorial revision; [manuscript.tex](manuscript.tex) is its source. Relative to the scientific v0.1 archive, one introductory paragraph has been rephrased and the PDF rebuilt. The complete source is unchanged outside that paragraph; see the [editorial change record](../provenance/EDITORIAL_CHANGES.json). The original freeze is retained.
+[manuscript.pdf](manuscript.pdf) is the 11-page manuscript v0.1 with the rc3 editorial revision; [manuscript.tex](manuscript.tex) is its source. Relative to the scientific v0.1 archive, one introductory attribution paragraph has been rephrased (rc2), one AI-workflow disclosure sentence has been added before the introductory roadmap (rc3), and the PDF has been rebuilt. The complete source is unchanged outside those edits; see the [rc2 editorial record](../provenance/EDITORIAL_CHANGES.json) and [rc3 disclosure record](../provenance/AI_DISCLOSURE_UPDATE.json). The full AI contribution statement at the end of the paper is retained. The earlier freezes are preserved.
 
 From the repository root:
 

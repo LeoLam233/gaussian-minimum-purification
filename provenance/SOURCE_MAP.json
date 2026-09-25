@@ -3,7 +3,7 @@
   "files": [
     {
       "repository_path": "paper/manuscript.pdf",
-      "distributed_sha256": "7c819b01039b172d98018c24cd4804f6ad7b8ae3301f2e67d30649efc535b1ff",
+      "distributed_sha256": "abd776c8a49a5a39703473d7682abe560b27881ebd0b672f5cc5327ef1324b19",
       "source_sha256": "956a7cc584855815915c3db3e223ac0670e6724058b64f6dcec9b679611887bc",
       "source_archive_chain": [
         {
@@ -12,11 +12,11 @@
         }
       ],
       "source_member": "Gaussian_MinPur_v0.1/paper/manuscript.pdf",
-      "transformation": "Rebuild with Tectonic 0.17.0 after the single-paragraph editorial revision recorded in provenance/EDITORIAL_CHANGES.json."
+      "transformation": "Rebuild with Tectonic 0.17.0 after the rc2 attribution revision and rc3 AI-workflow disclosure documented in provenance/EDITORIAL_CHANGES.json and provenance/AI_DISCLOSURE_UPDATE.json."
     },
     {
       "repository_path": "paper/manuscript.tex",
-      "distributed_sha256": "b18162be3bfc7a6c29872098e7b4c4dd5ee7ae8a8e72fecfadb96ae5d598e70c",
+      "distributed_sha256": "fdaf9671311e037f806e7f0fa36534b74bd663ade90d061560c4cd9b8ee6f20a",
       "source_sha256": "40f022a8d08801d7e1e09c0802cb5b4b2c2f2d1b964a8392f748c586620501ba",
       "source_archive_chain": [
         {
@@ -25,7 +25,7 @@
         }
       ],
       "source_member": "Gaussian_MinPur_v0.1/paper/manuscript.tex",
-      "transformation": "Rephrase the single introductory attribution paragraph documented in provenance/EDITORIAL_CHANGES.json; all other source bytes unchanged."
+      "transformation": "Rephrase one introductory attribution paragraph (provenance/EDITORIAL_CHANGES.json) and add one introductory AI-workflow disclosure sentence (provenance/AI_DISCLOSURE_UPDATE.json); all other source bytes unchanged."
     },
     {
       "repository_path": "verification/original/verify_polar_compression.py",

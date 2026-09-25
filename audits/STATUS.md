@@ -1,6 +1,6 @@
 # Audit and evidence status
 
-Three AI reports examined the 24 September 2026 manuscript. Their assessment informed the 25 September revision. The current candidate also contains a subsequent editorial revision of one introductory paragraph. These later exposition changes have not received a second complete set of three AI reviews.
+Three AI reports examined the 24 September 2026 manuscript. Their assessment informed the 25 September revision. The current candidate also contains a subsequent editorial revision of one introductory attribution paragraph (rc2) and a brief AI-workflow disclosure in the introduction (rc3). These later exposition changes have not received a second complete set of three AI reviews.
 
 | Review or computation | Scope and retained evidence |
 | --- | --- |
@@ -17,7 +17,7 @@ The assessed objections did not require a change to the central proof. This is a
 
 The manuscript credits the earlier formulation and mode-count statement, distinguishes canonical construction from comparison over all finite extensions, and uses the published section and equation numbering. It also makes the fixed-parity empty-system exception and the inverse-transpose auxiliary transformation explicit.
 
-The current editorial revision retains this attribution and contribution scope while describing the relationship to the earlier work in more direct, neutral prose. The theorem, proof, bibliography and scientific verification code are unchanged by that revision.
+The rc2 editorial revision retains this attribution and contribution scope while describing the relationship to the earlier work in more direct, neutral prose. The rc3 revision adds a one-sentence AI-workflow disclosure in the introduction and retains the full end-of-paper statement. The theorem, proof, bibliography and scientific verification code are unchanged by these revisions.
 
 ## Public computational evidence
 

@@ -4,7 +4,7 @@ The complete scientific freeze is retained locally as Gaussian_MinPur_v0.1.zip. 
 
     1610956a15654942ef7fa7db0f737e4345a353b50ff37faff8864b27fadd33b0
 
-This repository contains the current paper, byte-identical scientific scripts, explanatory documents, and diagnostic records. SOURCE_MAP.json records each selected archive member and its original and distributed hashes. The current paper has the one-paragraph editorial revision documented in EDITORIAL_CHANGES.json. The independent reference JSON has only its local interpreter path replaced; its numerical fields are unchanged.
+This repository contains the current paper, byte-identical scientific scripts, explanatory documents, and diagnostic records. SOURCE_MAP.json records each selected archive member and its original and distributed hashes. The paper contains the introductory attribution revision documented in EDITORIAL_CHANGES.json and the one-sentence introduction disclosure documented in AI_DISCLOSURE_UPDATE.json. The independent reference JSON has only its local interpreter path replaced; its numerical fields are unchanged.
 
 The larger archive includes historical drafts, raw AI reviews and search records, local build/runtime paths, and intermediate audit implementations discussed in audits/STATUS.md. Those packages are retained separately, unchanged, for author-controlled reviewer access.
 

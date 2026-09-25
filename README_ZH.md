@@ -2,7 +2,7 @@
 
 作者：Dehao Lin，School of Physics, Sun Yat-sen University, Guangzhou, China。
 
-[论文 v0.1（rc2 文字修订，11 页）](paper/manuscript.pdf) · [英文首页](README.md) · [论证导读](docs/PROOF_GUIDE.md) · [复现说明](REPRODUCIBILITY.md)
+[论文 v0.1（rc3 文字修订，11 页）](paper/manuscript.pdf) · [英文首页](README.md) · [论证导读](docs/PROOF_GUIDE.md) · [复现说明](REPRODUCIBILITY.md)
 
 本稿证明：对文中假设下的有限模玻色和费米高斯态，在所有有限辅助模式数的高斯纯化上取熵的下确界，可以由两侧辅助模分别匹配各自物理模式数的纯化达到。
 
@@ -10,6 +10,6 @@ Windt、Jahn、Eisert 与 Hackl 提出了最小纯化猜想，在文中陈述了
 
 先用 Python 运行 scripts/verify_repository.py 校验文件，再按照 REPRODUCIBILITY.md 安装依赖和重放。原始六个验证器及独立密度算符检查保留其原始代码；新入口将计算放到 .local/ 下运行，不改写已固定文件。
 
-三份 AI 审计的核验范围、留存代码问题与未复现统计见 [审计状态](audits/STATUS.md)。目前尚无人类专家或期刊同行复核。rc2 仅调整了论文引言中介绍前人工作的一个段落，并重新编译 PDF；定理、公式、证明正文、参考文献和科学验证脚本均未改变，旧冻结版继续保留。
+三份 AI 审计的核验范围、留存代码问题与未复现统计见 [审计状态](audits/STATUS.md)。目前尚无人类专家或期刊同行复核。rc2 调整了论文引言中介绍前人工作的一个段落；rc3 在引言末尾增加一句 AI 工作流说明，保留文末完整声明，并重新编译 PDF。定理、公式、证明正文、参考文献和科学验证脚本均未改变，旧冻结版继续保留。
 
 自有代码采用 MIT，论文与文档采用 CC BY 4.0；第三方材料除外。完整原始冻结档保留在本地，仓库中的来源映射说明每份公开代码与其原始文件的关系。
