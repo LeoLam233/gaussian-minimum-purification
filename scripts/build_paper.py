@@ -50,7 +50,7 @@ def main():
     if not (output/'manuscript.pdf').is_file():
         raise RuntimeError('Build reported success without producing a PDF')
     print('Built working-copy PDF: '+str((output/'manuscript.pdf').relative_to(ROOT)))
-    print('The frozen manuscript files were not modified.')
+    print('The versioned manuscript files were not modified.')
     return 0
 
 

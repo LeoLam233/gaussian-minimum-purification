@@ -4,9 +4,9 @@ The complete scientific freeze is retained locally as Gaussian_MinPur_v0.1.zip. 
 
     1610956a15654942ef7fa7db0f737e4345a353b50ff37faff8864b27fadd33b0
 
-This repository contains the unchanged current paper, selected byte-identical scientific scripts, public-facing explanatory documents, and recorded diagnostic results. SOURCE_MAP.json identifies each selected source member, its enclosing archives and hashes, and the sole path-only transformation applied to the independent result JSON.
+This repository contains the current paper, byte-identical scientific scripts, explanatory documents, and diagnostic records. SOURCE_MAP.json records each selected archive member and its original and distributed hashes. The current paper has the one-paragraph editorial revision documented in EDITORIAL_CHANGES.json. The independent reference JSON has only its local interpreter path replaced; its numerical fields are unchanged.
 
-The larger archive includes historical drafts, raw AI reviews and search records, local build/runtime paths, and audit implementations with the defects described in audits/STATUS.md. Those raw packages remain outside the public file view. They have not been edited or silently replaced; the full archive is retained for author-controlled reviewer access.
+The larger archive includes historical drafts, raw AI reviews and search records, local build/runtime paths, and intermediate audit implementations discussed in audits/STATUS.md. Those packages are retained separately, unchanged, for author-controlled reviewer access.
 
 The repository's original diagnostic scripts and the independent density implementation match their archived sources byte for byte. The new scripts/ entry points only stage, execute and check them. Reference logs are preserved, while a fresh replay creates new logs under .local/.
 
@@ -18,3 +18,15 @@ The repository's original diagnostic scripts and the independent density impleme
 - Parent three-report adjudication: 96a4ed1dac3f22888f711761d48584bcb60103a34865045f55717d790812dce7
 
 These are archive fingerprints, not publicly registered DOIs or mathematical certificates. The public summary records the material qualifications of the raw reviews.
+
+## Distribution scope
+
+| Public repository and source ZIP | Retained locally |
+| --- | --- |
+| Current paper, scientific checks, reference results and explanatory documents | Complete historical research and review archives |
+| Source maps, licenses, citation metadata and file checksums | Author review notes, build caches and working directories |
+| Tracked Git history, including author and committer metadata | Git configuration and reflogs; these are not transferred by a Git push |
+
+The repository ZIP is exported from a committed Git tree. It excludes .git/, .local/, virtual environments, raw compiler logs and local author-review documents. A Git bundle is a repository backup, not the suggested public source archive; it contains committed objects and refs, but no local configuration or reflogs.
+
+The author's name, affiliation and academic contact email are intentionally public. The same approved academic email appears in the candidate's Git authorship metadata. Fresh local diagnostic and compiler outputs can contain the executing reader's own paths; these remain under the ignored .local/ directory and are not part of the release.

@@ -1,32 +1,32 @@
 # Audit and evidence status
 
-Three AI reports examined the 24 September 2026 manuscript. Their combined adjudication led to the 25 September post-audit changes, now fixed in manuscript v0.1. This does not mean that the final small exposition changes received a second complete three-model audit.
+Three AI reports examined the 24 September 2026 manuscript. Their assessment informed the 25 September revision. The current candidate also contains a subsequent editorial revision of one introductory paragraph. These later exposition changes have not received a second complete set of three AI reviews.
 
-| Review or computation | Current interpretation |
+| Review or computation | Scope and retained evidence |
 | --- | --- |
-| Independent-context A1V2 subagent | No inherited research conversation. It re-derived decisive steps, reran the six original scripts, and wrote separate density-operator and graded-subsystem checks. It used the same model as the parent agent. |
-| ds4.1Flash | Its analytic review reported no fatal flaw. The claimed 4000+4000+480 final tests remain auditor-reported: the retained code contains early errors and cannot replay those counts. This does not show whether corrected code was executed interactively elsewhere. |
-| Additional user-supplied AI review | The parent replayed its 480 generic compression tests and two bosonic orbit constructions. The retained Jacobian uses I rather than 0 in the fixed physical block, and its fermion entropy function mishandles zero and pure endpoints. These are audit-code defects, not counterexamples to the manuscript. |
-| Parent's corrected tangent check | In a separate driver, the corrected fixed-marginal tangent produced ranks 10, 20, 21 and 36. Dimension agreement is a local diagnostic; Appendix A's analytic construction carries the full orbit statement. |
-| Full nonlinear searches | Not independently certified. Padding keeps a candidate entropy unchanged by construction; finite local searches cannot establish a global optimum. |
+| Review A: A1V2, fresh context | Conducted without the research conversation, using the same model as the coordinating system. The review re-derived key steps, reran the six original scripts, and supplied separate density-operator and graded-subsystem checks. |
+| Review B: ds4.1Flash | The report identified no fatal mathematical flaw and reported 4000+4000+480 successful tests. The retained scripts appear to be an earlier revision and do not reproduce those final counts. The counts are therefore treated as report-level evidence; corrected interactive runs were not independently recovered. |
+| Review C: additional AI report | Follow-up checks reproduced 480 generic compression cases and two bosonic orbit constructions. Two issues in the retained implementation were identified: the Jacobian used I rather than 0 in the fixed physical block, and the fermion entropy routine mishandled zero and pure endpoints. These implementation issues did not produce a manuscript counterexample. |
+| Follow-up tangent calculation | A separate driver with the corrected fixed-marginal tangent gave ranks 10, 20, 21 and 36. This is a local diagnostic; Appendix A provides the analytic orbit argument. |
+| Nonlinear searches | Finite local searches were not certified as global optimizations. Equal padded candidate values and local search outcomes are supporting diagnostics. |
 | Human and journal review | Not performed. |
 
-No report supplied an effective counterexample requiring a change to the central proof. That assessment is based on the mathematical objections and their resolution, not a vote among models.
+The assessed objections did not require a change to the central proof. This is an assessment of the available arguments and calculations, within the limits above.
 
-## Changes accepted after review
+## Changes following review
 
-The introduction now acknowledges the prior paper's existing mode-count assertion, separates its canonical construction from a comparison with all finite extensions, and uses the published section/equation numbering. It also cites the original later invocation of the conjecture. The fixed-parity empty-system exception is explicit, and Appendix A states the inverse-transpose direction of the auxiliary symplectic map.
+The manuscript credits the earlier formulation and mode-count statement, distinguishes canonical construction from comparison over all finite extensions, and uses the published section and equation numbering. It also makes the fixed-parity empty-system exception and the inverse-transpose auxiliary transformation explicit.
 
-The main theorem, local compression proof and fixed-total attainment argument were retained. An alternative Rényi-2 attainment argument was judged optional and was not added.
+The current editorial revision retains this attribution and contribution scope while describing the relationship to the earlier work in more direct, neutral prose. The theorem, proof, bibliography and scientific verification code are unchanged by that revision.
 
 ## Public computational evidence
 
-The default runnable checks consist of the original six verifiers and the first auditor's independent density-operator implementation. Their earlier records and the new repository-entry-point replay are included. Known defective external audit implementations are retained in the private research archive; they are not presented as passing verifiers in this repository.
+The runnable checks are the six original verifiers and Review A's separately written density-operator implementation. Earlier successful records and repository-entry-point replay records are included. The full review archives, including intermediate implementations, are retained separately; implementations with the issues described above are not included in the default verification suite.
 
-All finite numerical tests have diagnostic scope. Neither AI agreement, hash verification, ordinary floating-point residuals, nor the higher-precision finite checks amount to formal verification of the universal claim.
+Finite computations and AI review provide diagnostic evidence. They do not constitute a formal verification of the universal theorem or human peer review.
 
-## Novelty and sources
+## Literature and source status
 
-The recorded public searches found no duplicate proof, and the reviews identified no unverified third-party AI repository as a load-bearing premise. The source paper's own earlier assertion is explicitly credited. No claim is made to have excluded every private or unindexed precursor. This repository assembly did not conduct a new novelty search.
+The recorded public-literature searches found no matching proof. The earlier paper's statement is credited, and no unverified third-party AI repository was identified as a premise of the proof. This is a dated search outcome, not an absolute priority claim. Repository preparation and the editorial revision did not conduct a new novelty audit.
 
-The [archive map](../provenance/ARCHIVAL_BOUNDARY.md) identifies the retained raw reports and their hashes.
+The [archive map](../provenance/ARCHIVAL_BOUNDARY.md) identifies the retained review reports and their hashes.

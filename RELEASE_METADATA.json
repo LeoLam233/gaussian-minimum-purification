@@ -3,15 +3,20 @@
   "author": "Dehao Lin",
   "version": "v0.1",
   "scientific_freeze_date": "2026-09-25",
-  "repository_candidate": "v0.1-rc1",
+  "repository_candidate": "v0.1-rc2",
   "repository_name": "gaussian-minimum-purification",
   "manuscript_pages": 11,
   "manuscript_sha256": {
-    "paper/manuscript.pdf": "956a7cc584855815915c3db3e223ac0670e6724058b64f6dcec9b679611887bc",
-    "paper/manuscript.tex": "40f022a8d08801d7e1e09c0802cb5b4b2c2f2d1b964a8392f748c586620501ba"
+    "paper/manuscript.pdf": "7c819b01039b172d98018c24cd4804f6ad7b8ae3301f2e67d30649efc535b1ff",
+    "paper/manuscript.tex": "b18162be3bfc7a6c29872098e7b4c4dd5ee7ae8a8e72fecfadb96ae5d598e70c"
   },
   "private_freeze_archive_sha256": "1610956a15654942ef7fa7db0f737e4345a353b50ff37faff8864b27fadd33b0",
   "code_license": "MIT",
   "manuscript_and_documentation_license": "CC-BY-4.0",
-  "human_peer_review": "not performed"
+  "human_peer_review": "not performed",
+  "scientific_baseline_manuscript_sha256": {
+    "paper/manuscript.pdf": "956a7cc584855815915c3db3e223ac0670e6724058b64f6dcec9b679611887bc",
+    "paper/manuscript.tex": "40f022a8d08801d7e1e09c0802cb5b4b2c2f2d1b964a8392f748c586620501ba"
+  },
+  "manuscript_revision": "Single-paragraph editorial revision; mathematical content unchanged from the scientific v0.1 baseline."
 }

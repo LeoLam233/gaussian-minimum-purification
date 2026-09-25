@@ -1,0 +1,48 @@
+{
+  "timestamp_utc": "2026-09-25T03:30:05.175028+00:00",
+  "interpretation": "Repository-entry-point replay of existing diagnostic implementations; not a new independent proof audit.",
+  "python_version": "3.12.14",
+  "system": "Windows",
+  "packages": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0"
+  },
+  "integrity_before_run": {
+    "status": "PASS",
+    "files_checked": 46,
+    "source_map_entries": 20,
+    "local_links_checked": 38,
+    "errors": []
+  },
+  "jobs": [
+    {
+      "suite": "original",
+      "exit_code": 0,
+      "summary_error": null,
+      "status": "PASS",
+      "elapsed_seconds": 4.469,
+      "counts": {
+        "original_verifiers": 6
+      },
+      "log": "original/stdout.log"
+    },
+    {
+      "suite": "independent",
+      "exit_code": 0,
+      "summary_error": null,
+      "status": "PASS",
+      "elapsed_seconds": 5.453,
+      "counts": {
+        "boson_kernel": 4,
+        "fermion_density": 32,
+        "fermion_graded_parity": 12
+      },
+      "log": "independent/stdout.log"
+    }
+  ],
+  "overall": "PASS",
+  "log_location_note": "Job log paths are relative to the fresh local run directory, which is not part of the public repository.",
+  "candidate": "v0.1-rc2"
+}

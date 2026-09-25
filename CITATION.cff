@@ -3,7 +3,7 @@
   "message": "Please cite the manuscript using preferred-citation.",
   "title": "A Mode Bound for Gaussian Entanglement of Purification",
   "type": "software",
-  "version": "0.1",
+  "version": "0.1-rc2",
   "authors": [
     {
       "family-names": "Lin",
@@ -23,7 +23,7 @@
       }
     ],
     "year": 2026,
-    "version": "0.1",
-    "notes": "Manuscript v0.1; original paper and prose licensed CC BY 4.0. No DOI or journal publication is claimed."
+    "version": "0.1 (editorial revision v0.1-rc2)",
+    "notes": "Manuscript v0.1, editorial revision v0.1-rc2; original paper and prose licensed CC BY 4.0. No DOI or journal publication is claimed."
   }
 }

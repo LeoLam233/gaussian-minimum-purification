@@ -1,0 +1,25 @@
+{
+  "baseline_repository_tag": "v0.1-rc1",
+  "baseline_commit": "5da28ee01a005e41ca2418a7b5a211563dbef051",
+  "candidate": "v0.1-rc2",
+  "scope": "One introductory paragraph; attribution, contribution scope and mathematical content preserved.",
+  "manuscript_changes": [
+    {
+      "location": "Introduction: Relation to the original analytical bounds",
+      "before": "Section~6.3 of Ref.~\\cite{Windt2021} already asserts that the auxiliary counts may be restricted to the matched choice, and constructs such a purification in Eq.~(192) before developing entropy upper bounds. Section~6.4 nevertheless invokes the matched choice ``as suggested by conjecture~2''. The displayed construction establishes an admissible matched-size extension; it does not provide a variational comparison with \\emph{every} larger finite Gaussian extension. Here we supply that reduction and prove attainment, using the pure-factor equality condition at a fixed-total optimum. Section and equation numbers for Ref.~\\cite{Windt2021} refer to the published SciPost version.",
+      "after": "The matched-mode restriction is stated in Section~6.3 of Ref.~\\cite{Windt2021}, which gives a canonical purification in Eq.~(192) and develops analytical entropy upper bounds. Section~6.4 refers to the matched choice ``as suggested by conjecture~2''. Building on this formulation, the present work gives an explicit variational comparison with all larger finite Gaussian extensions and proves attainment. The pure-factor equality condition at a fixed-total optimum provides the reduction step. Section and equation numbers for Ref.~\\cite{Windt2021} refer to the published SciPost version."
+    }
+  ],
+  "complete_tex_unchanged_outside_recorded_replacement": true,
+  "baseline_tex_sha256": "40f022a8d08801d7e1e09c0802cb5b4b2c2f2d1b964a8392f748c586620501ba",
+  "revised_tex_sha256": "b18162be3bfc7a6c29872098e7b4c4dd5ee7ae8a8e72fecfadb96ae5d598e70c",
+  "equation_blocks_unchanged": 37,
+  "align_blocks_unchanged": 1,
+  "theorem_blocks_unchanged": 1,
+  "lemma_blocks_unchanged": 2,
+  "proposition_blocks_unchanged": 2,
+  "thebibliography_blocks_unchanged": 1,
+  "scientific_python_files_unchanged": 8,
+  "baseline_pdf_sha256": "956a7cc584855815915c3db3e223ac0670e6724058b64f6dcec9b679611887bc",
+  "revised_pdf_sha256": "7c819b01039b172d98018c24cd4804f6ad7b8ae3301f2e67d30649efc535b1ff"
+}

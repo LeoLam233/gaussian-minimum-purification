@@ -4,7 +4,7 @@ The bibliography in the [manuscript](../paper/manuscript.pdf) is authoritative f
 
 The research target is Conjecture 2 in Windt, Jahn, Eisert and Hackl, *Local optimization on pure Gaussian state manifolds*, [SciPost Phys. 10, 066 (2021)](https://doi.org/10.21468/SciPostPhys.10.3.066), [arXiv:2009.11884v3](https://arxiv.org/abs/2009.11884v3). Conjecture 1, about Gaussian versus unrestricted purifications, is distinct.
 
-In the published version, Section 6.3 already asserts that matched auxiliary mode counts suffice and displays a canonical construction in Eq. (192). Section 6.4 still invokes the matched choice as suggested by the conjecture. The present paper acknowledges that earlier assertion and supplies an explicit variational comparison with arbitrary larger finite auxiliary systems and an attainment proof. The fact that one canonical purification is not optimal would not, by itself, establish that the mode-count claim remained unproved.
+In the published version, Section 6.3 states the matched-mode restriction, gives a canonical purification in Eq. (192), and develops analytical entropy upper bounds. Section 6.4 refers to the matched choice as suggested by Conjecture 2. Building on this formulation, the present paper gives an explicit variational comparison with all larger finite Gaussian extensions and proves attainment. The conjecture and earlier mode-count statement are attributed to their authors; the detailed reduction and attainment argument are the contribution of this manuscript.
 
 The canonical construction is numbered (191) in the preprint PDF and (252) in the arXiv HTML. Manuscript v0.1 consistently uses the published SciPost numbering.
 

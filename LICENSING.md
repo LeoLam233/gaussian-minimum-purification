@@ -1,6 +1,6 @@
 # Licensing scope
 
-The author confirmed these choices for this project:
+The following licenses apply to the original project materials:
 
 | Material | License |
 | --- | --- |

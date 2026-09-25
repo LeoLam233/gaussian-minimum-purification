@@ -48,7 +48,7 @@ def verify():
     metadata = json.loads((ROOT/'RELEASE_METADATA.json').read_text(encoding='utf-8'))
     for name, digest in metadata['manuscript_sha256'].items():
         if expected.get(name) != digest:
-            errors.append('Manuscript freeze disagreement: '+name)
+            errors.append('Manuscript release-metadata disagreement: '+name)
     sources = json.loads((ROOT/'provenance/SOURCE_MAP.json').read_text(encoding='utf-8'))
     for row in sources['files']:
         if expected.get(row['repository_path']) != row['distributed_sha256']:
@@ -56,7 +56,7 @@ def verify():
         if row['transformation']=='none' and row['source_sha256'] != row['distributed_sha256']:
             errors.append('Non-identical frozen source: '+row['repository_path'])
     citation = json.loads((ROOT/'CITATION.cff').read_text(encoding='utf-8'))
-    if citation.get('cff-version') != '1.2.0' or citation.get('version') != '0.1':
+    if citation.get('cff-version') != '1.2.0' or citation.get('version') != metadata['repository_candidate'].removeprefix('v'):
         errors.append('Citation version mismatch')
     if citation.get('title') != metadata['title'] or citation['authors'][0]['family-names'] != 'Lin':
         errors.append('Citation identity mismatch')

@@ -1,6 +1,23 @@
+# Generated local runs and environments
 .local/
 .venv/
 __pycache__/
 *.py[cod]
 .DS_Store
 Thumbs.db
+
+# Local credentials and private keys
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Local compiler intermediates
+*.aux
+*.fls
+*.synctex.gz
+paper/*.log
+paper/*.out
+paper/*.xdv

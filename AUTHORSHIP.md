@@ -12,6 +12,6 @@ No AI system is listed as an author. No independent human expert validation or j
 
 ## Declarations
 
-This work received no specific funding. The author declares no competing interests. No acknowledgments are included in this version.
+This work received no specific funding. The author declares no competing interests.
 
-The author supplied the name, affiliation, email address, AI-disclosure wording, funding and conflict declarations, repository name, and licensing choices used here.
+The author designed and supervised the research workflow and makes the manuscript and release decisions.

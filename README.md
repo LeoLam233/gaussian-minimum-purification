@@ -4,7 +4,7 @@
 School of Physics, Sun Yat-sen University, Guangzhou, China<br>
 lindh9@mail2.sysu.edu.cn
 
-**Manuscript v0.1.** [Read the paper](paper/manuscript.pdf) · [Proof guide](docs/PROOF_GUIDE.md) · [Reproduce the checks](REPRODUCIBILITY.md) · [Evidence and audit status](audits/STATUS.md)
+**Manuscript v0.1, editorial revision v0.1-rc2.** [Read the paper](paper/manuscript.pdf) · [Proof guide](docs/PROOF_GUIDE.md) · [Reproduce the checks](REPRODUCIBILITY.md) · [Evidence and audit status](audits/STATUS.md)
 
 For a finite-mode bipartite Gaussian state, the paper proves that Gaussian entanglement of purification attains its minimum with as many auxiliary modes on each side as physical modes:
 
@@ -16,7 +16,7 @@ $$
 
 The infimum on the left allows **all finite auxiliary mode counts**. The bosonic statement assumes a normal state with finite covariance; the fermionic statement concerns parity-invariant quasifree states, including pure factors, zero modes and degeneracies.
 
-This is the mode-count assertion of Windt, Jahn, Eisert and Hackl's minimum purification conjecture. Their paper already states the matched-size restriction and gives a canonical construction. The present contribution supplies an explicit variational reduction from arbitrary finite auxiliary sizes and proves attainment. The introduction explains the relationship to the original assertion and construction; see [source positioning](provenance/SOURCES.md).
+This establishes the mode-count assertion of the minimum purification conjecture formulated by Windt, Jahn, Eisert and Hackl. Their paper states the matched-size restriction and develops canonical purifications and analytical bounds. Building on that formulation, this work gives an explicit reduction from arbitrary finite auxiliary sizes and proves attainment; see [source positioning](provenance/SOURCES.md).
 
 ## The proof in one paragraph
 
@@ -44,10 +44,10 @@ python scripts/reproduce.py
 
 The reproduction command runs the six original verifiers and the separately written density-operator checks in fresh working directories. Generated results go under .local/; the versioned scripts and manuscript are left untouched.
 
-These computations are finite diagnostics. The analytic proof carries the universal claim. Three AI reviews found no effective counterexample requiring a change to the main proof, but some external audit statistics could not be reproduced from the retained scripts; [their limitations are recorded](audits/STATUS.md). **Independent human expert validation and journal peer review have not been performed.**
+These computations are finite diagnostics. The analytic proof carries the universal claim. Three AI reviews were considered alongside checks of their supporting calculations; [the review scope and reproducibility limits are recorded](audits/STATUS.md). **Independent human expert validation and journal peer review have not been performed.**
 
 ## AI contribution and licensing
 
 An AI workflow designed and assembled by the author autonomously selected the open problem and developed the proof. AI systems played the primary role in the derivation and computational checks, and other AI systems carried out adversarial reviews. AI assistance also contributed to exposition and repository preparation. These reviews are distinct from human peer review.
 
-Original code is licensed under [MIT](LICENSE). The original manuscript and documentation are licensed under [CC BY 4.0](LICENSES/CC-BY-4.0.txt). See [licensing scope](LICENSING.md) for third-party exclusions. The full frozen research archive is retained separately; this repository is its documented, reproducible public-facing view.
+Original code is licensed under [MIT](LICENSE). The original manuscript and documentation are licensed under [CC BY 4.0](LICENSES/CC-BY-4.0.txt). See [licensing scope](LICENSING.md) for third-party exclusions. The full research archive is retained separately; this repository provides the manuscript, runnable checks and a documented [public/private boundary](provenance/ARCHIVAL_BOUNDARY.md). The [editorial change record](provenance/EDITORIAL_CHANGES.json) identifies the single revised manuscript paragraph; the mathematical argument and scientific scripts are unchanged.
