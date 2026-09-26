@@ -1,7 +1,5 @@
 # 高斯纠缠纯化的模式数界
 
-作者：Dehao Lin，School of Physics, Sun Yat-sen University, Guangzhou, China。
-
 **正式发布版本 v0.1。** [完整论文（11 页）](paper/manuscript.pdf) · [两页专家短稿](docs/expert-brief/expert_brief.pdf) · [英文首页](README.md) · [论证导读](docs/PROOF_GUIDE.md)
 
 本研究基于作者自行搭建的 AI 工作流：AI 自主选题并发展证明，其他 AI 系统随后进行了对抗性审查。具体贡献和证据范围见 [作者与 AI 声明](AUTHORSHIP.md) 及 [审计状态](audits/STATUS.md)。目前尚无人类专家验证或期刊同行评审。
