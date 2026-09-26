@@ -6,15 +6,14 @@ lindh9@mail2.sysu.edu.cn
 
 **Public release v0.1.** [Read the paper](paper/manuscript.pdf) · [Proof guide](docs/PROOF_GUIDE.md) · [Reproduce the checks](REPRODUCIBILITY.md) · [Evidence and audit status](audits/STATUS.md)
 
-For a finite-mode bipartite Gaussian state, the paper proves that Gaussian entanglement of purification attains its minimum with as many auxiliary modes on each side as physical modes:
+For a finite-mode bipartite Gaussian state $\rho_{AB}$, let $\mathcal P_{\mathrm{match}}^{\mathrm G}(\rho_{AB})$ be its pure Gaussian purifications with $n_{A'}=n_A$ and $n_{B'}=n_B$. The paper proves
 
 $$
 E_P^{\mathrm G}(\rho_{AB})
-=\min_{\substack{\psi_{ABA'B'}\ {\rm pure\ Gaussian},\ \psi_{AB}=\rho_{AB}\\
-n_{A'}=n_A,\ n_{B'}=n_B}}S(\psi_{AA'}).
+=\min_{\psi\in\mathcal P_{\mathrm{match}}^{\mathrm G}(\rho_{AB})}S(\psi_{AA'}).
 $$
 
-The infimum on the left allows **all finite auxiliary mode counts**. The bosonic statement assumes a normal state with finite covariance; the fermionic statement concerns parity-invariant quasifree states, including pure factors, zero modes and degeneracies.
+The infimum defining $E_P^{\mathrm G}$ allows **all finite auxiliary mode counts**. The bosonic statement assumes a normal state with finite covariance; the fermionic statement concerns parity-invariant quasifree states, including pure factors, zero modes and degeneracies.
 
 This establishes the mode-count assertion of the minimum purification conjecture formulated by Windt, Jahn, Eisert and Hackl. Their paper states the matched-size restriction and develops canonical purifications and analytical bounds. Building on that formulation, this work gives an explicit reduction from arbitrary finite auxiliary sizes and proves attainment; see [source positioning](provenance/SOURCES.md).
 
