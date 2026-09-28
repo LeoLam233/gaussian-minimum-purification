@@ -3,7 +3,7 @@
   "message": "Please cite the manuscript using preferred-citation.",
   "title": "A Mode Bound for Gaussian Entanglement of Purification",
   "type": "software",
-  "version": "0.1",
+  "version": "0.1.1",
   "authors": [
     {
       "family-names": "Lin",
@@ -23,11 +23,11 @@
       }
     ],
     "year": 2026,
-    "version": "0.1",
-    "notes": "Manuscript v0.1; original paper and prose licensed CC BY 4.0. No DOI or journal publication is claimed.",
-    "url": "https://github.com/LeoLam233/gaussian-minimum-purification/blob/v0.1/paper/manuscript.pdf"
+    "version": "0.1.1",
+    "notes": "Manuscript v0.1.1; original paper and prose licensed CC BY 4.0. No DOI or journal publication is claimed.",
+    "url": "https://github.com/LeoLam233/gaussian-minimum-purification/blob/v0.1.1/paper/manuscript.pdf"
   },
-  "date-released": "2026-09-25",
+  "date-released": "2026-09-28",
   "repository-code": "https://github.com/LeoLam233/gaussian-minimum-purification",
   "url": "https://github.com/LeoLam233/gaussian-minimum-purification"
 }

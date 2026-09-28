@@ -17,12 +17,12 @@
 \newcommand{\ket}[1]{\lvert#1\rangle}
 \newcommand{\bra}[1]{\langle#1\rvert}
 \newcommand{\heading}[1]{\par\vspace{5pt}{\large\bfseries #1}\par\vspace{1pt}}
-\hypersetup{pdftitle={Removing excess modes in Gaussian purification: an expert brief},pdfsubject={The transfer, equality and removal mechanism; companion to manuscript v0.1, editorial revision rc3}}
+\hypersetup{pdftitle={Removing excess modes in Gaussian purification: an expert brief},pdfsubject={The transfer, equality and removal mechanism; companion to manuscript v0.1.1}}
 
 \begin{document}
 {\LARGE\bfseries Removing excess modes in Gaussian purification}\par
 \vspace{4pt}
-{\small Expert brief v0.1 \quad Companion to manuscript v0.1, editorial revision rc3}
+{\small Expert brief v0.1.1 \quad Companion to manuscript v0.1.1}
 
 \heading{The result and its scope}
 For a bipartite Gaussian state $\rho_{AB}$ with $n_A$ and $n_B$ modes, Gaussian entanglement of purification minimizes $S(AA')$ over pure Gaussian extensions and \emph{all finite} auxiliary mode counts. The accompanying manuscript~[1] proves
@@ -33,7 +33,7 @@ n_{A'}=n_A,\ n_{B'}=n_B}}S(\psi_{AA'}).
 \end{equation*}
 Here bosonic states are normal with finite covariance; fermionic states are parity-invariant quasifree states. Pure factors, degenerate spectra and fermionic covariance zero modes are included. The main fermionic optimization allows both total-parity sectors.
 
-This is the mode-count assertion of Windt, Jahn, Eisert and Hackl's minimum purification conjecture~[2, Sec.~6.1, Conjecture~2]. Their Section~6.3 states the matched-mode restriction and gives a canonical purification. Building on that formulation, [1] gives a variational comparison with every finite auxiliary size and proves attainment. The result fixes the size of the Gaussian optimization; it neither settles optimality among non-Gaussian purifications nor guarantees that a local optimizer finds the global minimum.
+This is the mode-count assertion of Windt, Jahn, Eisert and Hackl's minimum purification conjecture~[2, Sec.~6.1, Conjecture~2]. Their Section~6.3 explicitly states that the matched-mode restriction can be made without loss of generality and gives a canonical purification. Building on these results, [1] gives an explicit variational comparison with every finite auxiliary size and proves attainment. The result fixes the size of the Gaussian optimization; it neither settles optimality among non-Gaussian purifications nor guarantees that a local optimizer finds the global minimum.
 
 \heading{The key mechanism: transfer, equality, removal}
 The local ingredient is a compression lemma. If a Gaussian state on $XC$ has $a$ modes in $X$ and $c>a$ modes in $C$, an auxiliary-only Gaussian coordinate change selects a one-mode subsystem $P$, with $C=\widetilde C\oplus P$, such that
@@ -100,7 +100,7 @@ at a degenerate cut. Here $\sigma_{\min}$ is the smallest singular value and $\n
 \vspace{3pt}
 {\small
 \textbf{Full argument and sources.}
-[1] \emph{A Mode Bound for Gaussian Entanglement of Purification}, accompanying manuscript v0.1, editorial revision rc3 (25 September 2026). Compression: Sec.~3, pp.~3--5; auxiliary orbit: App.~A, pp.~8--9; attainment: Sec.~4, pp.~6--7; reduction: Sec.~5, pp.~7--8; parity: App.~B, p.~10.
+[1] \emph{A Mode Bound for Gaussian Entanglement of Purification}, accompanying manuscript v0.1.1 (28 September 2026). Compression: Sec.~3, pp.~3--5; auxiliary orbit: App.~A, pp.~8--9; attainment: Sec.~4, pp.~6--7; reduction: Sec.~5, pp.~7--8; parity: App.~B, p.~10.
 
 [2] B.~Windt, A.~Jahn, J.~Eisert and L.~Hackl, \emph{Local optimization on pure Gaussian state manifolds}, SciPost Phys.~\textbf{10}, 066 (2021), \href{https://doi.org/10.21468/SciPostPhys.10.3.066}{doi:10.21468/SciPostPhys.10.3.066}.
 

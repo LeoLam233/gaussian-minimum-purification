@@ -1,10 +1,10 @@
 # A Mode Bound for Gaussian Entanglement of Purification
 
-**Public release v0.1.** [Read the paper](paper/manuscript.pdf) · [Proof guide](docs/PROOF_GUIDE.md) · [Reproduce the checks](REPRODUCIBILITY.md) · [Evidence and audit status](audits/STATUS.md)
+**Public release v0.1.1.** [Read the paper](paper/manuscript.pdf) · [Proof guide](docs/PROOF_GUIDE.md) · [Reproduce the checks](REPRODUCIBILITY.md) · [Evidence and audit status](audits/STATUS.md)
 
 For a finite-mode bipartite Gaussian state, the paper proves that the Gaussian entanglement of purification has a minimum attained by a pure Gaussian purification with **the same number of auxiliary modes as physical modes on each respective side**. The optimization allows arbitrary finite auxiliary mode counts; the matched counts suffice. The bosonic statement assumes a normal state with finite covariance, and the fermionic statement concerns parity-invariant quasifree states, including pure factors, zero modes and degeneracies.
 
-This establishes the mode-count assertion of the minimum purification conjecture formulated by Windt, Jahn, Eisert and Hackl. Their paper states the matched-size restriction and develops canonical purifications and analytical bounds. Building on that formulation, this work gives an explicit reduction from arbitrary finite auxiliary sizes and proves attainment; see [source positioning](provenance/SOURCES.md).
+This establishes the mode-count assertion of the minimum purification conjecture formulated by Windt, Jahn, Eisert and Hackl. Their Section 6.3 explicitly states that auxiliary mode counts may be matched to the physical counts without loss of generality, and develops a canonical purification and analytical bounds. Building on these results, this work gives an explicit reduction across arbitrary finite auxiliary sizes and proves attainment; see [source positioning](provenance/SOURCES.md).
 
 **AI-assisted research:** an author-designed AI workflow selected the problem and developed the proof; other AI systems performed adversarial reviews. See [the contribution statement](AUTHORSHIP.md).
 
@@ -35,13 +35,13 @@ python scripts/reproduce.py
 
 The reproduction command runs the six original verifiers and the separately written density-operator checks in fresh working directories. Generated results go under .local/; the versioned scripts and manuscript are left untouched.
 
-These computations are finite diagnostics. The analytic proof carries the universal claim. Three AI reviews were considered alongside checks of their supporting calculations; [the review scope and reproducibility limits are recorded](audits/STATUS.md). **Independent human expert validation and journal peer review have not been performed.**
+These computations are finite diagnostics. The analytic proof carries the universal claim. The initial three AI reviews and subsequent AI audit reports were considered alongside checks of their supporting calculations; [their scope and reproducibility limits are recorded](audits/STATUS.md). **Independent human expert validation and journal peer review have not been performed.**
 
 ## Reconstruction records and additional results
 
 Two problem-only AI attempts returned PARTIAL. A later method-guided attempt returned CLAIMED_PROOF; targeted post-freeze reading found no load-bearing gap. This was reconstruction with a supplied method architecture, not blind discovery. The two earlier outcomes remain PARTIAL.
 
-The complete input packets and mathematical outputs are in [reproduction/](reproduction/README.md). Alternative arguments and partial results are explicitly marked **not separately adversarially audited** and are not used as premises of the released manuscript. The manuscript and original scientific scripts are unchanged from rc3.
+The complete input packets and mathematical outputs are in [reproduction/](reproduction/README.md). Alternative arguments and partial results are explicitly marked **not separately adversarially audited** and are not used as premises of the released manuscript. The original scientific scripts are unchanged from rc3. The v0.1.1 manuscript contains a documented editorial attribution revision; its proof statements and arguments are unchanged.
 
 ## AI contribution and licensing
 

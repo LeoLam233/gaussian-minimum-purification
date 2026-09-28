@@ -1,25 +1,15 @@
 {
   "title": "Removing excess modes in Gaussian purification: an expert brief",
-  "brief_version": "v0.1",
+  "brief_version": "v0.1.1",
   "created_at_utc": "2026-09-25T06:41:21.208866+00:00",
   "document_role": "Companion expert reading note selecting the main proof mechanism; not a replacement for the full proof.",
   "language": "English",
   "pages": 2,
   "source_body_font_pt": 11,
   "author_block_and_contact_details": "omitted",
-  "source_manuscript": {
-    "title": "A Mode Bound for Gaussian Entanglement of Purification",
-    "scientific_version": "v0.1",
-    "repository_tag": "v0.1-rc3",
-    "git_commit": "179590232c52a59d4bc0751ea3f8885056a345d5",
-    "sha256": {
-      "paper/manuscript.pdf": "abd776c8a49a5a39703473d7682abe560b27881ebd0b672f5cc5327ef1324b19",
-      "paper/manuscript.tex": "fdaf9671311e037f806e7f0fa36534b74bd663ade90d061560c4cd9b8ee6f20a"
-    }
-  },
   "artifacts": {
-    "expert_brief.pdf": "b14bf9939a8c0efac931a9c21c7dec16637cb881a38095c830eec8f053d55219",
-    "expert_brief.tex": "20d5647e41a3b276cbe06397a3398f843a7ebd37c059095c9e47ffabaad56cdb"
+    "expert_brief.pdf": "719e79c11bcf81b2458748be41747cc96ca090120cdbe4271c167a72ab026812",
+    "expert_brief.tex": "a2853cfbbdd23ae848a6a151e895cdb3031694b589cb6ac72ed6d1da856def33"
   },
   "new_mathematical_claims": false,
   "claim_to_manuscript_map": [
@@ -140,7 +130,7 @@
       "https://doi.org/10.21468/SciPostPhys.10.3.066"
     ],
     "visible_text_and_pdf_objects_privacy_scan": "PASS",
-    "source_manuscript_hashes_unchanged": true,
+    "source_manuscript_hashes_unchanged": false,
     "point_checked_in_text": [
       "finite mode counts, bosonic normality and finite covariance, fermionic parity invariance",
       "equality is asserted for the specifically constructed mode",
@@ -152,8 +142,30 @@
       "fermionic lower and bosonic upper interlacing bounds are distinguished",
       "bosonic first moments and the complete auxiliary orbit are addressed",
       "fixed-M entropy divergence excludes degeneracy; minimum is taken over all M+1 splits"
-    ]
+    ],
+    "source_manuscript_hashes_unchanged_note": "v0.1.1 editorial revision; historic v0.1/rc3 hashes retained in original_source_manuscript."
   },
-  "published": false,
-  "distribution_license": "CC-BY-4.0"
+  "published": true,
+  "distribution_license": "CC-BY-4.0",
+  "original_source_manuscript": {
+    "title": "A Mode Bound for Gaussian Entanglement of Purification",
+    "scientific_version": "v0.1",
+    "git_commit": "179590232c52a59d4bc0751ea3f8885056a345d5",
+    "sha256": {
+      "paper/manuscript.pdf": "abd776c8a49a5a39703473d7682abe560b27881ebd0b672f5cc5327ef1324b19",
+      "paper/manuscript.tex": "fdaf9671311e037f806e7f0fa36534b74bd663ade90d061560c4cd9b8ee6f20a"
+    },
+    "candidate_label": "v0.1-rc3 (internal pre-release label, not a public Git tag)"
+  },
+  "current_manuscript": {
+    "title": "A Mode Bound for Gaussian Entanglement of Purification",
+    "repository_tag": "v0.1.1",
+    "sha256": {
+      "paper/manuscript.pdf": "0d70ce853d097447508d96aa5bd86452f2d9cdec9018860acb0da51af66b9a7b",
+      "paper/manuscript.tex": "2d177bb65fa734df6c849458e8c0d6af9263a564acdfe71f922eddc5869548a4"
+    },
+    "relation": "Editorial attribution revision of the v0.1 manuscript; theorem and proof argument unchanged."
+  },
+  "revised_on": "2026-09-28",
+  "revision_scope": "Attribution, date, release links and PDF rebuild; no new mathematical claims."
 }

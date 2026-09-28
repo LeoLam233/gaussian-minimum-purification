@@ -1,0 +1,26 @@
+{
+  "version": "v0.1.1",
+  "date": "2026-09-28",
+  "base_release": "v0.1",
+  "scope": "Editorial attribution clarification and replay/CI reliability; theorem, proof argument, bibliography and archived scientific diagnostic scripts unchanged.",
+  "original_authors_statement": "Section 6.3 of Windt–Jahn–Eisert–Hackl states that auxiliary mode counts may be matched without loss of generality; v0.1.1 credits this explicitly.",
+  "manuscript_v0_1_sha256": {
+    "paper/manuscript.pdf": "abd776c8a49a5a39703473d7682abe560b27881ebd0b672f5cc5327ef1324b19",
+    "paper/manuscript.tex": "fdaf9671311e037f806e7f0fa36534b74bd663ade90d061560c4cd9b8ee6f20a"
+  },
+  "manuscript_v0_1_1_sha256": {
+    "paper/manuscript.pdf": "0d70ce853d097447508d96aa5bd86452f2d9cdec9018860acb0da51af66b9a7b",
+    "paper/manuscript.tex": "2d177bb65fa734df6c849458e8c0d6af9263a564acdfe71f922eddc5869548a4"
+  },
+  "expert_brief_v0_1_sha256": {
+    "docs/expert-brief/expert_brief.pdf": "b14bf9939a8c0efac931a9c21c7dec16637cb881a38095c830eec8f053d55219",
+    "docs/expert-brief/expert_brief.tex": "20d5647e41a3b276cbe06397a3398f843a7ebd37c059095c9e47ffabaad56cdb"
+  },
+  "expert_brief_v0_1_1_sha256": {
+    "docs/expert-brief/expert_brief.pdf": "719e79c11bcf81b2458748be41747cc96ca090120cdbe4271c167a72ab026812",
+    "docs/expert-brief/expert_brief.tex": "a2853cfbbdd23ae848a6a151e895cdb3031694b589cb6ac72ed6d1da856def33"
+  },
+  "replay_safety": "The entry point rejects optimized Python and strips PYTHONOPTIMIZE from child environments; archived scientific scripts are not changed.",
+  "ci_maintenance": "Action pins updated to Node 24 compatible releases and Ubuntu fixed to 24.04.",
+  "validation": "Both PDFs compiled with Tectonic 0.17.0; 11- and 2-page renderings visually inspected; text, privacy and layout checks recorded locally."
+}

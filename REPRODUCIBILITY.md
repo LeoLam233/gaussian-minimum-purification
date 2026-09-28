@@ -14,7 +14,11 @@ python scripts/reproduce.py
 
 The standard-library verifier checks the repository manifest, current manuscript hashes, source-map hashes, citation metadata, and local Markdown links. It ignores Git internals, .local/, .venv/ and Python bytecode caches.
 
-The reproduction entry point verifies the repository first, copies the scientific scripts into a new directory under .local/runs/, runs them there, saves stdout and generated JSON, and returns a nonzero status if a job fails. It sets common BLAS thread counts to one and does not silently accept failed assertions. Successful execution must also produce the expected PASS summary and case counts.
+The reproduction entry point first requires Python assertions to be enabled, then verifies the repository, copies the scientific scripts into a new directory under .local/runs/, runs them there, saves stdout and generated JSON, and returns a nonzero status if a job fails. It sets common BLAS thread counts to one. Successful execution must also produce the expected PASS summary and case counts.
+
+Run without `-O`, `-OO` or `PYTHONOPTIMIZE`: the archived scientific scripts contain assertions that Python removes in optimization mode. The current entry point rejects an optimized interpreter with exit code 2 and also removes `PYTHONOPTIMIZE` from child-process environments. The latter is necessary when the parent ignores the variable (for example, with `-E`) but its children would otherwise inherit it. Frozen v0.1 does not contain these safeguards; use an unoptimized interpreter and unset `PYTHONOPTIMIZE` when replaying that release.
+
+The regression check `python scripts/test_replay_safety.py` verifies rejection of optimized invocation and deliberately injects a +1 nat error into the covariance entropy calculation in memory. The child verifier must fail at its entropy assertion, including when `PYTHONOPTIMIZE` was present in the parent environment. CI runs this check before the scientific suites.
 
 To run one group:
 
@@ -32,6 +36,8 @@ The original scientific files are not edited by this entry point. Running them d
 | Original six verifiers | Covariance compression, finite Fock representations, selected exact algebra, auxiliary orbit/boundary examples, a failed shortcut, and mutation checks. |
 | Independent density checks | Four bosonic density-kernel examples with quadrature refinement; 32 fermionic density-matrix examples; 12 graded-cut and parity checks. The implementation does not import the original verifier code. |
 
+Here, "independent" describes a separately written implementation within the AI research workflow. It does not mean independent human expert validation.
+
 The original suite mixes exact finite algebra with ordinary and higher-precision numerical diagnostics. None is a complete formal certificate for the universal theorem. Floating-point agreement and successful quadrature refinement have their stated finite scope.
 
 ## Reference records
@@ -46,7 +52,7 @@ The initial coarse-quadrature calculation and its subsequent refinement are reta
 
 See [paper/README.md](paper/README.md). A rebuild writes to a new .local/ directory. The versioned PDF is not overwritten by the build command; an independently rebuilt PDF may differ in metadata bytes.
 
-The GitHub Actions workflow verifies the manifest and runs the diagnostics when the repository is published. Remote execution status is shown in the repository Actions tab; the dated local replay records do not claim a remote run.
+The GitHub Actions workflow verifies the manifest and runs the diagnostics when the repository is published. It selects `ubuntu-24.04` and pins the checkout and Python setup actions to full commit SHAs whose metadata declares Node 24. The runner image still receives updates; this is not a claim of byte-identical execution environments. Remote execution status is shown in the repository Actions tab; the dated local replay records do not claim a remote run.
 
 ## Independent derivation protocols
 

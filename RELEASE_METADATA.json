@@ -1,14 +1,14 @@
 {
   "title": "A Mode Bound for Gaussian Entanglement of Purification",
   "author": "Dehao Lin",
-  "version": "v0.1",
+  "version": "v0.1.1",
   "scientific_freeze_date": "2026-09-25",
-  "repository_candidate": "v0.1",
+  "repository_candidate": "v0.1.1",
   "repository_name": "gaussian-minimum-purification",
   "manuscript_pages": 11,
   "manuscript_sha256": {
-    "paper/manuscript.pdf": "abd776c8a49a5a39703473d7682abe560b27881ebd0b672f5cc5327ef1324b19",
-    "paper/manuscript.tex": "fdaf9671311e037f806e7f0fa36534b74bd663ade90d061560c4cd9b8ee6f20a"
+    "paper/manuscript.pdf": "0d70ce853d097447508d96aa5bd86452f2d9cdec9018860acb0da51af66b9a7b",
+    "paper/manuscript.tex": "2d177bb65fa734df6c849458e8c0d6af9263a564acdfe71f922eddc5869548a4"
   },
   "private_freeze_archive_sha256": "1610956a15654942ef7fa7db0f737e4345a353b50ff37faff8864b27fadd33b0",
   "code_license": "MIT",
@@ -18,11 +18,11 @@
     "paper/manuscript.pdf": "956a7cc584855815915c3db3e223ac0670e6724058b64f6dcec9b679611887bc",
     "paper/manuscript.tex": "40f022a8d08801d7e1e09c0802cb5b4b2c2f2d1b964a8392f748c586620501ba"
   },
-  "manuscript_revision": "Public v0.1 retains the exact rc3 manuscript; no mathematical or editorial manuscript changes in this release.",
-  "repository_release": "v0.1",
-  "release_date": "2026-09-25",
+  "manuscript_revision": "The v0.1.1 introduction credits the original Section 6.3 matched-mode statement explicitly; the theorem, proof argument and bibliography are unchanged from v0.1.",
+  "repository_release": "v0.1.1",
+  "release_date": "2026-09-28",
   "repository_url": "https://github.com/LeoLam233/gaussian-minimum-purification",
-  "release_tag": "v0.1",
+  "release_tag": "v0.1.1",
   "prepublication_candidate": "v0.1-rc3",
   "reconstruction_records": "reproduction/RUNS.json",
   "supplementary_results_status": "Not separately adversarially audited; not premises of the released manuscript."

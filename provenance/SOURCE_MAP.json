@@ -3,7 +3,7 @@
   "files": [
     {
       "repository_path": "paper/manuscript.pdf",
-      "distributed_sha256": "abd776c8a49a5a39703473d7682abe560b27881ebd0b672f5cc5327ef1324b19",
+      "distributed_sha256": "0d70ce853d097447508d96aa5bd86452f2d9cdec9018860acb0da51af66b9a7b",
       "source_sha256": "956a7cc584855815915c3db3e223ac0670e6724058b64f6dcec9b679611887bc",
       "source_archive_chain": [
         {
@@ -12,11 +12,11 @@
         }
       ],
       "source_member": "Gaussian_MinPur_v0.1/paper/manuscript.pdf",
-      "transformation": "Rebuild with Tectonic 0.17.0 after the rc2 attribution revision and rc3 AI-workflow disclosure documented in provenance/EDITORIAL_CHANGES.json and provenance/AI_DISCLOSURE_UPDATE.json."
+      "transformation": "Further v0.1.1 editorial attribution/date revision and Tectonic 0.17.0 PDF rebuild; the theorem and proof argument remain unchanged from v0.1. See provenance/V0_1_1_EDITORIAL.json."
     },
     {
       "repository_path": "paper/manuscript.tex",
-      "distributed_sha256": "fdaf9671311e037f806e7f0fa36534b74bd663ade90d061560c4cd9b8ee6f20a",
+      "distributed_sha256": "2d177bb65fa734df6c849458e8c0d6af9263a564acdfe71f922eddc5869548a4",
       "source_sha256": "40f022a8d08801d7e1e09c0802cb5b4b2c2f2d1b964a8392f748c586620501ba",
       "source_archive_chain": [
         {
@@ -25,7 +25,7 @@
         }
       ],
       "source_member": "Gaussian_MinPur_v0.1/paper/manuscript.tex",
-      "transformation": "Rephrase one introductory attribution paragraph (provenance/EDITORIAL_CHANGES.json) and add one introductory AI-workflow disclosure sentence (provenance/AI_DISCLOSURE_UPDATE.json); all other source bytes unchanged."
+      "transformation": "Further v0.1.1 editorial attribution/date revision and Tectonic 0.17.0 PDF rebuild; the theorem and proof argument remain unchanged from v0.1. See provenance/V0_1_1_EDITORIAL.json."
     },
     {
       "repository_path": "verification/original/verify_polar_compression.py",
@@ -390,7 +390,7 @@
     },
     {
       "repository_path": "docs/expert-brief/expert_brief.pdf",
-      "distributed_sha256": "b14bf9939a8c0efac931a9c21c7dec16637cb881a38095c830eec8f053d55219",
+      "distributed_sha256": "719e79c11bcf81b2458748be41747cc96ca090120cdbe4271c167a72ab026812",
       "source_sha256": "b14bf9939a8c0efac931a9c21c7dec16637cb881a38095c830eec8f053d55219",
       "source_archive_chain": [
         {
@@ -399,11 +399,11 @@
         }
       ],
       "source_member": "Gaussian_MinPur_Expert_Brief_v0.1/expert_brief.pdf",
-      "transformation": "none"
+      "transformation": "Further v0.1.1 editorial attribution/date revision and Tectonic 0.17.0 PDF rebuild; the theorem and proof argument remain unchanged from v0.1. See provenance/V0_1_1_EDITORIAL.json."
     },
     {
       "repository_path": "docs/expert-brief/expert_brief.tex",
-      "distributed_sha256": "20d5647e41a3b276cbe06397a3398f843a7ebd37c059095c9e47ffabaad56cdb",
+      "distributed_sha256": "a2853cfbbdd23ae848a6a151e895cdb3031694b589cb6ac72ed6d1da856def33",
       "source_sha256": "20d5647e41a3b276cbe06397a3398f843a7ebd37c059095c9e47ffabaad56cdb",
       "source_archive_chain": [
         {
@@ -412,11 +412,11 @@
         }
       ],
       "source_member": "Gaussian_MinPur_Expert_Brief_v0.1/expert_brief.tex",
-      "transformation": "none"
+      "transformation": "Further v0.1.1 editorial attribution/date revision and Tectonic 0.17.0 PDF rebuild; the theorem and proof argument remain unchanged from v0.1. See provenance/V0_1_1_EDITORIAL.json."
     },
     {
       "repository_path": "docs/expert-brief/PROVENANCE.json",
-      "distributed_sha256": "7796e3d0f0dd372f0f4e252b57f3201464384f89fa645830b102c9aa97982ace",
+      "distributed_sha256": "b42dcf88a0ea45600ee04b43b0b41570f2216cdaafd68e58d778574271bb05dd",
       "source_sha256": "7796e3d0f0dd372f0f4e252b57f3201464384f89fa645830b102c9aa97982ace",
       "source_archive_chain": [
         {
@@ -425,7 +425,8 @@
         }
       ],
       "source_member": "Gaussian_MinPur_Expert_Brief_v0.1/PROVENANCE.json",
-      "transformation": "none"
+      "transformation": "Update version and source-document provenance for v0.1.1; original v0.1 record retained. See provenance/V0_1_1_EDITORIAL.json."
     }
-  ]
+  ],
+  "repository_version": "v0.1.1"
 }

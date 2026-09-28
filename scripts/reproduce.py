@@ -16,7 +16,21 @@ import uuid
 from verify_repository import ROOT, verify
 
 
+def diagnostic_environment():
+    env = os.environ.copy()
+    # A parent started with -E may still carry this variable into its children.
+    env.pop('PYTHONOPTIMIZE', None)
+    env.update(OPENBLAS_NUM_THREADS='1', OMP_NUM_THREADS='1', MKL_NUM_THREADS='1',
+               PYTHONDONTWRITEBYTECODE='1', PYTHONUTF8='1')
+    return env
+
+
 def main():
+    if sys.flags.optimize:
+        print('Diagnostic replay requires Python assertions. '
+              'Remove -O/-OO and unset PYTHONOPTIMIZE before running this command.',
+              file=sys.stderr)
+        return 2
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--suite', choices=['all','original','independent'], default='all')
     args = parser.parse_args()
@@ -27,9 +41,7 @@ def main():
     stamp = datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ')
     output = ROOT/'.local/runs'/(stamp+'-'+uuid.uuid4().hex[:8])
     output.mkdir(parents=True)
-    env = os.environ.copy()
-    env.update(OPENBLAS_NUM_THREADS='1', OMP_NUM_THREADS='1', MKL_NUM_THREADS='1',
-               PYTHONDONTWRITEBYTECODE='1', PYTHONUTF8='1')
+    env = diagnostic_environment()
     selected = ['original','independent'] if args.suite=='all' else [args.suite]
     records = []
     for name in selected:
@@ -74,6 +86,7 @@ def main():
         'timestamp_utc':datetime.now(timezone.utc).isoformat(),
         'interpretation':'Repository-entry-point replay of existing diagnostic implementations; not a new independent proof audit.',
         'python_version':platform.python_version(),'system':platform.system(),
+        'python_optimization':sys.flags.optimize,
         'packages':{n:importlib.metadata.version(n) for n in ['numpy','scipy','sympy','mpmath']},
         'integrity_before_run':integrity,'jobs':records,
         'overall':'PASS' if all(r['status']=='PASS' for r in records) else 'FAIL',

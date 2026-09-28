@@ -1,6 +1,6 @@
-# Manuscript v0.1
+# Manuscript v0.1.1
 
-[manuscript.pdf](manuscript.pdf) is the 11-page manuscript in public release v0.1, retaining the rc3 editorial revision; [manuscript.tex](manuscript.tex) is its source. Relative to the scientific v0.1 archive, one introductory attribution paragraph has been rephrased (rc2), one AI-workflow disclosure sentence has been added before the introductory roadmap (rc3), and the PDF has been rebuilt. The complete source is unchanged outside those edits; see the [rc2 editorial record](../provenance/EDITORIAL_CHANGES.json) and [rc3 disclosure record](../provenance/AI_DISCLOSURE_UPDATE.json). The full AI contribution statement at the end of the paper is retained. The earlier freezes are preserved.
+[manuscript.pdf](manuscript.pdf) is the 11-page manuscript in public release v0.1.1; [manuscript.tex](manuscript.tex) is its source. This revision states the original authors' Section 6.3 matched-mode assertion more explicitly and updates the manuscript date. The theorem, proof argument and bibliography are unchanged from v0.1. See the [v0.1.1 editorial record](../provenance/V0_1_1_EDITORIAL.json), together with the earlier [rc2 attribution](../provenance/EDITORIAL_CHANGES.json) and [rc3 AI-disclosure](../provenance/AI_DISCLOSURE_UPDATE.json) records. The v0.1 tag and release preserve the earlier text and PDF.
 
 From the repository root:
 
