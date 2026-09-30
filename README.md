@@ -1,6 +1,6 @@
 # A Mode Bound for Gaussian Entanglement of Purification
 
-**Public release v0.1.1.** [Read the paper](paper/manuscript.pdf) · [Proof guide](docs/PROOF_GUIDE.md) · [Reproduce the checks](REPRODUCIBILITY.md) · [Evidence and audit status](audits/STATUS.md)
+**Public release v0.1.2; manuscript v0.1.1.** [Read the paper](paper/manuscript.pdf) · [Proof guide](docs/PROOF_GUIDE.md) · [Reproduce the checks](REPRODUCIBILITY.md) · [Evidence and audit status](audits/STATUS.md)
 
 For a finite-mode bipartite Gaussian state, the paper proves that the Gaussian entanglement of purification has a minimum attained by a pure Gaussian purification with **the same number of auxiliary modes as physical modes on each respective side**. The optimization allows arbitrary finite auxiliary mode counts; the matched counts suffice. The bosonic statement assumes a normal state with finite covariance, and the fermionic statement concerns parity-invariant quasifree states, including pure factors, zero modes and degeneracies.
 
@@ -18,7 +18,7 @@ The result does not establish optimality among non-Gaussian purifications, give 
 
 - [Manuscript PDF](paper/manuscript.pdf), [LaTeX source](paper/manuscript.tex), and [build instructions](paper/README.md).
 - [Two-page expert brief](docs/expert-brief/expert_brief.pdf) and [proof guide](docs/PROOF_GUIDE.md).
-- [Independent-context attempts and method-guided rederivation](reproduction/README.md), with [additional results not separately audited](reproduction/EXTRA_RESULTS.md).
+- [Independent-context attempts and method-guided rederivation](reproduction/README.md), with [additional results and their review scope](reproduction/EXTRA_RESULTS.md).
 - [Reproduction instructions](REPRODUCIBILITY.md) and [audit qualifications](audits/STATUS.md).
 - [Source and artifact provenance](provenance/SOURCE_MAP.json), [archival boundary](provenance/ARCHIVAL_BOUNDARY.md), and [release notes](RELEASE_NOTES.md).
 - [Author and AI contribution statements](AUTHORSHIP.md) and [citation metadata](CITATION.cff).
@@ -35,13 +35,15 @@ python scripts/reproduce.py
 
 The reproduction command runs the six original verifiers and the separately written density-operator checks in fresh working directories. Generated results go under .local/; the versioned scripts and manuscript are left untouched.
 
-These computations are finite diagnostics. The analytic proof carries the universal claim. The initial three AI reviews and subsequent AI audit reports were considered alongside checks of their supporting calculations; [their scope and reproducibility limits are recorded](audits/STATUS.md). **Independent human expert validation and journal peer review have not been performed.**
+These computations are finite diagnostics. The analytic proof carries the universal claim. The [audit record](audits/STATUS.md) distinguishes proof artifacts, hostile audits, cross-proof reconciliation and numerical evidence. No proof-assistant formalization is claimed. **Independent human expert validation and journal peer review have not been performed.**
 
 ## Reconstruction records and additional results
 
-Two problem-only AI attempts returned PARTIAL. A later method-guided attempt returned CLAIMED_PROOF; targeted post-freeze reading found no load-bearing gap. This was reconstruction with a supplied method architecture, not blind discovery. The two earlier outcomes remain PARTIAL.
+The [Stage A/B/C assessment](audits/POST_STAGE_C.md) records a reported blind complete derivation (Stage A), a hostile manuscript audit (Stage B), and two cross-proof audits (Stage C). Multiple complete derivations use partially independent global reduction and attainment mechanisms while sharing a nontrivial adapted-J compression/spectral core; see [proof architectures](docs/PROOF_ARCHITECTURES.md). Reported exposure and model identities are not independently authenticated.
 
-The complete input packets and mathematical outputs are in [reproduction/](reproduction/README.md). Alternative arguments and partial results are explicitly marked **not separately adversarially audited** and are not used as premises of the released manuscript. The original scientific scripts are unchanged from rc3. The v0.1.1 manuscript contains a documented editorial attribution revision; its proof statements and arguments are unchanged.
+The earlier CR0-1 and CR0-2 outcomes remain PARTIAL. MR1 remains a method-guided CLAIMED_PROOF, with a supplied architecture; later review does not turn it into blind discovery. The integration review found no new load-bearing defect in the checked routes.
+
+The complete original CR0/MR1 input packets and mathematical outputs are in [reproduction/](reproduction/README.md). Later review of selected supplementary nodes is recorded there; it is not a blanket audit of every ancillary claim. Raw Stage A/B/C archives remain separately retained, with [curated identities and hashes](provenance/POST_STAGE_C.json). The manuscript and expert brief remain v0.1.1, and the scientific scripts are unchanged. Repository release v0.1.2 is documentation/audit-only.
 
 ## AI contribution and licensing
 

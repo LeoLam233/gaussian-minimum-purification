@@ -9,7 +9,7 @@ The following licenses apply to the original project materials:
 | Original metadata and diagnostic JSON/log content | CC BY 4.0 to the extent rights apply; mathematical facts and raw numerical values are not claimed as exclusive rights |
 | Third-party publications, attributed quotations, license texts and dependency software | Their respective terms; excluded from the project grants |
 
-Attribution for the manuscript and documentation: Dehao Lin, *A Mode Bound for Gaussian Entanglement of Purification*, v0.1.1. Link to [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) and indicate changes where applicable.
+Attribution: Dehao Lin, *A Mode Bound for Gaussian Entanglement of Purification*; manuscript v0.1.1, repository documentation v0.1.2. Link to [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) and indicate changes where applicable.
 
 The MIT license applies to original code. Its standard reference to associated documentation does not override the separate CC BY 4.0 treatment of the manuscript and project prose.
 

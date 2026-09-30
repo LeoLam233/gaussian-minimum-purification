@@ -1,6 +1,14 @@
 # Audit and evidence status
 
-Three AI reports examined the 24 September 2026 manuscript. Their assessment informed the 25 September revision. The released manuscript also contains a subsequent editorial revision of one introductory attribution paragraph (rc2) and a brief AI-workflow disclosure in the introduction (rc3). These later exposition changes have not received a second complete set of three AI reviews.
+## Current assessment: 30 September 2026
+
+The [Stage A/B/C integration assessment](POST_STAGE_C.md) adds a reported blind complete derivation, hostile manuscript scrutiny and cross-proof dependency analysis. Multiple complete derivations use partially independent global reduction and attainment mechanisms while sharing a nontrivial adapted-J compression/spectral core. No new load-bearing defect was found in the checked routes. The manuscript and expert brief remain v0.1.1 and are unchanged by this documentation release.
+
+Stage B and Stage C are audits, MR1 is method-guided, and the CR0 outcomes remain PARTIAL. Review of selected supplementary nodes does not certify every ancillary result. AI review is not independent human validation, journal peer review or proof-assistant formalization. [Evidence identities and exposure limits](../provenance/POST_STAGE_C.json) distinguish reported provenance from authenticated bytes.
+
+## Historical manuscript reviews: 24–25 September 2026
+
+Three AI reports examined the 24 September 2026 manuscript. Their assessment informed the 25 September revision. The released manuscript also contains a subsequent editorial revision of one introductory attribution paragraph (rc2) and a brief AI-workflow disclosure in the introduction (rc3). This paragraph records the early review sequence; later manuscript and cross-proof audits are described above by their actual scope.
 
 | Review or computation | Scope and retained evidence |
 | --- | --- |
@@ -35,11 +43,11 @@ The [archive map](../provenance/ARCHIVAL_BOUNDARY.md) identifies the retained re
 
 Two problem-only derivation attempts remained PARTIAL. A later method-guided rederivation claimed a complete proof; targeted post-freeze reading identified no load-bearing gap in its eight requested nodes. These outcomes and qualifications are recorded in [reproduction/README.md](../reproduction/README.md).
 
-The [additional results](../reproduction/EXTRA_RESULTS.md) have not received a separate complete adversarial audit and are not part of the released manuscript's proof dependencies. The paper and scientific scripts are unchanged from rc3; publication does not turn targeted reading into another full audit or human validation.
+At the v0.1 reconstruction release, the [additional results](../reproduction/EXTRA_RESULTS.md) had received targeted reading, not a separate complete adversarial audit. Later selected-node coverage is recorded in the current assessment and [review notes](../reproduction/REVIEW_NOTES.md). They remain outside the manuscript's proof dependencies. The scientific scripts and proof argument are unchanged from rc3; v0.1.1 made editorial manuscript changes. Historical publication notices retain their original scope.
 
 ## Post-release replay safety check (28 September 2026)
 
-An additional AI audit dated 27 September reviewed the v0.1 tag and the then-current `main` separately, checked the selected-mode equality argument, and ran separately written compression and auxiliary-orbit diagnostics. It reported no P0/P1 mathematical defect or identified prior complete proof. Its local searches and finite novelty search remain limited evidence; neither establishes the theorem or a priority claim. The v0.1 source ZIP correctly represents the v0.1 tag rather than later `main` documentation edits. This v0.1.1 release again binds its source ZIP to its own tag.
+An additional AI audit dated 27 September reviewed the v0.1 tag and the then-current `main` separately, checked the selected-mode equality argument, and ran separately written compression and auxiliary-orbit diagnostics. It reported no P0/P1 mathematical defect or identified prior complete proof. Its local searches and finite novelty search remain limited evidence; neither establishes the theorem or a priority claim. The v0.1 source ZIP correctly represents the v0.1 tag rather than later `main` documentation edits. The v0.1.1 release again binds its source ZIP to its own tag.
 
 A further AI review found that Python optimization removes assertions used by several archived scientific verifiers. Its fault-injection probe was reproduced locally: adding 1 nat to the covariance entropy calculation caused an assertion failure in normal mode, but the optimized verifier returned success and printed PASS. This is a replay-safety defect; it does not supply a counterexample to the analytic proof or show that the default CI run used optimization.
 

@@ -1,9 +1,9 @@
 {
   "cff-version": "1.2.0",
-  "message": "Please cite the manuscript using preferred-citation.",
+  "message": "Repository release v0.1.2. Please cite the unchanged v0.1.1 manuscript using preferred-citation.",
   "title": "A Mode Bound for Gaussian Entanglement of Purification",
   "type": "software",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "authors": [
     {
       "family-names": "Lin",
@@ -27,7 +27,7 @@
     "notes": "Manuscript v0.1.1; original paper and prose licensed CC BY 4.0. No DOI or journal publication is claimed.",
     "url": "https://github.com/LeoLam233/gaussian-minimum-purification/blob/v0.1.1/paper/manuscript.pdf"
   },
-  "date-released": "2026-09-28",
+  "date-released": "2026-09-30",
   "repository-code": "https://github.com/LeoLam233/gaussian-minimum-purification",
   "url": "https://github.com/LeoLam233/gaussian-minimum-purification"
 }

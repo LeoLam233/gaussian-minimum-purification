@@ -56,4 +56,10 @@ The GitHub Actions workflow verifies the manifest and runs the diagnostics when 
 
 ## Independent derivation protocols
 
-The [reconstruction directory](reproduction/README.md) contains the complete CR0 and MR1 input packets, three mathematical outputs and their provenance. These research runs are distinct from replaying the diagnostic scripts. The released proof does not use the unaudited additional results as premises.
+The [reconstruction directory](reproduction/README.md) contains the complete CR0 and MR1 input packets, three mathematical outputs and their provenance. These research runs are distinct from replaying the diagnostic scripts. The released proof does not use the supplementary results as premises. Later selected-node review and the separate Stage A/B/C records are described in that directory; historical campaigns are not automatically included in this replay.
+
+## Diagnostic limitations clarified after Stage C
+
+The original orbit examples start from orbit-generated extensions, so their reconstruction success does not establish that all extensions lie in that orbit. The endpoint support fixtures in the exact-geometry script start with a known pure eigenvector; they do not test the full implication from entropy equality. The original mutation suite supplies counterexamples to false mathematical statements, whereas `test_replay_safety.py` injects an actual entropy fault into a verifier. These are different checks.
+
+Historical scripts and reference outputs are preserved byte for byte. Stage A/B/C supply additional tests and analytic reconstructions, summarized in [the assessment](audits/POST_STAGE_C.md), but their raw campaigns are retained separately and are not run by `scripts/reproduce.py`. A successful replay checks the retained suite, not the universal theorem, every historical campaign, or proof independence.

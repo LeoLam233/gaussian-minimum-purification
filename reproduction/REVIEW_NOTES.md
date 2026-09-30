@@ -1,6 +1,6 @@
 # Post-freeze review qualifications
 
-This is a public summary of targeted AI reading and integrity checks performed after the runs froze. It is not a new full A1V2 adversarial audit, a formal proof certificate or human peer review. The additional results retain the status **not separately adversarially audited**.
+The following original sections summarize the targeted AI reading available when the CR0/MR1 records were first projected publicly. Their historical scope was **not separately adversarially audited**. Later coverage is recorded in the dated addendum below. Neither stage is human peer review or a formal proof certificate.
 
 ## CR0-1
 
@@ -25,3 +25,11 @@ The returned diagnostic contained one case per statistics and was read but not r
 All three received archives passed their retained manifest and result-file checks, and the separately supplied result files matched the corresponding archived payloads. The original input manifests matched the prepared packets. These checks bind received documents to their frozen records; they cannot certify unlogged accesses or technical isolation.
 
 Early logging gaps and the disclosed output-directory/cache deviations are recorded in [RUNS.json](RUNS.json). MR1's first freeze failed on an automatically generated input bytecode cache; after cleanup, input verification and final freezing succeeded. The records do not show external proof material introduced through those deviations. Complete system-level access traces were not available.
+
+## Addendum: Stage C assessment, 30 September 2026
+
+Both Stage C records examined the manuscript, Stage A and MR1 routes, with Stage B's audit and the CR0 records available. Their analytic reconstructions address MR1's physical subsystem spectrum, exact rigidity, full-covariance bosonic attainment and global transfer/deletion. They also revisit CR0-2's mixed-mode-count reduction and fixed-size attainment, identifying the remaining original sidewise bottleneck. The integration review checked the decisive shared interfaces and the different global/attainment mechanisms; no new load-bearing defect was found there.
+
+CR0-1 and CR0-2 remain PARTIAL for the full target. MR1 received the method architecture, including the gauge-attainment idea already present in CR0-2. Later scrutiny does not make it blind. The initial public notices and original run objects remain historical records, with this addendum recording the changed review coverage.
+
+This selected-node coverage does not assert a complete separate audit of every bound, subclass, optional argument or historical numerical campaign in EXTRA_RESULTS or the raw records. Stage C expands some standard/expository premises in its own reconstruction; those expansions are not attributed retroactively to the original texts. See [Stage A/B/C assessment](../audits/POST_STAGE_C.md) and [proof architectures](../docs/PROOF_ARCHITECTURES.md).

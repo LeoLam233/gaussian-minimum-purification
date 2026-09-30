@@ -1,3 +1,14 @@
+# v0.1.2 — documentation/audit-only release
+
+Release date: 30 September 2026. This documentation/audit-only release derives from the approved post-stagec-rc1 against baseline `313c3e8ac67463388c36a4094a42f40aec8a3aa6`.
+
+- Add curated Stage A/B/C roles, exposure limits and artifact hashes.
+- Reconcile proof independence through the exact adapted-J hull/complement and spectrum/equality crosswalk.
+- Clarify later review of selected supplementary nodes and limits of the original diagnostic scripts; preserve all frozen outcomes and payloads.
+- Add compact architecture/common-core notes, including counterexamples to an overbroad deletion claim that the manuscript does not use.
+
+The manuscript, expert brief and scientific scripts are unchanged. VERSION and the top-level citation identify repository v0.1.2; the preferred manuscript citation retains v0.1.1. RELEASE_METADATA separates the v0.1.2 release from the historical v0.1.1 release and approved integration RC. No human peer review or formal verification is claimed.
+
 # v0.1.1 — A Mode Bound for Gaussian Entanglement of Purification
 
 Release date: 28 September 2026.

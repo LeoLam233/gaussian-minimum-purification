@@ -88,5 +88,11 @@
       "Temporary proofreading excerpt of own result outside the permitted output directory.",
       "Import-created input bytecode cache; first freeze rejected, cache removed, input rechecked and final freeze succeeded."
     ]
+  },
+  "later_review": {
+    "date": "2026-09-30",
+    "record": "provenance/POST_STAGE_C.json",
+    "coverage": "Stage C examines complete MR1 and selected CR0-2 nodes; original run objects and frozen outcomes above are historical and unchanged. Not a blanket audit of all ancillary results.",
+    "current_assessment": "audits/POST_STAGE_C.md"
   }
 }

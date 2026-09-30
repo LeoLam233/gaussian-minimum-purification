@@ -1,6 +1,6 @@
 # Additional results from the reconstruction attempts
 
-**Status: supplementary, not separately adversarially audited.** These are claims or alternative arguments retained from the AI runs. Targeted reading is documented separately; the released manuscript does not depend on them. No novelty or priority claim is made for this collection.
+**Status: supplementary; review coverage is claim-specific.** The original targeted reading and later Stage C examination of the mixed-mode reduction, gauge attainment and compression interfaces are recorded in [REVIEW_NOTES.md](REVIEW_NOTES.md). This is not a complete separate audit of every ancillary claim in this collection. The released manuscript does not depend on these results. No novelty or priority claim is made.
 
 ## A. Standard bounds and an exactly solvable family (CR0-1)
 

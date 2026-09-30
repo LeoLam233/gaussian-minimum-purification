@@ -35,3 +35,9 @@ For fermions the relevant Grassmannian is compact. For bosons, admissible symple
 The manuscript uses both total-parity components in its main fermionic definition. The empty physical system is included in that main statement; an odd-parity empty matched extension does not exist.
 
 The numerical scripts test particular constructions and limiting cases. Local optimization values, equal padded candidate values, and agreement among AI reports are not proof steps.
+
+## Later cross-proof navigation
+
+The [architecture comparison](PROOF_ARCHITECTURES.md) identifies the shared adapted-J selection/spectrum core and the different global reductions. The [common-core note](COMMON_CORE.md) explains why equality for an arbitrary deletion is insufficient, with exact counterexamples to that stronger claim.
+
+The manuscript invokes equality at an **exact attained** fixed-total minimum. A small numerical entropy gap does not make the selected mode exactly pure and does not authorize exact deletion. In the bosonic attainment proof, a diverging frame at a fixed cut is a local gauge change; the coercive estimate addresses degeneration of the physical cut. Both distinctions are already respected by the proof.

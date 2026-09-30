@@ -1,0 +1,164 @@
+{
+  "schema": "gaussian-minpur-post-stagec-evidence-1",
+  "assessment_date": "2026-09-30",
+  "publication_status": "public release v0.1.2",
+  "baseline": {
+    "repository": "LeoLam233/gaussian-minimum-purification",
+    "commit": "313c3e8ac67463388c36a4094a42f40aec8a3aa6"
+  },
+  "interpretation": "Curated evidence registry. Original verdicts and exposure statements are records, not premises. Archive hashes bind bytes, not mathematical correctness, model identity, trusted timestamps or technical isolation.",
+  "integration_input": {
+    "filename": "Gaussian_MinPur_PostStageC_Integration_Input_v0.1.zip",
+    "sha256": "1545623e7a64ed837b4d63fd1263db5640b989acc7822eede795d021e4f80166",
+    "bytes": 7081885
+  },
+  "prior_stagec_input": {
+    "filename": "Gaussian_MinPur_StageC_CrossProof_Input_v0.2.zip",
+    "sha256": "1d689a440fbc843a0162912b3f9e0509b02e249c26d109409f4d46480cf28bd3",
+    "bytes": 6887642
+  },
+  "runs": [
+    {
+      "label": "Stage A",
+      "model_identity_as_reported": "Claude Opus 5.5 (record: claude-opus-5-5)",
+      "model_identity_independently_authenticated": false,
+      "technical_isolation_independently_authenticated": false,
+      "role": "mathematical proof artifact",
+      "exposure": "Reported problem-only/blind: candidate manuscript, method framework and earlier verdicts withheld before freeze.",
+      "frozen_outcome": "CLAIMED_PROOF",
+      "input": {
+        "filename": "INPUT_PACKET.zip",
+        "sha256": "01995e0a592f15239ffca3a9f1a24f44b9b18aa9de02c93d504d31593639e704",
+        "bytes": 1218967
+      },
+      "archive": {
+        "filename": "STAGE_A_FROZEN.zip",
+        "sha256": "56c07e4e029c361909d872063ade1fdfd9beec5669278a746588f24a2cc0d572",
+        "bytes": 300309
+      },
+      "report": {
+        "filename": "RESULT.md",
+        "sha256": "67a140e98a258e4821cff2bba2315374fb5aaed9f03d249ffbebbe03847d04f8",
+        "bytes": 29572
+      },
+      "report_member": "RESULT/RESULT.md",
+      "mathematical_locators": "RESULT.md Lemmas 1–4, Corollary 5 and section 5",
+      "contribution": "Whole-subsystem compression, finite cap, marginal-rank bosonic attainment and two-sided deletion."
+    },
+    {
+      "label": "Stage B",
+      "model_identity_as_reported": "Claude Opus 5.5 (record: claude-opus-5-5)",
+      "model_identity_independently_authenticated": false,
+      "technical_isolation_independently_authenticated": false,
+      "role": "hostile mathematical audit",
+      "exposure": "Manuscript-aware; reportedly withheld Stage A before freeze.",
+      "frozen_outcome": "Positive manuscript audit; standard Gaussian formalism EXT.4 conditional in original ledger",
+      "input": {
+        "filename": "INPUT_PACKET.zip",
+        "sha256": "1117e19aa5f1d3fb93ef27e22bc400685ad3da2ac8dec0805319369d67fd78f9",
+        "bytes": 1578766
+      },
+      "archive": {
+        "filename": "STAGE_B_FROZEN.zip",
+        "sha256": "655fd4b0039247d81e3205a06360ae2955f0363fe32bb4069c8dc5b030331763",
+        "bytes": 576664
+      },
+      "report": {
+        "filename": "AUDIT_REPORT.md",
+        "sha256": "b631966e64036c51fad871ff0dcb44099cc36d95de25a63e601fa9e7b8f583c0",
+        "bytes": 49890
+      },
+      "report_member": "RESULT/AUDIT_REPORT.md",
+      "mathematical_locators": "AUDIT_REPORT.md sections 4–9; CLAIM_LEDGER.md EXT.4; FINDINGS_LEDGER.md FND-07 through FND-10",
+      "contribution": "Manuscript node reconstruction and diagnostic-scope criticism; EXT.4 conditional in its own ledger."
+    },
+    {
+      "label": "Stage C sol_xhigh",
+      "model_identity_as_reported": "GPT-5.6 Sol; xhigh as package label",
+      "model_identity_independently_authenticated": false,
+      "technical_isolation_independently_authenticated": false,
+      "role": "cross-proof mathematical audit",
+      "exposure": "Manuscript reading copy, Stage A/B, CR0/MR1 and earlier audit evidence available. Not blind.",
+      "archive": {
+        "filename": "STAGE_C_FROZEN.zip",
+        "sha256": "bf4112bd998fb6599e33755de88dd6d12dd3405c75a4f68e0c24158ebc04ec92",
+        "bytes": 65252
+      },
+      "report": {
+        "filename": "STAGE_C_REPORT.md",
+        "sha256": "45598d72d16a17787181bd3eaa0588a449f942f6e16006dbcfc155ec97cdac3d",
+        "bytes": 28025
+      },
+      "report_member": "RUN_OUTPUT/STAGE_C_REPORT.md",
+      "shared_input_sha256": "1d689a440fbc843a0162912b3f9e0509b02e249c26d109409f4d46480cf28bd3",
+      "frozen_outcomes": {
+        "routes": "candidate, Stage A and MR1 labeled VALID",
+        "theorem_scopes": "bosons.value, bosons.attainment, fermions.value, fermions.attainment labeled ESTABLISHED-WITHIN-PACKET"
+      },
+      "independence_as_reported": "Two substantially independent foundations at architectural granularity; this review qualifies the asserted compression independence.",
+      "mathematical_locators": [
+        "NODE_CROSSWALK.md; COMMON_DEPENDENCY_CUT.md; STAGE_C_REPORT.md sections 4–13"
+      ]
+    },
+    {
+      "label": "Stage C gpt6_pro",
+      "model_identity_as_reported": "GPT-6 Pro (run record: GPT-6 Astra Pro)",
+      "model_identity_independently_authenticated": false,
+      "technical_isolation_independently_authenticated": false,
+      "role": "cross-proof mathematical audit",
+      "exposure": "Manuscript reading copy, Stage A/B, CR0/MR1 and earlier audit evidence available. Not blind.",
+      "archive": {
+        "filename": "STAGE_C_FROZEN.zip",
+        "sha256": "f62616b2cbc6a34b0a752c324e54ecc23a4f96e5c5a3d243b42a01f8fba98ade",
+        "bytes": 168999
+      },
+      "report": {
+        "filename": "STAGE_C_REPORT.md",
+        "sha256": "6da4bf63f510a6b99aeda910b57857b53391f9c100bd1b2d385fbaae40403e9b",
+        "bytes": 23605
+      },
+      "report_member": "RUN_OUTPUT/STAGE_C_REPORT.md",
+      "shared_input_sha256": "1d689a440fbc843a0162912b3f9e0509b02e249c26d109409f4d46480cf28bd3",
+      "frozen_outcomes": {
+        "routes": "candidate, Stage A and MR1 labeled VALID",
+        "theorem_scopes": "bosons.value, bosons.attainment, fermions.value, fermions.attainment labeled ESTABLISHED-WITHIN-PACKET"
+      },
+      "independence_as_reported": "Three complete derivation artifacts with one shared adapted-J compression/spectral foundation; distinct global reductions and attainment mechanisms.",
+      "mathematical_locators": [
+        "MATHEMATICAL_RECONSTRUCTION.md sections 4–7: shared core and distinct routes",
+        "MATHEMATICAL_RECONSTRUCTION.md section 9: exact hypothesis-removal counterexamples",
+        "MATHEMATICAL_RECONSTRUCTION.md section 10: CR0-2 bottleneck",
+        "NODE_CROSSWALK.md; CONTRADICTION_LEDGER.md CL07/CL09/CL18"
+      ]
+    }
+  ],
+  "current_mathematical_assessment": "No new load-bearing defect found in the reconstructed selection/spectrum/equality, attainment and global reduction interfaces. Multiple complete derivations share a nontrivial adapted-J compression/spectral core with partially independent global and attainment mechanisms.",
+  "historical_outcomes_preserved": true,
+  "manuscript_changed": false,
+  "theorem_or_proof_text_changed": false,
+  "human_expert_validation": "not performed",
+  "journal_peer_review": "not performed",
+  "proof_assistant_formalization": "not claimed",
+  "new_novelty_search": false,
+  "raw_archives_in_repository": false,
+  "current_review_documents": [
+    "audits/POST_STAGE_C.md",
+    "docs/PROOF_ARCHITECTURES.md",
+    "docs/COMMON_CORE.md"
+  ],
+  "authorship_and_licensing": "New curated prose is AI-assisted editorial synthesis for operator review under the existing documentation license. Raw historical archives are not redistributed and no license to redistribute them is inferred.",
+  "historical_replay_scope": "Historical campaigns were inspected selectively, not all rerun. The repository entry point replays the unchanged original and independent density suites only.",
+  "approved_integration_rc": {
+    "candidate_identifier": "post-stagec-rc1",
+    "publication_status": "unpublished local candidate",
+    "archive": "Gaussian_MinPur_PostStageC_RC_candidate.zip",
+    "sha256": "02f331975710fd711fd1e38c248016115c1b0d5ff1f84404ae103fe5f89fd005"
+  },
+  "repository_version": "v0.1.2",
+  "source_publication_candidate": {
+    "identifier": "v0.1.2-publication-rc1",
+    "publication_status_at_freeze": "publication-ready local candidate; not yet remotely published",
+    "archive": "Gaussian_MinPur_v0.1.2_RELEASE_CANDIDATE.zip",
+    "sha256": "14d6ccb716cf2c88173d32d75d98e424c135584f6bb603a24ed242220acb121b"
+  }
+}

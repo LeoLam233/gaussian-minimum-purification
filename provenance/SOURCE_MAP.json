@@ -426,7 +426,346 @@
       ],
       "source_member": "Gaussian_MinPur_Expert_Brief_v0.1/PROVENANCE.json",
       "transformation": "Update version and source-document provenance for v0.1.1; original v0.1 record retained. See provenance/V0_1_1_EDITORIAL.json."
+    },
+    {
+      "repository_path": "audits/POST_STAGE_C.md",
+      "distributed_sha256": "c5edd3912add3df22febcce01e98b357095ef52ad591c8a47e2da730c6ef8033",
+      "source_sha256": null,
+      "source_archive_chain": [],
+      "source_member": null,
+      "source_kind": "newly authored synthesis",
+      "source_repository": "LeoLam233/gaussian-minimum-purification",
+      "source_commit": null,
+      "evidence_registry": "provenance/POST_STAGE_C.json",
+      "transformation": "Post-Stage-C editorial assessment; no manuscript or proof-text change. New synthesis has no single frozen source payload."
+    },
+    {
+      "repository_path": "audits/STATUS.md",
+      "distributed_sha256": "4bf9cd1288bfe1e039c9a83cfa5b98ec77efc32be01ef6a11616d40e4567ba49",
+      "source_sha256": "0325de388bfe4991b7b58f465c33934d1987b93c254566ba7fa33603773ddb8f",
+      "source_archive_chain": [],
+      "source_member": "audits/STATUS.md",
+      "source_kind": "baseline editorial revision",
+      "source_repository": "LeoLam233/gaussian-minimum-purification",
+      "source_commit": "313c3e8ac67463388c36a4094a42f40aec8a3aa6",
+      "evidence_registry": "provenance/POST_STAGE_C.json",
+      "transformation": "Post-Stage-C editorial assessment; no manuscript or proof-text change. New synthesis has no single frozen source payload.",
+      "publication_transformation": {
+        "approved_rc_archive": "Gaussian_MinPur_PostStageC_RC_candidate.zip",
+        "approved_rc_archive_sha256": "02f331975710fd711fd1e38c248016115c1b0d5ff1f84404ae103fe5f89fd005",
+        "approved_rc_distributed_sha256": "48bfb4d3bfc6dee8a7f1312e07e6d9826e34494ef9ffd44841f99589b1a5e76c",
+        "description": "Narrow v0.1.2 publication identity/version transformation; historical evidence and mathematical content preserved."
+      },
+      "finalization_transformation": {
+        "source_publication_candidate_archive": "Gaussian_MinPur_v0.1.2_RELEASE_CANDIDATE.zip",
+        "source_publication_candidate_archive_sha256": "14d6ccb716cf2c88173d32d75d98e424c135584f6bb603a24ed242220acb121b",
+        "source_distributed_sha256": "004e32ae1e7aaffddba64359bef7d5e8877b842fb95e8358a521e159537d948a",
+        "description": "Release-state semantics for public v0.1.2; mathematical/scientific content unchanged."
+      }
+    },
+    {
+      "repository_path": "docs/COMMON_CORE.md",
+      "distributed_sha256": "b4d1b965f25e1089e66b3b5eb756b0fb771059fed7c529b8e9d5b3726796da89",
+      "source_sha256": null,
+      "source_archive_chain": [],
+      "source_member": null,
+      "source_kind": "newly authored synthesis",
+      "source_repository": "LeoLam233/gaussian-minimum-purification",
+      "source_commit": null,
+      "evidence_registry": "provenance/POST_STAGE_C.json",
+      "transformation": "Post-Stage-C editorial assessment; no manuscript or proof-text change. New synthesis has no single frozen source payload."
+    },
+    {
+      "repository_path": "docs/PROOF_ARCHITECTURES.md",
+      "distributed_sha256": "ac503f1c0ac80667f988cef426921ddf57922db887fe227564de6ceb9fad0f26",
+      "source_sha256": null,
+      "source_archive_chain": [],
+      "source_member": null,
+      "source_kind": "newly authored synthesis",
+      "source_repository": "LeoLam233/gaussian-minimum-purification",
+      "source_commit": null,
+      "evidence_registry": "provenance/POST_STAGE_C.json",
+      "transformation": "Post-Stage-C editorial assessment; no manuscript or proof-text change. New synthesis has no single frozen source payload."
+    },
+    {
+      "repository_path": "docs/PROOF_GUIDE.md",
+      "distributed_sha256": "74281fa883f4bf9b2bfb28ca1ebcbd7b40a1c20b3e0cd04dbeff9c0b45218b83",
+      "source_sha256": "f82a232425df8bb58dad2184b662fb9b724f568156c12a7a5941da9154d75ab2",
+      "source_archive_chain": [],
+      "source_member": "docs/PROOF_GUIDE.md",
+      "source_kind": "baseline editorial revision",
+      "source_repository": "LeoLam233/gaussian-minimum-purification",
+      "source_commit": "313c3e8ac67463388c36a4094a42f40aec8a3aa6",
+      "evidence_registry": "provenance/POST_STAGE_C.json",
+      "transformation": "Post-Stage-C editorial assessment; no manuscript or proof-text change. New synthesis has no single frozen source payload."
+    },
+    {
+      "repository_path": "provenance/ARCHIVAL_BOUNDARY.md",
+      "distributed_sha256": "141223537967193ffdc8efbec41b1019a4cef94791d2c63323fe7a6d370c45a6",
+      "source_sha256": "07d99aada1a9812c99f24462d7074d8db1c179e9fc5efd6fc039d905cf9ed2e6",
+      "source_archive_chain": [],
+      "source_member": "provenance/ARCHIVAL_BOUNDARY.md",
+      "source_kind": "baseline editorial revision",
+      "source_repository": "LeoLam233/gaussian-minimum-purification",
+      "source_commit": "313c3e8ac67463388c36a4094a42f40aec8a3aa6",
+      "evidence_registry": "provenance/POST_STAGE_C.json",
+      "transformation": "Post-Stage-C editorial assessment; no manuscript or proof-text change. New synthesis has no single frozen source payload.",
+      "publication_transformation": {
+        "approved_rc_archive": "Gaussian_MinPur_PostStageC_RC_candidate.zip",
+        "approved_rc_archive_sha256": "02f331975710fd711fd1e38c248016115c1b0d5ff1f84404ae103fe5f89fd005",
+        "approved_rc_distributed_sha256": "06ba82c65a0b7e8e33677aaa3bad8f4f5781b4668d67004b45c563e73956c161",
+        "description": "Narrow v0.1.2 publication identity/version transformation; historical evidence and mathematical content preserved."
+      },
+      "finalization_transformation": {
+        "source_publication_candidate_archive": "Gaussian_MinPur_v0.1.2_RELEASE_CANDIDATE.zip",
+        "source_publication_candidate_archive_sha256": "14d6ccb716cf2c88173d32d75d98e424c135584f6bb603a24ed242220acb121b",
+        "source_distributed_sha256": "33726ccd2dfc34a23b9b3e28295012639fe8961139b8e5e058078655ae2037fb",
+        "description": "Release-state semantics for public v0.1.2; mathematical/scientific content unchanged."
+      }
+    },
+    {
+      "repository_path": "provenance/POST_STAGE_C.json",
+      "distributed_sha256": "31f7af474081a5b26b8f728201d04b9efe72439c78ef199fa1e773e31787f44c",
+      "source_sha256": null,
+      "source_archive_chain": [],
+      "source_member": null,
+      "source_kind": "newly authored synthesis",
+      "source_repository": "LeoLam233/gaussian-minimum-purification",
+      "source_commit": null,
+      "evidence_registry": "provenance/POST_STAGE_C.json",
+      "transformation": "Post-Stage-C editorial assessment; no manuscript or proof-text change. New synthesis has no single frozen source payload.",
+      "publication_transformation": {
+        "approved_rc_archive": "Gaussian_MinPur_PostStageC_RC_candidate.zip",
+        "approved_rc_archive_sha256": "02f331975710fd711fd1e38c248016115c1b0d5ff1f84404ae103fe5f89fd005",
+        "approved_rc_distributed_sha256": "9feccb4438b4fffb10543ee42556af9bd14fde51dd8f1b921863ead971969514",
+        "description": "Narrow v0.1.2 publication identity/version transformation; historical evidence and mathematical content preserved."
+      },
+      "finalization_transformation": {
+        "source_publication_candidate_archive": "Gaussian_MinPur_v0.1.2_RELEASE_CANDIDATE.zip",
+        "source_publication_candidate_archive_sha256": "14d6ccb716cf2c88173d32d75d98e424c135584f6bb603a24ed242220acb121b",
+        "source_distributed_sha256": "94cec8d2f5a2fbe6af9b174a69ab8069527e0a07fef8ea57e2ee96427260277e",
+        "description": "Release-state semantics for public v0.1.2; mathematical/scientific content unchanged."
+      }
+    },
+    {
+      "repository_path": "README.md",
+      "distributed_sha256": "b4663381735c588ffeba688b799b812cb8dbf6c1c3e1f2b0de60fd4a0d6f4d27",
+      "source_sha256": "47106b831a19d42eade42908ea90f7813f341293faa9fe26196a7501e8092bf9",
+      "source_archive_chain": [],
+      "source_member": "README.md",
+      "source_kind": "baseline editorial revision",
+      "source_repository": "LeoLam233/gaussian-minimum-purification",
+      "source_commit": "313c3e8ac67463388c36a4094a42f40aec8a3aa6",
+      "evidence_registry": "provenance/POST_STAGE_C.json",
+      "transformation": "Post-Stage-C editorial assessment; no manuscript or proof-text change. New synthesis has no single frozen source payload.",
+      "publication_transformation": {
+        "approved_rc_archive": "Gaussian_MinPur_PostStageC_RC_candidate.zip",
+        "approved_rc_archive_sha256": "02f331975710fd711fd1e38c248016115c1b0d5ff1f84404ae103fe5f89fd005",
+        "approved_rc_distributed_sha256": "ec063d6fa7ea901faa8dcc22b67c289d3c7bc3ef96353099b4dac3547932a08a",
+        "description": "Narrow v0.1.2 publication identity/version transformation; historical evidence and mathematical content preserved."
+      },
+      "finalization_transformation": {
+        "source_publication_candidate_archive": "Gaussian_MinPur_v0.1.2_RELEASE_CANDIDATE.zip",
+        "source_publication_candidate_archive_sha256": "14d6ccb716cf2c88173d32d75d98e424c135584f6bb603a24ed242220acb121b",
+        "source_distributed_sha256": "a709d067f166cf0c31e90bb58170643bfaace6fb0bd68a38a34576f5c33fe06e",
+        "description": "Release-state semantics for public v0.1.2; mathematical/scientific content unchanged."
+      }
+    },
+    {
+      "repository_path": "README_ZH.md",
+      "distributed_sha256": "4a7e82beb4c96d88f7bddd86f51134ede2993af302df323121a67ad28d4f7331",
+      "source_sha256": "b09d400caca8ca10119dfd21fde21f741c4d2584e4faf9b4271496bbc554f663",
+      "source_archive_chain": [],
+      "source_member": "README_ZH.md",
+      "source_kind": "baseline editorial revision",
+      "source_repository": "LeoLam233/gaussian-minimum-purification",
+      "source_commit": "313c3e8ac67463388c36a4094a42f40aec8a3aa6",
+      "evidence_registry": "provenance/POST_STAGE_C.json",
+      "transformation": "Post-Stage-C editorial assessment; no manuscript or proof-text change. New synthesis has no single frozen source payload.",
+      "publication_transformation": {
+        "approved_rc_archive": "Gaussian_MinPur_PostStageC_RC_candidate.zip",
+        "approved_rc_archive_sha256": "02f331975710fd711fd1e38c248016115c1b0d5ff1f84404ae103fe5f89fd005",
+        "approved_rc_distributed_sha256": "37f6dd791e2898db32ddaee37d4226a3102974c563065381db948fd80ee8ebac",
+        "description": "Narrow v0.1.2 publication identity/version transformation; historical evidence and mathematical content preserved."
+      },
+      "finalization_transformation": {
+        "source_publication_candidate_archive": "Gaussian_MinPur_v0.1.2_RELEASE_CANDIDATE.zip",
+        "source_publication_candidate_archive_sha256": "14d6ccb716cf2c88173d32d75d98e424c135584f6bb603a24ed242220acb121b",
+        "source_distributed_sha256": "510fd5343fac5f817b670140f4e1d7422e94db89f5978b1d6de552ee648c5064",
+        "description": "Release-state semantics for public v0.1.2; mathematical/scientific content unchanged."
+      }
+    },
+    {
+      "repository_path": "RELEASE_METADATA.json",
+      "distributed_sha256": "97764d7c31b2b67292c0b5830f04f479c25bd5cc3abec019bee70d6faf8e5039",
+      "source_sha256": "bfa6060363bcb9ea0fffd353429593b1bfbd629eef24271a69622005c2553884",
+      "source_archive_chain": [],
+      "source_member": "RELEASE_METADATA.json",
+      "source_kind": "baseline editorial revision",
+      "source_repository": "LeoLam233/gaussian-minimum-purification",
+      "source_commit": "313c3e8ac67463388c36a4094a42f40aec8a3aa6",
+      "evidence_registry": "provenance/POST_STAGE_C.json",
+      "transformation": "Post-Stage-C editorial assessment; no manuscript or proof-text change. New synthesis has no single frozen source payload.",
+      "publication_transformation": {
+        "approved_rc_archive": "Gaussian_MinPur_PostStageC_RC_candidate.zip",
+        "approved_rc_archive_sha256": "02f331975710fd711fd1e38c248016115c1b0d5ff1f84404ae103fe5f89fd005",
+        "approved_rc_distributed_sha256": "9b9257f7f66b17823f5b005399316d7e814930fa1da107e099e4369bd6ff11f6",
+        "description": "Narrow v0.1.2 publication identity/version transformation; historical evidence and mathematical content preserved."
+      },
+      "finalization_transformation": {
+        "source_publication_candidate_archive": "Gaussian_MinPur_v0.1.2_RELEASE_CANDIDATE.zip",
+        "source_publication_candidate_archive_sha256": "14d6ccb716cf2c88173d32d75d98e424c135584f6bb603a24ed242220acb121b",
+        "source_distributed_sha256": "4a244665e79f1f8c295190079fbdd0191082fc6e636e9028cc2e70c11519f2cc",
+        "description": "Release-state semantics for public v0.1.2; mathematical/scientific content unchanged."
+      }
+    },
+    {
+      "repository_path": "RELEASE_NOTES.md",
+      "distributed_sha256": "3e082579f875c7e6a30f6eba2080d58d58e761892f4a634f22212c3dd44f1058",
+      "source_sha256": "e56e81148da8eb16ceefad2a784419f0c51defc026e96cc1d3f23e8bc486d9ec",
+      "source_archive_chain": [],
+      "source_member": "RELEASE_NOTES.md",
+      "source_kind": "baseline editorial revision",
+      "source_repository": "LeoLam233/gaussian-minimum-purification",
+      "source_commit": "313c3e8ac67463388c36a4094a42f40aec8a3aa6",
+      "evidence_registry": "provenance/POST_STAGE_C.json",
+      "transformation": "Post-Stage-C editorial assessment; no manuscript or proof-text change. New synthesis has no single frozen source payload.",
+      "publication_transformation": {
+        "approved_rc_archive": "Gaussian_MinPur_PostStageC_RC_candidate.zip",
+        "approved_rc_archive_sha256": "02f331975710fd711fd1e38c248016115c1b0d5ff1f84404ae103fe5f89fd005",
+        "approved_rc_distributed_sha256": "a5eb9fb9732c6815e2a1b3eaabddeef36fa6eac5cedc4a5d6dde5c6ed9aafbd4",
+        "description": "Narrow v0.1.2 publication identity/version transformation; historical evidence and mathematical content preserved."
+      },
+      "finalization_transformation": {
+        "source_publication_candidate_archive": "Gaussian_MinPur_v0.1.2_RELEASE_CANDIDATE.zip",
+        "source_publication_candidate_archive_sha256": "14d6ccb716cf2c88173d32d75d98e424c135584f6bb603a24ed242220acb121b",
+        "source_distributed_sha256": "3b6fd9b70a5bfc7af62bc72c0ffdf4afb62e3ba17459aae10636c0ddd27ee219",
+        "description": "Release-state semantics for public v0.1.2; mathematical/scientific content unchanged."
+      }
+    },
+    {
+      "repository_path": "REPRODUCIBILITY.md",
+      "distributed_sha256": "df68780d45332380b3710f80cef221b58cbbf1bc8651a83916df30b7dccd5f41",
+      "source_sha256": "4a8e81699006ca24b5fee067874ca4765affeb03d55a39f7d7baf8a5f8049aec",
+      "source_archive_chain": [],
+      "source_member": "REPRODUCIBILITY.md",
+      "source_kind": "baseline editorial revision",
+      "source_repository": "LeoLam233/gaussian-minimum-purification",
+      "source_commit": "313c3e8ac67463388c36a4094a42f40aec8a3aa6",
+      "evidence_registry": "provenance/POST_STAGE_C.json",
+      "transformation": "Post-Stage-C editorial assessment; no manuscript or proof-text change. New synthesis has no single frozen source payload."
+    },
+    {
+      "repository_path": "reproduction/EXTRA_RESULTS.md",
+      "distributed_sha256": "b720998932d6f6d384d6caaeb739ce3734e6a9afd9a4e49a08956603f4219160",
+      "source_sha256": "cf998ddeac4d14f37cd5023f797ea169691400243fd43b6168850bf4f321f7cc",
+      "source_archive_chain": [],
+      "source_member": "reproduction/EXTRA_RESULTS.md",
+      "source_kind": "baseline editorial revision",
+      "source_repository": "LeoLam233/gaussian-minimum-purification",
+      "source_commit": "313c3e8ac67463388c36a4094a42f40aec8a3aa6",
+      "evidence_registry": "provenance/POST_STAGE_C.json",
+      "transformation": "Post-Stage-C editorial assessment; no manuscript or proof-text change. New synthesis has no single frozen source payload."
+    },
+    {
+      "repository_path": "reproduction/README.md",
+      "distributed_sha256": "96d24ca7741583246ccbd60f06364d2cd98fd26c55a887839f3febc99a78bc9e",
+      "source_sha256": "7aa159245a834b3cacfbbc6eaf98606f6f11d6bda09665ab0064fcec9b3ef5dc",
+      "source_archive_chain": [],
+      "source_member": "reproduction/README.md",
+      "source_kind": "baseline editorial revision",
+      "source_repository": "LeoLam233/gaussian-minimum-purification",
+      "source_commit": "313c3e8ac67463388c36a4094a42f40aec8a3aa6",
+      "evidence_registry": "provenance/POST_STAGE_C.json",
+      "transformation": "Post-Stage-C editorial assessment; no manuscript or proof-text change. New synthesis has no single frozen source payload."
+    },
+    {
+      "repository_path": "reproduction/REVIEW_NOTES.md",
+      "distributed_sha256": "ab8db86ebb64f63c42c6c268dd7397b525cddd14843ec911bff358e7a0efa680",
+      "source_sha256": "47e70b570ea1c77bc10db08e89e68869264460bb512b88483d4aed6a8bdcf3b2",
+      "source_archive_chain": [],
+      "source_member": "reproduction/REVIEW_NOTES.md",
+      "source_kind": "baseline editorial revision",
+      "source_repository": "LeoLam233/gaussian-minimum-purification",
+      "source_commit": "313c3e8ac67463388c36a4094a42f40aec8a3aa6",
+      "evidence_registry": "provenance/POST_STAGE_C.json",
+      "transformation": "Post-Stage-C editorial assessment; no manuscript or proof-text change. New synthesis has no single frozen source payload."
+    },
+    {
+      "repository_path": "reproduction/RUNS.json",
+      "distributed_sha256": "56e29cfaf857631da9b09c8556dc5689ab1193edeb72669df509bc49d68be0be",
+      "source_sha256": "8f5b3dae2461d80b118dc565a840373cf8e484071a8f217908a1e917a3663734",
+      "source_archive_chain": [],
+      "source_member": "reproduction/RUNS.json",
+      "source_kind": "baseline editorial revision",
+      "source_repository": "LeoLam233/gaussian-minimum-purification",
+      "source_commit": "313c3e8ac67463388c36a4094a42f40aec8a3aa6",
+      "evidence_registry": "provenance/POST_STAGE_C.json",
+      "transformation": "Post-Stage-C editorial assessment; no manuscript or proof-text change. New synthesis has no single frozen source payload."
+    },
+    {
+      "repository_path": "VERSION",
+      "distributed_sha256": "0db2511f269a54364b2c6101b8ffabe2989272ce8b6c7b417634e18d132755a2",
+      "source_sha256": "588f5d8e92b8639ca0f92b568a7f881a32531a06112de4bb7705f4fbeede5ae5",
+      "source_archive_chain": [
+        {
+          "archive": "Gaussian_MinPur_PostStageC_RC_candidate.zip",
+          "sha256": "02f331975710fd711fd1e38c248016115c1b0d5ff1f84404ae103fe5f89fd005"
+        }
+      ],
+      "source_member": "VERSION",
+      "source_kind": "approved RC publication metadata revision",
+      "transformation": "Narrow v0.1.2 version/candidate identity or attribution update; manuscript and license terms unchanged."
+    },
+    {
+      "repository_path": "CITATION.cff",
+      "distributed_sha256": "9076c776bd17d18b81146ee52bd1eb75d4b6578c36590bc680d0b483d10d6459",
+      "source_sha256": "d73d8a5719af29ab3c8401dc97427639a420d21d18a9e728a1ece6d3a923a57c",
+      "source_archive_chain": [
+        {
+          "archive": "Gaussian_MinPur_PostStageC_RC_candidate.zip",
+          "sha256": "02f331975710fd711fd1e38c248016115c1b0d5ff1f84404ae103fe5f89fd005"
+        }
+      ],
+      "source_member": "CITATION.cff",
+      "source_kind": "approved RC publication metadata revision",
+      "transformation": "Narrow v0.1.2 version/candidate identity or attribution update; manuscript and license terms unchanged.",
+      "finalization_transformation": {
+        "source_publication_candidate_archive": "Gaussian_MinPur_v0.1.2_RELEASE_CANDIDATE.zip",
+        "source_publication_candidate_archive_sha256": "14d6ccb716cf2c88173d32d75d98e424c135584f6bb603a24ed242220acb121b",
+        "source_distributed_sha256": "d354fc12657707d4bb91adb4e85b41e2936ccc29dc12b470fa9cc933c853417e",
+        "description": "Release-state semantics for public v0.1.2; mathematical/scientific content unchanged."
+      }
+    },
+    {
+      "repository_path": "LICENSING.md",
+      "distributed_sha256": "9d94fd46476524a68172db87d4052bfba1e4b1581cd99d67e390807b5a8ea6f3",
+      "source_sha256": "57cb95d41cc7e5523d25a7c0f69379d10b51e26cb7e3f685d4e1f348dfe09ed1",
+      "source_archive_chain": [
+        {
+          "archive": "Gaussian_MinPur_PostStageC_RC_candidate.zip",
+          "sha256": "02f331975710fd711fd1e38c248016115c1b0d5ff1f84404ae103fe5f89fd005"
+        }
+      ],
+      "source_member": "LICENSING.md",
+      "source_kind": "approved RC publication metadata revision",
+      "transformation": "Narrow v0.1.2 version/candidate identity or attribution update; manuscript and license terms unchanged."
     }
   ],
-  "repository_version": "v0.1.1"
+  "repository_version": "v0.1.2",
+  "approved_source_map": {
+    "archive": "Gaussian_MinPur_PostStageC_RC_candidate.zip",
+    "archive_sha256": "02f331975710fd711fd1e38c248016115c1b0d5ff1f84404ae103fe5f89fd005",
+    "member": "provenance/SOURCE_MAP.json",
+    "sha256": "c889215f2245a991e4a375f8a9514fa97e1da49681b57ddfda3a634c3108f218",
+    "repository_version": "v0.1.1",
+    "local_candidate_identifier": "post-stagec-rc1"
+  },
+  "source_publication_candidate_map": {
+    "archive": "Gaussian_MinPur_v0.1.2_RELEASE_CANDIDATE.zip",
+    "archive_sha256": "14d6ccb716cf2c88173d32d75d98e424c135584f6bb603a24ed242220acb121b",
+    "member": "provenance/SOURCE_MAP.json",
+    "sha256": "1dee22dbe22ef823894902d9c28689eb879bd297d17aa7399202edc1b96d51a1",
+    "local_candidate_identifier": "v0.1.2-publication-rc1"
+  }
 }

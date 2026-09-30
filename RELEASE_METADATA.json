@@ -1,9 +1,9 @@
 {
   "title": "A Mode Bound for Gaussian Entanglement of Purification",
   "author": "Dehao Lin",
-  "version": "v0.1.1",
+  "version": "v0.1.2",
   "scientific_freeze_date": "2026-09-25",
-  "repository_candidate": "v0.1.1",
+  "repository_candidate": "v0.1.2",
   "repository_name": "gaussian-minimum-purification",
   "manuscript_pages": 11,
   "manuscript_sha256": {
@@ -19,11 +19,57 @@
     "paper/manuscript.tex": "40f022a8d08801d7e1e09c0802cb5b4b2c2f2d1b964a8392f748c586620501ba"
   },
   "manuscript_revision": "The v0.1.1 introduction credits the original Section 6.3 matched-mode statement explicitly; the theorem, proof argument and bibliography are unchanged from v0.1.",
-  "repository_release": "v0.1.1",
-  "release_date": "2026-09-28",
+  "repository_release": "v0.1.2",
+  "release_date": "2026-09-30",
   "repository_url": "https://github.com/LeoLam233/gaussian-minimum-purification",
-  "release_tag": "v0.1.1",
-  "prepublication_candidate": "v0.1-rc3",
+  "release_tag": "v0.1.2",
+  "prepublication_candidate": "v0.1.2-publication-rc1",
   "reconstruction_records": "reproduction/RUNS.json",
-  "supplementary_results_status": "Not separately adversarially audited; not premises of the released manuscript."
+  "supplementary_results_status": "Selected MR1 and CR0-2 nodes received later Stage C review; not a blanket audit of all ancillary results; not premises of the manuscript.",
+  "historical_repository_release": {
+    "version": "v0.1.1",
+    "repository_candidate": "v0.1.1",
+    "repository_release": "v0.1.1",
+    "release_date": "2026-09-28",
+    "release_tag": "v0.1.1",
+    "prepublication_candidate": "v0.1-rc3"
+  },
+  "approved_integration_candidate": {
+    "identifier": "post-stagec-rc1",
+    "status": "unpublished local candidate",
+    "baseline_sha": "313c3e8ac67463388c36a4094a42f40aec8a3aa6",
+    "prepared_date": "2026-09-30",
+    "scope": "documentation and evidence provenance only",
+    "manuscript_changed": false,
+    "theorem_or_proof_text_changed": false,
+    "recommended_eventual_version": "v0.1.2",
+    "version_policy": "Existing version, repository_candidate, repository_release, release_tag and release_date fields describe baseline v0.1.1. VERSION and CITATION remain baseline identities pending a separate publication decision.",
+    "evidence_registry": "provenance/POST_STAGE_C.json"
+  },
+  "release_status": "public release",
+  "release_fields_scope": "The current version, repository_release, release_tag and release_date identify public release v0.1.2. repository_candidate is a legacy verifier key whose value is the current repository release. Prior v0.1.1 fields are preserved in historical_repository_release.",
+  "release_scope": "documentation/audit-only",
+  "manuscript_version": "v0.1.1",
+  "expert_brief_version": "v0.1.1",
+  "approved_rc": {
+    "identifier": "post-stagec-rc1",
+    "archive": "Gaussian_MinPur_PostStageC_RC_candidate.zip",
+    "sha256": "02f331975710fd711fd1e38c248016115c1b0d5ff1f84404ae103fe5f89fd005"
+  },
+  "historical_publication_candidate": {
+    "identifier": "v0.1.2-publication-rc1",
+    "status": "publication-ready local candidate; not yet remotely published",
+    "baseline_sha": "313c3e8ac67463388c36a4094a42f40aec8a3aa6",
+    "prepared_date": "2026-09-30",
+    "scope": "documentation/audit-only",
+    "manuscript_changed": false,
+    "theorem_or_proof_text_changed": false,
+    "scientific_code_changed": false,
+    "intended_version": "v0.1.2",
+    "evidence_registry": "provenance/POST_STAGE_C.json"
+  },
+  "source_publication_candidate": {
+    "archive": "Gaussian_MinPur_v0.1.2_RELEASE_CANDIDATE.zip",
+    "sha256": "14d6ccb716cf2c88173d32d75d98e424c135584f6bb603a24ed242220acb121b"
+  }
 }
