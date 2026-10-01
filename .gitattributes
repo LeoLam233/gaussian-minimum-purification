@@ -10,3 +10,6 @@ requirements.txt -text
 reproduction/runs/** -text whitespace=trailing-space,space-before-tab,cr-at-eol
 reproduction/inputs/*.zip -text
 docs/expert-brief/** -text whitespace=trailing-space,space-before-tab,cr-at-eol
+
+# The independently verified complete Lean project is immutable evidence.
+formalization/** -text whitespace=trailing-space,space-before-tab,cr-at-eol

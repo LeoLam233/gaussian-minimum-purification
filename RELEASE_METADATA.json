@@ -1,9 +1,9 @@
 {
   "title": "A Mode Bound for Gaussian Entanglement of Purification",
   "author": "Dehao Lin",
-  "version": "v0.1.2",
+  "version": "v0.1.3",
   "scientific_freeze_date": "2026-09-25",
-  "repository_candidate": "v0.1.2",
+  "repository_candidate": "v0.1.3",
   "repository_name": "gaussian-minimum-purification",
   "manuscript_pages": 11,
   "manuscript_sha256": {
@@ -19,11 +19,11 @@
     "paper/manuscript.tex": "40f022a8d08801d7e1e09c0802cb5b4b2c2f2d1b964a8392f748c586620501ba"
   },
   "manuscript_revision": "The v0.1.1 introduction credits the original Section 6.3 matched-mode statement explicitly; the theorem, proof argument and bibliography are unchanged from v0.1.",
-  "repository_release": "v0.1.2",
-  "release_date": "2026-09-30",
+  "repository_release": "v0.1.3",
+  "release_date": "2026-10-01",
   "repository_url": "https://github.com/LeoLam233/gaussian-minimum-purification",
-  "release_tag": "v0.1.2",
-  "prepublication_candidate": "v0.1.2-publication-rc1",
+  "release_tag": "v0.1.3",
+  "prepublication_candidate": "v0.1.3-lean-integration-rc1",
   "reconstruction_records": "reproduction/RUNS.json",
   "supplementary_results_status": "Selected MR1 and CR0-2 nodes received later Stage C review; not a blanket audit of all ancillary results; not premises of the manuscript.",
   "historical_repository_release": {
@@ -47,8 +47,8 @@
     "evidence_registry": "provenance/POST_STAGE_C.json"
   },
   "release_status": "public release",
-  "release_fields_scope": "The current version, repository_release, release_tag and release_date identify public release v0.1.2. repository_candidate is a legacy verifier key whose value is the current repository release. Prior v0.1.1 fields are preserved in historical_repository_release.",
-  "release_scope": "documentation/audit-only",
+  "release_fields_scope": "Current version, repository_release, release_tag and release_date identify repository release v0.1.3; repository_candidate is a legacy verifier key matching the current repository release. Historical v0.1.1/v0.1.2 identities are retained separately. The manuscript and expert brief remain v0.1.1.",
+  "release_scope": "Lean formalization and reproducibility integration",
   "manuscript_version": "v0.1.1",
   "expert_brief_version": "v0.1.1",
   "approved_rc": {
@@ -68,8 +68,26 @@
     "intended_version": "v0.1.2",
     "evidence_registry": "provenance/POST_STAGE_C.json"
   },
-  "source_publication_candidate": {
+  "historical_v0_1_2_release": {
+    "version": "v0.1.2",
+    "repository_candidate": "v0.1.2",
+    "repository_release": "v0.1.2",
+    "release_date": "2026-09-30",
+    "release_tag": "v0.1.2",
+    "prepublication_candidate": "v0.1.2-publication-rc1",
+    "release_scope": "documentation/audit-only",
+    "release_status": "public release"
+  },
+  "historical_source_publication_candidate": {
     "archive": "Gaussian_MinPur_v0.1.2_RELEASE_CANDIDATE.zip",
     "sha256": "14d6ccb716cf2c88173d32d75d98e424c135584f6bb603a24ed242220acb121b"
-  }
+  },
+  "formalization_provenance": "provenance/LEAN_FORMALIZATION_SOURCE.json",
+  "protected_formalization_files": 313,
+  "lean_source_files": 308,
+  "formalization_project_modified": false,
+  "mathematical_manuscript_changed": false,
+  "theorem_or_proof_changed": false,
+  "baseline_commit": "f0d0ba959472bf4eda97319b8d79fe51461e0b60",
+  "baseline_tree": "91b29c15888b58caf088477fd8577f78a3e3a144"
 }

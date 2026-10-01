@@ -1,6 +1,6 @@
 # 高斯纠缠纯化的模式数界
 
-**公开发布版本 v0.1.2；论文版本 v0.1.1。** [完整论文（11 页）](paper/manuscript.pdf) · [两页专家短稿](docs/expert-brief/expert_brief.pdf) · [英文首页](README.md) · [论证导读](docs/PROOF_GUIDE.md)
+**仓库版本 v0.1.3；论文版本 v0.1.1。** [完整论文（11 页）](paper/manuscript.pdf) · [两页专家短稿](docs/expert-brief/expert_brief.pdf) · [英文首页](README.md) · [论证导读](docs/PROOF_GUIDE.md)
 
 本研究基于作者自行搭建的 AI 工作流：AI 自主选题并发展证明，其他 AI 系统随后进行了对抗性审查。具体贡献和证据范围见 [作者与 AI 声明](AUTHORSHIP.md) 及 [审计状态](audits/STATUS.md)。目前尚无人类专家验证或期刊同行评审。
 
@@ -14,12 +14,16 @@ Windt、Jahn、Eisert 与 Hackl 提出了最小纯化猜想，其原论文第 6.
 
 [早期推导记录](reproduction/README.md) 中 CR0-1、CR0-2 的 PARTIAL 保持不变；MR1 的 CLAIMED_PROOF 仍是预先获知方法框架后的重建，不属于盲发现。Stage B、Stage C 属于审计，不作为额外证明计数。
 
-[额外结果](reproduction/EXTRA_RESULTS.md) 收录混合正规模数控制的压缩、特殊族结论及较短的达到性路线。后续审计检查了其中明确列出的节点，并非对所有附带结论作整体认证；这些材料不作为正式论文的证明前提。原 CR0/MR1 完整输入包和数学输出可供检查；Stage A/B/C 原始封存档案另行保存，公开候选只加入 [整理后的记录与哈希](provenance/POST_STAGE_C.json)。原始访问日志、环境路径和完整私人档案不公开。尚无证明助手形式化认证。
+[额外结果](reproduction/EXTRA_RESULTS.md) 收录混合正规模数控制的压缩、特殊族结论及较短的达到性路线。后续审计检查了其中明确列出的节点，并非对所有附带结论作整体认证；这些材料不作为正式论文的证明前提。原 CR0/MR1 完整输入包和数学输出可供检查；Stage A/B/C 原始封存档案另行保存，公开候选只加入 [整理后的记录与哈希](provenance/POST_STAGE_C.json)。这些历史 Stage A/B/C 原始访问日志、环境路径和完整私人档案仍另行保留。
 
-仓库发布版本 v0.1.2 仅更新文档、审计范围与来源记录。论文及两页短稿维持 v0.1.1，证明与科学验证脚本保持原样。两页短稿是阅读导引，不能替代完整证明。
+历史仓库版本 v0.1.2 仅更新文档、审计范围与来源记录。v0.1.3 新增 [Lean 形式化及复现层](docs/LEAN_FORMALIZATION.md)，完整保留已验证项目的 313 个文件（308 个 Lean 源文件），并添加公开源代码构建 CI。论文及两页短稿维持 v0.1.1，证明与科学验证脚本保持原样。两页短稿是阅读导引，不能替代完整证明。
+
+形式化覆盖有限模玻色及费米高斯定理，包括任意独立有限辅助尺寸、实际逐侧匹配的达到性见证及物理态/协方差/熵语义桥。另一次 Codex 独立复现从源代码重建了全部 308 个 Gaussian 模块及 74 个选定 Physlib 模块，普通 `lake build` 通过，313 个文件保持逐字节一致；针对性语义审计无实质未决发现。根定理的新鲜公理检查只报告 `propext`、`Classical.choice`、`Quot.sound`，未发现项目局部数学公理或证明空洞。内部记录是有明确角色和暴露限定的三轮完整 A–F 审计，不表示三轮完全盲且相互独立的审计。
+
+该形式化不证明非高斯最优性、无限模推广、优化器唯一性、闭式优化器或另行指定总宇称的可选强化。
 
 ## 检查与许可
 
 先运行 `python scripts/verify_repository.py`，再按 [复现说明](REPRODUCIBILITY.md) 安装依赖、重放诊断。有限数值检查不承担普适定理的证明。
 
-自有代码采用 MIT，论文与文档采用 CC BY 4.0；输入包中的第三方论文依照各自随附许可分发，详见 [许可范围](LICENSING.md)。作者批准公开的学术联系邮箱为 lindh9@mail2.sysu.edu.cn。
+自有代码采用 MIT，保留的 Mathlib 来源证明按 Apache-2.0 例外处理；论文与文档采用 CC BY 4.0；输入包中的第三方论文依照各自随附许可分发，详见 [许可范围](LICENSING.md)。作者批准公开的学术联系邮箱为 lindh9@mail2.sysu.edu.cn。

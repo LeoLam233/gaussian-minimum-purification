@@ -1,4 +1,4 @@
-# Reproduce the diagnostics
+# Reproduce the diagnostics and Lean formalization
 
 The manuscript presents an analytic proof. This repository also includes its finite diagnostic checks and a separately written density-operator check, with source hashes tying them to the retained research and audit archives.
 
@@ -12,7 +12,7 @@ python -m pip install -r requirements.txt
 python scripts/reproduce.py
 ~~~
 
-The standard-library verifier checks the repository manifest, current manuscript hashes, source-map hashes, citation metadata, and local Markdown links. It ignores Git internals, .local/, .venv/ and Python bytecode caches.
+The standard-library verifier checks the repository manifest, current manuscript hashes, source-map hashes, citation metadata, and local Markdown links. It also verifies the full frozen 313-file Lean source identity. It ignores Git internals, .local/, .venv/, generated Lean build/evidence directories and Python bytecode caches; the dedicated tracked-file gate rejects committed proof products.
 
 The reproduction entry point first requires Python assertions to be enabled, then verifies the repository, copies the scientific scripts into a new directory under .local/runs/, runs them there, saves stdout and generated JSON, and returns a nonzero status if a job fails. It sets common BLAS thread counts to one. Successful execution must also produce the expected PASS summary and case counts.
 
@@ -63,3 +63,17 @@ The [reconstruction directory](reproduction/README.md) contains the complete CR0
 The original orbit examples start from orbit-generated extensions, so their reconstruction success does not establish that all extensions lie in that orbit. The endpoint support fixtures in the exact-geometry script start with a known pure eigenvector; they do not test the full implication from entropy equality. The original mutation suite supplies counterexamples to false mathematical statements, whereas `test_replay_safety.py` injects an actual entropy fault into a verifier. These are different checks.
 
 Historical scripts and reference outputs are preserved byte for byte. Stage A/B/C supply additional tests and analytic reconstructions, summarized in [the assessment](audits/POST_STAGE_C.md), but their raw campaigns are retained separately and are not run by `scripts/reproduce.py`. A successful replay checks the retained suite, not the universal theorem, every historical campaign, or proof independence.
+
+## Lean formalization added in v0.1.3
+
+See [the formalization guide](docs/LEAN_FORMALIZATION.md) for exact physical root declarations, scope, trusted-base wording, all dependency pins and the distinction between the expensive independent serial rebuild and routine CI. The 313 submitted project files are immutable, including their original README and build script. All repository-specific controls live outside that project.
+
+From a fresh source-only checkout with Git, Python 3.12 and official elan installed:
+
+~~~sh
+python scripts/verify_lean_source.py --check-tracked
+python scripts/test_lean_gates.py
+python scripts/lean_ci.py --use-official-cache --check-tracked
+~~~
+
+The last command selects Lean 4.34.1 / Lake 5.0.0-src+5045d00, verifies all exact dependency revisions, optionally reuses official upstream mathlib caches, compiles Gaussian sources with ordinary `lake build`, and checks both named physical roots and their individual foundational dependency sets. It refuses pre-existing Gaussian build products. It does not rebuild all mathlib sources or repeat an independent semantic audit. No submitted `sorry` or `admit` is permitted. Logs are generated under .local/lean-ci/. The public Lean workflow is separate from the existing finite diagnostic workflow; both must succeed on the exact release commit.

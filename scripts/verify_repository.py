@@ -6,7 +6,7 @@ import json
 import re
 
 ROOT = Path(__file__).resolve().parents[1]
-IGNORED_DIRS = {'.git', '.local', '.venv', '__pycache__'}
+IGNORED_DIRS = {'.git', '.local', '.venv', '__pycache__', '.lake', 'build-evidence'}
 
 
 def inventory(root=ROOT):
@@ -60,6 +60,9 @@ def verify():
         errors.append('Citation version mismatch')
     if citation.get('title') != metadata['title'] or citation['authors'][0]['family-names'] != 'Lin':
         errors.append('Citation identity mismatch')
+
+    from verify_lean_source import verify as verify_lean_source
+    errors.extend('Lean source identity: ' + error for error in verify_lean_source()['errors'])
 
     links_checked = 0
     for name, p in actual.items():

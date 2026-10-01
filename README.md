@@ -1,6 +1,6 @@
 # A Mode Bound for Gaussian Entanglement of Purification
 
-**Public release v0.1.2; manuscript v0.1.1.** [Read the paper](paper/manuscript.pdf) · [Proof guide](docs/PROOF_GUIDE.md) · [Reproduce the checks](REPRODUCIBILITY.md) · [Evidence and audit status](audits/STATUS.md)
+**Repository release v0.1.3; manuscript v0.1.1.** [Read the paper](paper/manuscript.pdf) · [Proof guide](docs/PROOF_GUIDE.md) · [Reproduce the checks](REPRODUCIBILITY.md) · [Evidence and audit status](audits/STATUS.md)
 
 For a finite-mode bipartite Gaussian state, the paper proves that the Gaussian entanglement of purification has a minimum attained by a pure Gaussian purification with **the same number of auxiliary modes as physical modes on each respective side**. The optimization allows arbitrary finite auxiliary mode counts; the matched counts suffice. The bosonic statement assumes a normal state with finite covariance, and the fermionic statement concerns parity-invariant quasifree states, including pure factors, zero modes and degeneracies.
 
@@ -19,6 +19,7 @@ The result does not establish optimality among non-Gaussian purifications, give 
 - [Manuscript PDF](paper/manuscript.pdf), [LaTeX source](paper/manuscript.tex), and [build instructions](paper/README.md).
 - [Two-page expert brief](docs/expert-brief/expert_brief.pdf) and [proof guide](docs/PROOF_GUIDE.md).
 - [Independent-context attempts and method-guided rederivation](reproduction/README.md), with [additional results and their review scope](reproduction/EXTRA_RESULTS.md).
+- [Lean formalization and reproducibility](docs/LEAN_FORMALIZATION.md), with the immutable [source project](formalization/README.md).
 - [Reproduction instructions](REPRODUCIBILITY.md) and [audit qualifications](audits/STATUS.md).
 - [Source and artifact provenance](provenance/SOURCE_MAP.json), [archival boundary](provenance/ARCHIVAL_BOUNDARY.md), and [release notes](RELEASE_NOTES.md).
 - [Author and AI contribution statements](AUTHORSHIP.md) and [citation metadata](CITATION.cff).
@@ -35,7 +36,7 @@ python scripts/reproduce.py
 
 The reproduction command runs the six original verifiers and the separately written density-operator checks in fresh working directories. Generated results go under .local/; the versioned scripts and manuscript are left untouched.
 
-These computations are finite diagnostics. The analytic proof carries the universal claim. The [audit record](audits/STATUS.md) distinguishes proof artifacts, hostile audits, cross-proof reconciliation and numerical evidence. No proof-assistant formalization is claimed. **Independent human expert validation and journal peer review have not been performed.**
+These computations are finite diagnostics. The analytic proof carries the universal claim. The [audit record](audits/STATUS.md) distinguishes proof artifacts, hostile audits, cross-proof reconciliation and numerical evidence. The [Lean formalization](docs/LEAN_FORMALIZATION.md) separately covers the primary finite-mode Gaussian theorem for both bosons and fermions, including all independently finite auxiliary pairs, actual matched sidewise witnesses attaining the infimum, and physical state/covariance/entropy bridges. Fresh independent root checks report only `propext`, `Classical.choice`, and `Quot.sound`; no project-local mathematical axioms or proof holes were found. **Independent human expert validation and journal peer review have not been performed.**
 
 ## Reconstruction records and additional results
 
@@ -43,10 +44,10 @@ The [Stage A/B/C assessment](audits/POST_STAGE_C.md) records a reported blind co
 
 The earlier CR0-1 and CR0-2 outcomes remain PARTIAL. MR1 remains a method-guided CLAIMED_PROOF, with a supplied architecture; later review does not turn it into blind discovery. The integration review found no new load-bearing defect in the checked routes.
 
-The complete original CR0/MR1 input packets and mathematical outputs are in [reproduction/](reproduction/README.md). Later review of selected supplementary nodes is recorded there; it is not a blanket audit of every ancillary claim. Raw Stage A/B/C archives remain separately retained, with [curated identities and hashes](provenance/POST_STAGE_C.json). The manuscript and expert brief remain v0.1.1, and the scientific scripts are unchanged. Repository release v0.1.2 is documentation/audit-only.
+The complete original CR0/MR1 input packets and mathematical outputs are in [reproduction/](reproduction/README.md). Later review of selected supplementary nodes is recorded there; it is not a blanket audit of every ancillary claim. Raw Stage A/B/C archives remain separately retained, with [curated identities and hashes](provenance/POST_STAGE_C.json). The manuscript and expert brief remain v0.1.1, and the scientific scripts are unchanged. Repository release v0.1.2 was documentation/audit-only; v0.1.3 adds the verified Lean source and public reproducible CI, without changing the manuscript theorem or proof.
 
 ## AI contribution and licensing
 
 An AI workflow designed and assembled by the author autonomously selected the open problem and developed the proof. AI systems played the primary role in the derivation and computational checks, and other AI systems carried out adversarial reviews. AI assistance also contributed to exposition and repository preparation. These reviews are distinct from human peer review.
 
-Original code is licensed under [MIT](LICENSE). The original manuscript and documentation are licensed under [CC BY 4.0](LICENSES/CC-BY-4.0.txt). See [licensing scope](LICENSING.md) for third-party exclusions. The full research archive is retained separately; this repository provides the manuscript, runnable checks and a documented [public/private boundary](provenance/ARCHIVAL_BOUNDARY.md). The [rc2 editorial record](provenance/EDITORIAL_CHANGES.json) and [rc3 AI disclosure record](provenance/AI_DISCLOSURE_UPDATE.json) document the introductory wording changes; the mathematical argument and scientific scripts are unchanged.
+Original code is licensed under [MIT](LICENSE), with the retained Apache-2.0 Mathlib-derived proof exception described in [licensing](LICENSING.md). The original manuscript and documentation are licensed under [CC BY 4.0](LICENSES/CC-BY-4.0.txt). See [licensing scope](LICENSING.md) for third-party exclusions. The full research archive is retained separately; this repository provides the manuscript, runnable checks and a documented [public/private boundary](provenance/ARCHIVAL_BOUNDARY.md). The [rc2 editorial record](provenance/EDITORIAL_CHANGES.json) and [rc3 AI disclosure record](provenance/AI_DISCLOSURE_UPDATE.json) document the introductory wording changes; the mathematical argument and scientific scripts are unchanged.

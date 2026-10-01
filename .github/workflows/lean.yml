@@ -1,0 +1,40 @@
+name: Lean formalization
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  lean:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.12'
+      - name: Verify source-only frozen project and repository
+        run: |
+          python scripts/verify_repository.py
+          python scripts/verify_lean_source.py --check-tracked
+          python scripts/test_lean_gates.py
+      - name: Install pinned official elan bootstrap
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd "$RUNNER_TEMP"
+          curl --fail --location --retry 3 --proto '=https' --tlsv1.2 \
+            https://github.com/leanprover/elan/releases/download/v4.2.4/elan-x86_64-unknown-linux-gnu.tar.gz \
+            --output elan.tar.gz
+          echo '42b94d4244e8353142c456ec0e4ca6528fd898a6c604d4059f494e706e431f63  elan.tar.gz' | sha256sum --check --strict
+          tar -xzf elan.tar.gz elan-init
+          ./elan-init -y --default-toolchain none --no-modify-path
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Build public project and verify physical roots
+        run: python scripts/lean_ci.py --use-official-cache --check-tracked
+      - name: Recheck immutable source bytes
+        if: always()
+        run: python scripts/verify_lean_source.py --check-tracked

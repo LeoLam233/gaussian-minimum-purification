@@ -1,10 +1,18 @@
 # Audit and evidence status
 
-## Current assessment: 30 September 2026
+## Lean formalization integration: 1 October 2026
 
-The [Stage A/B/C integration assessment](POST_STAGE_C.md) adds a reported blind complete derivation, hostile manuscript scrutiny and cross-proof dependency analysis. Multiple complete derivations use partially independent global reduction and attainment mechanisms while sharing a nontrivial adapted-J compression/spectral core. No new load-bearing defect was found in the checked routes. The manuscript and expert brief remain v0.1.1 and are unchanged by this documentation release.
+The immutable source-only [Lean project](../formalization/README.md) is added for repository v0.1.3. Its [provenance](../provenance/LEAN_FORMALIZATION_SOURCE.json) binds all 313 project files (308 Lean sources) to the frozen formalization archive and the separate independent verification archive. The recorded verdicts are FULL_FORMALIZATION_VERIFIED and INDEPENDENT_REPLAY_AND_SEMANTIC_AUDIT_PASS.
 
-Stage B and Stage C are audits, MR1 is method-guided, and the CR0 outcomes remain PARTIAL. Review of selected supplementary nodes does not certify every ancillary result. AI review is not independent human validation, journal peer review or proof-assistant formalization. [Evidence identities and exposure limits](../provenance/POST_STAGE_C.json) distinguish reported provenance from authenticated bytes.
+The separate Codex verification rebuilt 308 Gaussian and 74 selected Physlib modules from source, completed ordinary `lake build`, preserved the bytes of all 313 submitted files, and found no substantive unresolved issue in its targeted semantic audit. Fresh physical-root checks report only `propext`, `Classical.choice`, and `Quot.sound`; no project-local mathematical axioms or proof holes were found. Official pinned upstream mathlib caches were reused. The internal campaign records three complete A–F cycles with documented role/exposure qualifications, not three fully blind mutually independent audits.
+
+The [formalization guide](../docs/LEAN_FORMALIZATION.md) states exact roots, finite-mode Gaussian scope, semantic bridges and exclusions. The nonmaterial stale ThermalEntropy comment is retained unchanged. The manuscript theorem/proof and v0.1.1 manuscript/brief are unchanged. Formal verification and AI audits remain distinct from independent human expert review or journal peer review.
+
+## Historical Stage A/B/C assessment: 30 September 2026
+
+The [Stage A/B/C integration assessment](POST_STAGE_C.md) adds a reported blind complete derivation, hostile manuscript scrutiny and cross-proof dependency analysis. Multiple complete derivations use partially independent global reduction and attainment mechanisms while sharing a nontrivial adapted-J compression/spectral core. No new load-bearing defect was found in the checked routes. The manuscript and expert brief remain v0.1.1 and are unchanged by the v0.1.2 documentation release.
+
+Stage B and Stage C are audits, MR1 is method-guided, and the CR0 outcomes remain PARTIAL. Review of selected supplementary nodes does not certify every ancillary result. These Stage A/B/C AI reviews are not independent human validation, journal peer review or proof-assistant formalization; the later Lean evidence is described separately above. [Evidence identities and exposure limits](../provenance/POST_STAGE_C.json) distinguish reported provenance from authenticated bytes.
 
 ## Historical manuscript reviews: 24–25 September 2026
 

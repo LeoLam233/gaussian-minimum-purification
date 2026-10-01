@@ -21,3 +21,11 @@ Thumbs.db
 paper/*.log
 paper/*.out
 paper/*.xdv
+
+# Lean build products and optional serial-replay evidence are never distributed
+formalization/.lake/
+formalization/build-evidence/
+*.olean
+*.olean.private
+*.olean.server
+*.ilean
