@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-04",
+  "scope": "Bibliography/author metadata maintenance only; no scientific re-audit or new release.",
+  "baseline_commit": "62820a0afff79559be7c3af99cc23a8c7550ac5c",
+  "scientific_payload_changed": false,
+  "versions_tags_releases_changed": false,
+  "orcid_uri": "https://orcid.org/0009-0001-4551-8490",
+  "citation_added": "Bhattacharyya2018",
+  "primary_source": "https://arxiv.org/abs/1802.09545v2",
+  "attribution_scope": "Sections 3.5 and 4.4: minimal matched-size Gaussian ansatz and numerical support, not a general mode-count proof.",
+  "build": {
+    "status": "PASS",
+    "command": "scripts/build_paper.py --engine pdflatex",
+    "clean_source_only_directory": true,
+    "pdf_sha256": "d9722a7a32f8dcef0a872d106fad84267bfe923ee8239287419a0315d00159b2",
+    "source_sha256": {
+      "paper\\manuscript.tex": "3ce90a2ad7961aae3835199ba76332d8afb528afd1cc0d16ef902a04752a5430",
+      "paper/manuscript.tex": "f77e3b1cdec5d8f16dfe64ddaf9f7ac1ece51b629b14c5e7b837ae77a7597238"
+    },
+    "pages": 11,
+    "previous_pages": 11,
+    "latex_failures": [],
+    "log_sha256": "f9c345c00f38f10f5af6bfa0b0123bf4c24746525f64f7f85b645a6941e219bc",
+    "bibliography_keys": [
+      "Terhal2002",
+      "Bhattacharyya2018",
+      "Bhattacharyya2019",
+      "Camargo2021",
+      "Windt2021",
+      "Chen2025",
+      "Hackl2021",
+      "HornJohnson2013",
+      "Williamson1936"
+    ],
+    "pdf_author_orcid_count": 1,
+    "added_reference_visible": true,
+    "visual_review": "All pages inspected as rendered contact sheets; title/ORCID and reference pages checked. No clipping, overlap or unexpected blank pages.",
+    "historical_build_receipts": "Preserved with their original source/PDF identities; this receipt describes current main.",
+    "final_rebuild_render_check": "All 11 rendered pages byte-identical to visually reviewed page PNGs after preserving the original mixed source line endings."
+  },
+  "historical_records": "Old provenance, audit evidence, release metadata snapshots, tags and published release assets retained; historical no-ORCID descriptions refer to their original dates.",
+  "final_checks": {
+    "citation_cff_unique_fields": "PASS",
+    "all_author_records_orcid": "PASS",
+    "incorrect_orcid_values": [],
+    "preserved_historical_no_orcid_context_files": [],
+    "theorem_proof_source_comparison": "PASS: unchanged outside introduction/author/bibliography edits",
+    "pdf_rendering": "PASS"
+  }
+}

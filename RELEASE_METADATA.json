@@ -7,8 +7,8 @@
   "repository_name": "gaussian-minimum-purification",
   "manuscript_pages": 11,
   "manuscript_sha256": {
-    "paper/manuscript.pdf": "0d70ce853d097447508d96aa5bd86452f2d9cdec9018860acb0da51af66b9a7b",
-    "paper/manuscript.tex": "2d177bb65fa734df6c849458e8c0d6af9263a564acdfe71f922eddc5869548a4"
+    "paper/manuscript.pdf": "d9722a7a32f8dcef0a872d106fad84267bfe923ee8239287419a0315d00159b2",
+    "paper/manuscript.tex": "f77e3b1cdec5d8f16dfe64ddaf9f7ac1ece51b629b14c5e7b837ae77a7597238"
   },
   "private_freeze_archive_sha256": "1610956a15654942ef7fa7db0f737e4345a353b50ff37faff8864b27fadd33b0",
   "code_license": "MIT",
@@ -89,5 +89,7 @@
   "mathematical_manuscript_changed": false,
   "theorem_or_proof_changed": false,
   "baseline_commit": "f0d0ba959472bf4eda97319b8d79fe51461e0b60",
-  "baseline_tree": "91b29c15888b58caf088477fd8577f78a3e3a144"
+  "baseline_tree": "91b29c15888b58caf088477fd8577f78a3e3a144",
+  "author_orcid": "https://orcid.org/0009-0001-4551-8490",
+  "current_main_maintenance": "provenance/BIBLIOGRAPHY_ORCID_2026-10-04.json"
 }

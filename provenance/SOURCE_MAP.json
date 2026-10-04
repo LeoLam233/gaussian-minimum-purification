@@ -3,7 +3,7 @@
   "files": [
     {
       "repository_path": "paper/manuscript.pdf",
-      "distributed_sha256": "0d70ce853d097447508d96aa5bd86452f2d9cdec9018860acb0da51af66b9a7b",
+      "distributed_sha256": "d9722a7a32f8dcef0a872d106fad84267bfe923ee8239287419a0315d00159b2",
       "source_sha256": "956a7cc584855815915c3db3e223ac0670e6724058b64f6dcec9b679611887bc",
       "source_archive_chain": [
         {
@@ -12,11 +12,11 @@
         }
       ],
       "source_member": "Gaussian_MinPur_v0.1/paper/manuscript.pdf",
-      "transformation": "Further v0.1.1 editorial attribution/date revision and Tectonic 0.17.0 PDF rebuild; the theorem and proof argument remain unchanged from v0.1. See provenance/V0_1_1_EDITORIAL.json."
+      "transformation": "Further v0.1.1 editorial attribution/date revision and Tectonic 0.17.0 PDF rebuild; the theorem and proof argument remain unchanged from v0.1. See provenance/V0_1_1_EDITORIAL.json. 2026-10-04 bibliography/ORCID maintenance; theorem and proof unchanged. See provenance/BIBLIOGRAPHY_ORCID_2026-10-04.json."
     },
     {
       "repository_path": "paper/manuscript.tex",
-      "distributed_sha256": "2d177bb65fa734df6c849458e8c0d6af9263a564acdfe71f922eddc5869548a4",
+      "distributed_sha256": "f77e3b1cdec5d8f16dfe64ddaf9f7ac1ece51b629b14c5e7b837ae77a7597238",
       "source_sha256": "40f022a8d08801d7e1e09c0802cb5b4b2c2f2d1b964a8392f748c586620501ba",
       "source_archive_chain": [
         {
@@ -25,7 +25,7 @@
         }
       ],
       "source_member": "Gaussian_MinPur_v0.1/paper/manuscript.tex",
-      "transformation": "Further v0.1.1 editorial attribution/date revision and Tectonic 0.17.0 PDF rebuild; the theorem and proof argument remain unchanged from v0.1. See provenance/V0_1_1_EDITORIAL.json."
+      "transformation": "Further v0.1.1 editorial attribution/date revision and Tectonic 0.17.0 PDF rebuild; the theorem and proof argument remain unchanged from v0.1. See provenance/V0_1_1_EDITORIAL.json. 2026-10-04 bibliography/ORCID maintenance; theorem and proof unchanged. See provenance/BIBLIOGRAPHY_ORCID_2026-10-04.json."
     },
     {
       "repository_path": "verification/original/verify_polar_compression.py",
@@ -617,7 +617,7 @@
     },
     {
       "repository_path": "RELEASE_METADATA.json",
-      "distributed_sha256": "5a0cd2db97703b3e5a461b15934a68f28d501f6c7a3ecc5b291c304dac599523",
+      "distributed_sha256": "1411955d82ee533a70603b5a38e53591275b8996b44f366ff61a9637f1e9405d",
       "source_sha256": "bfa6060363bcb9ea0fffd353429593b1bfbd629eef24271a69622005c2553884",
       "source_archive_chain": [],
       "source_member": "RELEASE_METADATA.json",
@@ -625,7 +625,7 @@
       "source_repository": "LeoLam233/gaussian-minimum-purification",
       "source_commit": "313c3e8ac67463388c36a4094a42f40aec8a3aa6",
       "evidence_registry": "provenance/POST_STAGE_C.json",
-      "transformation": "Post-Stage-C editorial assessment; no manuscript or proof-text change. New synthesis has no single frozen source payload.",
+      "transformation": "Post-Stage-C editorial assessment; no manuscript or proof-text change. New synthesis has no single frozen source payload. 2026-10-04 author ORCID and current manuscript hash maintenance; historical release identities unchanged.",
       "publication_transformation": {
         "approved_rc_archive": "Gaussian_MinPur_PostStageC_RC_candidate.zip",
         "approved_rc_archive_sha256": "02f331975710fd711fd1e38c248016115c1b0d5ff1f84404ae103fe5f89fd005",
@@ -759,7 +759,7 @@
     },
     {
       "repository_path": "CITATION.cff",
-      "distributed_sha256": "3449f6e3d92a8a39ae89933300e2aa4ab13bc9b53987c05654527f67d2949e9f",
+      "distributed_sha256": "865cf922b38b36d7c6012903828926cc3334afe7d5ca375cd155c303e8efdeea",
       "source_sha256": "d73d8a5719af29ab3c8401dc97427639a420d21d18a9e728a1ece6d3a923a57c",
       "source_archive_chain": [
         {
@@ -769,7 +769,7 @@
       ],
       "source_member": "CITATION.cff",
       "source_kind": "approved RC publication metadata revision",
-      "transformation": "Narrow v0.1.2 version/candidate identity or attribution update; manuscript and license terms unchanged.",
+      "transformation": "Narrow v0.1.2 version/candidate identity or attribution update; manuscript and license terms unchanged. 2026-10-04 author ORCID and current manuscript hash maintenance; historical release identities unchanged.",
       "finalization_transformation": {
         "source_publication_candidate_archive": "Gaussian_MinPur_v0.1.2_RELEASE_CANDIDATE.zip",
         "source_publication_candidate_archive_sha256": "14d6ccb716cf2c88173d32d75d98e424c135584f6bb603a24ed242220acb121b",
