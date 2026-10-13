@@ -70,3 +70,7 @@ python build_serial.py --log-dir ../.local/lean-serial
 ~~~
 
 That procedure builds Gaussian and the selected Physlib import closure module by module before ordinary `lake build`. It is distinct from routine public CI. Neither workflow extends the theorem's scope exclusions.
+
+## Expert statement crosswalk
+
+The independent [formal verification appendix](formal-verification/APPENDIX.md) connects the v0.1.1 manuscript to 46 named v0.1.3 Lean declarations, with exact hypotheses, frozen source locations, semantic bridges and scope exclusions. Its [statement dossier](formal-verification/STATEMENTS.md) preserves source statement headers. It is a review aid, not human certification or a new kernel replay.
