@@ -2,6 +2,8 @@
 
 Repository release **v0.1.3** adds the already verified, source-only Lean project in [formalization/](../formalization/README.md). The mathematical manuscript and expert brief remain **v0.1.1**. Their theorem and proof are unchanged.
 
+The separate [formalization verification appendix](formalization-appendix/README.md) (version 1.0, 13 October 2026) maps the paper's proof nodes to 62 selected exact declarations and definitions, with immutable source locations, explicit hypotheses, semantic obligations and exclusions. It is prepared for external expert review and does not claim that such review has occurred. The existing instructions below remain the build/reproduction procedure.
+
 ## Formalized result and exact roots
 
 The primary finite-mode Gaussian minimum-purification theorem is formalized for both bosonic and fermionic sectors. The optimization includes **all independently finite auxiliary mode pairs**. Each physical root provides actual matched sidewise auxiliary witnesses attaining the global finite-auxiliary infimum, together with physical state/covariance/entropy semantic bridges.

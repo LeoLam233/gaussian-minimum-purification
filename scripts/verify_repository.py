@@ -64,6 +64,9 @@ def verify():
     from verify_lean_source import verify as verify_lean_source
     errors.extend('Lean source identity: ' + error for error in verify_lean_source()['errors'])
 
+    from verify_formalization_appendix import verify as verify_appendix
+    errors.extend('Formalization appendix: ' + error for error in verify_appendix()['errors'])
+
     links_checked = 0
     for name, p in actual.items():
         if p.suffix.lower() != '.md':

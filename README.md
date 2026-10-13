@@ -18,6 +18,7 @@ The result does not establish optimality among non-Gaussian purifications, give 
 
 - [Manuscript PDF](paper/manuscript.pdf), [LaTeX source](paper/manuscript.tex), and [build instructions](paper/README.md).
 - [Two-page expert brief](docs/expert-brief/expert_brief.pdf) and [proof guide](docs/PROOF_GUIDE.md).
+- [Formalization verification appendix](docs/formalization-appendix/README.md): paper-to-Lean correspondence, exact hypotheses, semantic bridges and a pinned declaration register for external experts.
 - [Independent-context attempts and method-guided rederivation](reproduction/README.md), with [additional results and their review scope](reproduction/EXTRA_RESULTS.md).
 - [Lean formalization and reproducibility](docs/LEAN_FORMALIZATION.md), with the immutable [source project](formalization/README.md).
 - [Reproduction instructions](REPRODUCIBILITY.md) and [audit qualifications](audits/STATUS.md).

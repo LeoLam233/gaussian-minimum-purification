@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "title": "Formalization verification appendix: finite-mode Gaussian minimum purification",
+  "appendix_version": "1.0",
+  "prepared_date": "2026-10-13",
+  "baseline_commit": "0e04a7bcd0bfb27e2a87dcb8be81bdaa71242dda",
+  "lean_source": {
+    "tag": "v0.1.3",
+    "commit": "62820a0afff79559be7c3af99cc23a8c7550ac5c",
+    "protected_inventory": "provenance/LEAN_FORMALIZATION_SOURCE.json",
+    "protected_files": 313,
+    "lean_sources": 308,
+    "changed": false
+  },
+  "manuscript_source": {
+    "tag": "v0.1.1",
+    "commit": "313c3e8ac67463388c36a4094a42f40aec8a3aa6",
+    "tag_sha256": {
+      "paper/manuscript.tex": "2d177bb65fa734df6c849458e8c0d6af9263a564acdfe71f922eddc5869548a4",
+      "paper/manuscript.pdf": "0d70ce853d097447508d96aa5bd86452f2d9cdec9018860acb0da51af66b9a7b"
+    },
+    "baseline_sha256": {
+      "paper/manuscript.tex": "f77e3b1cdec5d8f16dfe64ddaf9f7ac1ece51b629b14c5e7b837ae77a7597238",
+      "paper/manuscript.pdf": "d9722a7a32f8dcef0a872d106fad84267bfe923ee8239287419a0315d00159b2"
+    },
+    "body_comparison": {
+      "start_marker": "\\section{Statement and proof strategy}",
+      "end_marker": "\\section*{AI contribution statement}",
+      "sha256": "f926b3551f9cb8795c9a0258711e82a503ff1de5afae266ba7c168e6f1ebd51d",
+      "byte_identical": true
+    },
+    "baseline_difference": "2026-10-04 bibliography and ORCID maintenance; v0.1.1 mathematical body retained",
+    "changed_by_appendix": false
+  },
+  "preserved_baseline_artifacts": {
+    "paper/manuscript.tex": "f77e3b1cdec5d8f16dfe64ddaf9f7ac1ece51b629b14c5e7b837ae77a7597238",
+    "paper/manuscript.pdf": "d9722a7a32f8dcef0a872d106fad84267bfe923ee8239287419a0315d00159b2",
+    "docs/expert-brief/expert_brief.tex": "a2853cfbbdd23ae848a6a151e895cdb3031694b589cb6ac72ed6d1da856def33",
+    "docs/expert-brief/expert_brief.pdf": "719e79c11bcf81b2458748be41747cc96ca090120cdbe4271c167a72ab026812",
+    "docs/expert-brief/PROVENANCE.json": "b42dcf88a0ea45600ee04b43b0b41570f2216cdaafd68e58d778574271bb05dd"
+  },
+  "reused_navigation": [
+    "docs/PROOF_GUIDE.md",
+    "docs/COMMON_CORE.md",
+    "docs/PROOF_ARCHITECTURES.md",
+    "docs/LEAN_FORMALIZATION.md",
+    "provenance/SOURCES.md"
+  ],
+  "declaration_register": {
+    "path": "docs/formalization-appendix/declarations.json",
+    "selected_entries": 62,
+    "exhaustive_module_catalog": false,
+    "generated_excerpts": "docs/formalization-appendix/DECLARATIONS.md",
+    "checker": "scripts/verify_formalization_appendix.py"
+  },
+  "recorded_prior_evidence": {
+    "independent_rebuild": {
+      "gaussian_modules": 308,
+      "selected_physlib_modules": 74,
+      "source": "provenance/LEAN_FORMALIZATION_SOURCE.json",
+      "new_independent_rebuild_in_this_appendix_task": false
+    },
+    "root_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "baseline_push_ci": [
+      {
+        "name": "Lean formalization",
+        "run_id": 37201853615,
+        "conclusion": "success",
+        "head_sha": "0e04a7bcd0bfb27e2a87dcb8be81bdaa71242dda"
+      },
+      {
+        "name": "Verify repository",
+        "run_id": 37201853600,
+        "conclusion": "success",
+        "head_sha": "0e04a7bcd0bfb27e2a87dcb8be81bdaa71242dda"
+      }
+    ]
+  },
+  "authorship": "Prepared with Codex assistance for external expert inspection; no human expert signature or certification.",
+  "human_reviews": [],
+  "local_documentation_validation": {
+    "date": "2026-10-13",
+    "declaration_check": "PASS: 62 entries",
+    "repository_integrity": "PASS: all manifest entries and local file links",
+    "frozen_source_check": "PASS: 313 files / 308 Lean sources",
+    "existing_lean_gate_tests": "PASS: 8 tests, with scratch temporary directory in the workspace",
+    "documentation_negative_controls": "PASS: shifted locator and missing declaration rejected",
+    "preserved_artifact_check": "PASS: scientific proof payloads, paper and expert brief source/PDF untouched",
+    "local_lean_compilation": false,
+    "integration_ci": "Run the existing repository and Lean workflows on the integration commit; results are GitHub Actions evidence, not a new independent semantic audit"
+  },
+  "evidence_boundary": "Excerpt/identity checks are documentation checks. Kernel checks establish encoded formal implications. AI audits and CI are not human peer review.",
+  "change_scope": "New independent appendix, citation/provenance and selected declaration register; additive navigation links and documentation checker integration. Frozen Lean files, scientific proof payloads and existing paper/brief artifacts are unchanged."
+}

@@ -2,6 +2,8 @@
 
 The central statement is Theorem 2.1 of the [manuscript](../paper/manuscript.pdf). The optimization is over pure Gaussian extensions of a fixed finite-mode physical state and over every finite auxiliary size. The theorem proves existence of an optimum with the two auxiliary counts individually matched to their physical counterparts.
 
+For the later v0.1.3 implementation, use the [formalization verification appendix](formalization-appendix/README.md) alongside this guide. It connects these paper nodes to exact Lean statements, hypotheses, semantic bridges and immutable source line locators. It also distinguishes equivalent implementation routes from literal proof translations; this mathematical navigation need not be duplicated.
+
 ## The key step: equality turns transfer into removal
 
 Lemma 3.1 considers a mixed Gaussian state on $X$ and $C$, with $a$ physical modes and $c>a$ auxiliary modes. A compatible complex structure $J$ on the joint coefficient space gives
