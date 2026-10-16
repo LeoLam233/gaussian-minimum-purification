@@ -172,3 +172,5 @@ An external reviewer can use the following worksheet without accepting any audit
 | R7 | Are the parity, non-Gaussian, infinite-mode and numerical-search exclusions, and the attribution to Windt et al., accurately maintained? | |
 
 The current appendix contains **no completed human review entries**. A future expert assessment should be attributed to its actual author and scope, separately from this source correspondence and the existing AI audit history.
+
+For eleven additional source declarations preserved from a parallel documentation draft, see [supplementary declaration crosswalk](SUPPLEMENT_PR1.md). This is a non-normative complement to the 62-entry main register, not a competing appendix.
